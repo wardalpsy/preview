@@ -31,7 +31,7 @@
 		"label_PL": "Polski"
 	},
 	"hero": {
-		"image": "/$lib/assets/images/front-view-woman-writing-notebook.jpg",
+		"image": "/src/lib/assets/images/wardal-hero.jpg",
 		"name": "Patrycja Wardal",
 		"role": "Psycholog",
 		"title": "Bezpieczna przestrzeń dla Twojego umysłu.",

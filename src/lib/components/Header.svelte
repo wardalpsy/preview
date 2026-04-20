@@ -58,7 +58,7 @@
 		<div class="container mx-auto flex items-center justify-between px-4">
 			<!-- Brand Identity -->
 			<div class="flex items-center justify-center">
-				<div class="relative z-0 translate-x-6.5 -translate-y-2">
+				<div class="relative z-0 translate-x-6.5 -translate-y-2.5">
 					<Logo />
 				</div>
 				<a href={l('/')} class="group relative z-10 flex items-center">

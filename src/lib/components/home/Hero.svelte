@@ -24,9 +24,9 @@
 	// Robust lookup: find the image that matches the filename from the JSON
 	const getHeroImage = () => {
 		const targetPath = i18n.t.hero.image || '';
-		// Get just the filename ("hero-wardal.jpg")
+		// Get just the filename ("wardal-hero.jpg")
 		const filename = targetPath.split('/').pop();
-		const defaultImage = images['/src/lib/assets/images/hero-wardal.jpg'];
+		const defaultImage = images['/src/lib/assets/wardal-hero.jpg'];
 		if (!filename) return defaultImage;
 
 		// Look through all globbed images for one that ends with this filename
@@ -60,7 +60,7 @@
 					<Button size="xl" href={l('/availability')}>
 						{i18n.t.hero.cta_primary}
 					</Button>
-					<Button size="xl" variant="secondary" href={l('/reserved')}>
+					<Button size="xl" variant="secondary" href={l('/#approach')}>
 						{i18n.t.hero.cta_secondary}
 					</Button>
 				</div>
