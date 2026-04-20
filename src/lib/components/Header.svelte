@@ -30,23 +30,38 @@
 		observer.observe(topBarRef);
 		return () => observer.disconnect();
 	});
-	// Helper for the nav items to be dynamic based on JSON order
+	// Define the manual order of navigation items
+	const navOrder: (keyof typeof i18n.t.nav)[] = [
+		'about',
+		'approach',
+		'practices',
+		'articles',
+		'testimonials',
+		'faq',
+		'contact'
+	];
+
+	// Helper for the nav items to be dynamic based on the manual order
 	let navItems = $derived(
-		Object.entries(i18n.t.nav).map(([id, label]) => ({
-			id,
-			href: id === 'about' ? '/#about' : `/#${id}`,
-			label
-		}))
+		navOrder
+			.filter((id) => i18n.t.nav[id]) // Only show if translation exists
+			.map((id) => ({
+				id,
+				href: id === 'about' ? '/#about' : `/#${id}`,
+				label: i18n.t.nav[id]
+			}))
 	);
 </script>
 
 <header bind:this={topBarRef}>
-	<div class="border-b border-border pt-2 pb-4">
+	<div class="border-b border-border pt-4 pb-4">
 		<div class="container mx-auto flex items-center justify-between px-4">
 			<!-- Brand Identity -->
-			<div class="flex items-center justify-center gap-3">
-				<Logo />
-				<a href={l('/')} class="group flex items-center gap-3">
+			<div class="flex items-center justify-center">
+				<div class="relative z-0 translate-x-6.5 -translate-y-2">
+					<Logo />
+				</div>
+				<a href={l('/')} class="group relative z-10 flex items-center">
 					<div class="flex flex-col">
 						<div>
 							<span class="font-serif text-base leading-tight md:text-lg"
