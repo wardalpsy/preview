@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Admin Panel | WardalPsy</title>
+  <!-- Load Sveltia CMS -->
+  <script src="sveltia-cms.js" type="module"></script>
+</head>
+<body>
+  <script type="module">
+    import { translationCollection, articlesCollection, aboutCollection } from './config.js';
+
+    CMS.init({
+      config: {
+        load_config_file: false,
+        backend: {
+          name: 'github',
+          repo: 'wardalpsy/wardalpsy.com',
+          branch: 'v1.0.0'
+        },
+        media_folder: 'src/lib/assets/images',
+        public_folder: 'src/lib/assets/images',
+        collections: [translationCollection, articlesCollection, aboutCollection]
+      }
+    });
+  </script>
+</body>
+</html>
