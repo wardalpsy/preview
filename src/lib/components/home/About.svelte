@@ -1,9 +1,8 @@
 <script lang="ts">
 	import { i18n } from '$lib/i18n.svelte';
 	import type { Picture } from '@sveltejs/enhanced-img';
-	import { base } from '$app/paths';
 	//Icons
-	import IconArrowRight from 'virtual:icons/tabler/arrow-right';
+	//import IconArrowRight from 'virtual:icons/tabler/arrow-right';
 
 	// Dynamically import all images in the assets directory
 	// Added uppercase extensions to handle files like .JPG
@@ -20,7 +19,8 @@
 	const getAboutImage = () => {
 		const targetPath = about?.image || '';
 		const filename = targetPath.split('/').pop();
-		if (!filename) return null;
+		const defaultImage = images['/src/lib/assets/about-wardal.jpg'];
+		if (!filename) return defaultImage;
 
 		for (const globPath in images) {
 			if (globPath.toLowerCase().endsWith(filename.toLowerCase())) {
@@ -28,20 +28,13 @@
 			}
 		}
 
-		return null;
+		return defaultImage;
 	};
 
 	let { about, content: Content } = $props();
-	
+
 	// Use derived to fix TS error and handle reactivity
 	const aboutImage = $derived(getAboutImage());
-
-	const l = (path: string) => {
-		const lang = i18n.currentLang;
-		const prefix = lang === 'en' ? '' : `/${lang}`;
-		const cleanPath = path.startsWith('/') ? path : `/${path}`;
-		return `${base}${prefix}${cleanPath === '/' && lang !== 'en' ? '' : cleanPath}`;
-	};
 </script>
 
 <section id="about" class="scroll-m-12 overflow-hidden border-y-2 border-border bg-white py-24">
@@ -53,18 +46,18 @@
 
 				<div class="relative z-10">
 					<div
-						class="overflow-hidden rounded-[10rem] border-12 border-border/50 shadow-2xl shadow-brand/15"
+						class="mx-auto aspect-[751/1000] max-w-[500px] overflow-hidden rounded-[10rem] border-12 border-border/50 shadow-2xl shadow-brand/15 lg:ml-0"
 					>
 						{#if aboutImage}
 							<enhanced:img
 								src={aboutImage}
 								alt={about?.image_alt || i18n.t.about.image_alt}
-								class="aspect-4/3 h-135 w-full object-cover"
+								class="h-full w-full object-cover"
 								loading="lazy"
 							/>
 						{:else}
-							<div class="flex h-135 w-full items-center justify-center bg-muted/20">
-								<span class="text-muted-foreground/50 text-sm italic">Photo not found</span>
+							<div class="flex aspect-[751/1000] w-full items-center justify-center bg-muted/20">
+								<span class="text-sm text-muted-foreground italic">Photo not found</span>
 							</div>
 						{/if}
 					</div>
@@ -109,7 +102,7 @@
 					{/if}
 				</div>
 
-				<div class="pt-4">
+				<!--<div class="pt-4">
 					<a
 						href={l('/about')}
 						class="group inline-flex items-center gap-3 font-medium text-primary transition-colors hover:text-brand"
@@ -120,7 +113,7 @@
 							aria-hidden="true"
 						/>
 					</a>
-				</div>
+				</div>-->
 			</div>
 		</div>
 	</div>

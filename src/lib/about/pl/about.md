@@ -3,15 +3,9 @@ lang: pl
 title: Nazywam się Patrycja Wardal
 subtitle: Witaj w chwili obecnej, byśmy mogli wspólnie budować Twoją przyszłość.
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-excerpt_p1: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio.
-content_meta: null
-date: 24 Kwietnia 2024
-image: /$lib/assets/images/about/foto2-sm.JPG
+image: src/lib/assets/images/about/about-wardal.jpg
 image_alt: Opis obrazu
-quote: Rozmowa to początek zmiany.
-excerpt_p2: ''
-excerpt_p3: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+quote: ''
 ---
 
 Jestem psychologiem, psychoterapeutką i hipnoterapeutką, wpisaną do rejestru zawodowego regionu Puglia (Włochy). Specjalizuję się w psychoterapii ericksonowskiej i hipnozie, które ukończyłam w instytucie SIIPE w Rzymie.

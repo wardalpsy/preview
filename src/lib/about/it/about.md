@@ -3,7 +3,7 @@ lang: it
 title: Sono Patrycja Wardal!
 subtitle: Benvenuti nel vostro momento presente per costruire insieme il vostro futuro.
 description: dott.essa asd
-image: /src/lib/assets/images/about/foto2-sm.JPG
+image: /src/lib/assets/images/about/about-wardal.jpg
 image_alt: Descrizione dell'immagine
 quote: Parlare è l'inizio del cambiamento.
 ---
