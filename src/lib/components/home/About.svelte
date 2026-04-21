@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { i18n } from '$lib/i18n.svelte';
 	import type { Picture } from '@sveltejs/enhanced-img';
-	import ImgDefault from '$lib/assets/about-wardal.jpg';
+	//import ImgDefault from '$lib/assets/about-wardal.jpg';
 	//Icons
 	//import IconArrowRight from 'virtual:icons/tabler/arrow-right';
 
@@ -52,13 +52,6 @@
 						{#if aboutImage}
 							<enhanced:img
 								src={aboutImage}
-								alt={about?.image_alt}
-								class="h-full w-full object-cover"
-								loading="lazy"
-							/>
-						{:else}
-							<enhanced:img
-								src={ImgDefault}
 								alt={about?.image_alt}
 								class="h-full w-full object-cover"
 								loading="lazy"
