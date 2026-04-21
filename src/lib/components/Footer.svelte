@@ -28,9 +28,11 @@
 					<span class="font-display text-xl font-bold tracking-tight text-brand">
 						{i18n.t.header.name}
 					</span>
-					<p class="mt-2 max-w-xs text-sm leading-relaxed text-foreground/90">
-						{i18n.t.footer.description}
-					</p>
+					{#if i18n.t.footer.description}
+						<p class="mt-2 max-w-xs text-sm leading-relaxed text-foreground/90">
+							{i18n.t.footer.description}
+						</p>
+					{/if}
 				</div>
 			</div>
 
@@ -39,13 +41,14 @@
 				<h2 class="footer-headings">{i18n.t.footer.quick_links}</h2>
 				<ul class="space-y-4 text-sm">
 					<li>
-						<a href={l('/about')} class="footer-nav_link">{i18n.t.nav.about}</a>
+						<a href={l('/availability')} class="footer-nav_link">{i18n.t.footer.nav_availability}</a
+						>
 					</li>
 					<li>
-						<a href={l('/approach')} class="footer-nav_link">{i18n.t.nav.approach}</a>
+						<a href={l('/reserved')} class="footer-nav_link">{i18n.t.footer.nav_reserved}</a>
 					</li>
 					<li>
-						<a href={l('/booking')} class="footer-nav_link">{i18n.t.nav.articles}</a>
+						<a href={l('/articles')} class="footer-nav_link">{i18n.t.nav.articles}</a>
 					</li>
 					<li>
 						<a href="#contact" class="footer-nav_link">{i18n.t.nav.contact}</a>
@@ -90,7 +93,17 @@
 				</h2>
 				<ul class="space-y-4 text-xs leading-relaxed">
 					<li>{i18n.t.footer.vat}</li>
-					<li>{i18n.t.footer.register}</li>
+					<li>
+						{i18n.t.footer.register}
+						<a
+							href="https://www.psicologipuglia.it/single-professionista/?id=7134"
+							class="footer-legal_link"
+							target="_blank"
+							rel="noopener"
+							>{i18n.t.footer.register_no}
+							<span class="sr-only">{i18n.t.a11y.external_link}</span></a
+						>
+					</li>
 					<li>
 						<a href={l('/')} class="footer-legal_link">{i18n.t.footer.privacy}</a>
 					</li>
@@ -111,16 +124,17 @@
 			<small>
 				© {displayYear}&nbsp; Dr.&nbsp; {i18n.t.header.name}. &nbsp;{i18n.t.footer.rights}
 			</small>
-
-			<!-- Tiny Creator Credit -->
-			<a
-				href="https://oxypteros.com"
-				target="_blank"
-				class="font-serif text-xs hover:text-black hover:underline"
-				rel="noopener"
-				title="Designed & built by Oxypteros"
-				aria-label={`Designed & built by Oxypteros ${i18n.t.footer.external_link}`}>π</a
-			>
+			{#if i18n.t.footer.oxy_credit}
+				<!-- Tiny Creator Credit -->
+				<a
+					href="https://oxypteros.com"
+					target="_blank"
+					class="font-serif text-xs hover:text-black hover:underline"
+					rel="noopener"
+					title="Designed & built by Oxypteros"
+					aria-label={`Designed & built by Oxypteros ${i18n.t.a11y.external_link}`}>π</a
+				>
+			{/if}
 		</div>
 	</div>
 </footer>

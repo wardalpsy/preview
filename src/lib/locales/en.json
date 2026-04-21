@@ -117,21 +117,26 @@
 		"legal_title": "Legal Information",
 		"quick_links": "Quick Links",
 		"rights": "All rights reserved.",
-		"vat": "VAT No: 01234567890",
-		"register": "Registered with the Order of Psychologists No. 12345",
+		"vat": "VAT No: 08814610724",
+		"register": "Registered with the Apulian Register of Psychologists No.",
+		"register_no": "7277",
 		"privacy": "Privacy Policy",
 		"cookies": "Cookie Policy",
 		"accessibility": "Accessibility",
 		"whatsapp_Online": true,
-		"whatsapp": "391234567890",
+		"whatsapp": "393924759170",
 		"whatsapp_message": "Contact me with WhatsApp",
-		"email": "test@example.com",
+		"pec_email": "wardal.patrycja@psypec.it",
+		"email": "wardal.psy@gmail.com",
 		"linkedin": "https://linkedin.com",
 		"twitter": "https://twitter.com",
 		"instagram": "https://instagram.com",
 		"facebook": "https://facebook.com",
-		"phone": "391234567890",
-		"external_link": "(opens in a new tab)"
+		"phone": "393924759170",
+		"external_link": "(opens in a new tab)",
+		"nav_availability": "Availability",
+		"nav_reserved": "Appointments",
+		"oxy_credit": true
 	},
 	"consent": {
 		"legal_title": "Informed Consent for Treatment",
@@ -179,7 +184,7 @@
 		"contact_form_target": "wardalpsycom@protonmail.com",
 		"my_email": "wardalpsycom@protonmail.com",
 		"section_title": "Contact me!",
-		"section_subtitle": "Take the first step, it't time.",
+		"section_subtitle": "Lorem Ipsum Dolor",
 		"section_name": "Name",
 		"section_email": "Email",
 		"section_message": "Message",
@@ -205,7 +210,8 @@
 		"back_home": "Back to Home",
 		"close": "Close",
 		"sig_canvas": "Handwritten signature box",
-		"loading_consent": "Loading consent document..."
+		"loading_consent": "Loading consent document...",
+		"external_link": "(opens in a new tab)"
 	},
 	"seo": {
 		"title": "Dr. Patrycja Wardal | Psychologist, Psychotherapist, Hypnotherapist"
@@ -224,7 +230,7 @@
 	"testimonials": {
 		"enable_testimonials": true,
 		"title": "Shared Journeys",
-		"subtitle": "Voices of those who have walked this path, respecting the sanctity of the therapeutic space and personal privacy.",
+		"subtitle": "Lorem Ipsum Dolor",
 		"cta_button": "Leave a Testimonial",
 		"modal_title": "Share your experience",
 		"modal_desc": "Your words can help others find the courage to seek support. All submissions are reviewed for privacy before publishing.",
@@ -238,27 +244,22 @@
 		"policy_info": "for more information.",
 		"list": [
 			{
-				"name": "Sarah J.",
-				"testimonial": "Working with Patrycja helped me navigate a period of deep anxiety. Her approach is professional yet incredibly warm; I felt truly seen for the first time.",
+				"name": "K.",
+				"testimonial": "Dr. Patrycja is a wonderful and understanding specialist; she creates a very comfortable atmosphere during the sessions and has helped me tremendously.",
 				"isAnonymous": false
 			},
 			{
-				"name": "Michael Lowrey",
-				"testimonial": "I was skeptical about therapy, but the safe environment created here allowed me to explore my burnout and find a way back to myself. Highly recommended.",
-				"isAnonymous": true
+				"name": "N.",
+				"testimonial": "A very kind person who makes you feel truly heard and understood. The sessions reduce stress. I highly recommend a consultation with the doctor.",
+				"isAnonymous": false
 			},
 			{
-				"name": "Elena M.",
-				"testimonial": "The sessions helped me rebuild my self-esteem after a difficult relationship. The space is non-judgmental and the growth I've seen in myself is profound.",
-				"isAnonymous": true
-			},
-			{
-				"name": "David",
-				"testimonial": "A very focused and evidence-based approach. I appreciated the practical tools provided to manage my daily stress and the clear communication.",
+				"name": "A.",
+				"testimonial": "Very practical sessions with a sense of full understanding, along with insights for self-work and personal reflection. I am very grateful!",
 				"isAnonymous": false
 			}
 		],
-		"anonymized": "(Anonymized)",
+		"anonymized": "(Anonymous)",
 		"previous": "Previous testimonial",
 		"next": "Next terstimonial"
 	},

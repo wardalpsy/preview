@@ -8,10 +8,12 @@
 	import IconBrandLinkedin from 'virtual:icons/tabler/brand-linkedin';
 	import IconBrandInstagram from 'virtual:icons/tabler/brand-instagram';
 	import IconBrandX from 'virtual:icons/tabler/brand-x';
+	import IconMailPec from '$lib/components/ui/icons/mail-pec.svelte';
 
 	// URL Helper
 	const formatUrl = (id: string, value: string) => {
 		if (id === 'email') return `mailto:${value}`;
+		if (id === 'pec_email') return `mailto:${value}`;
 		if (id === 'whatsapp') {
 			// Removes spaces, dashes, and the '+' sign for the wa.me API
 			const cleanNumber = value.replace(/\D/g, '');
@@ -22,6 +24,7 @@
 	// Array for Contact options
 	const socialLinks = $derived([
 		{ id: 'email', label: 'E-mail', href: i18n.t.footer.email, icon: IconMail },
+		{ id: 'pec_email', label: 'PEC email', href: i18n.t.footer.pec_email, icon: IconMailPec },
 		{ id: 'whatsapp', label: 'WhatsApp', href: i18n.t.footer.whatsapp, icon: IconBrandWhatsapp },
 		{ id: 'linkedin', label: 'LinkedIn', href: i18n.t.footer.linkedin, icon: IconBrandLinkedin },
 		{ id: 'twitter', label: 'X (Twitter)', href: i18n.t.footer.twitter, icon: IconBrandX },

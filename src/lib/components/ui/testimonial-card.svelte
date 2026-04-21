@@ -17,25 +17,28 @@
 			height="40"
 			viewBox="0 0 24 24"
 			fill="currentColor"
+			aria-hidden="true"
 			><path
 				d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.437.917-3.996 3.638-3.996 5.849h3.983v10h-9.987z"
 			/></svg
 		>
 	</div>
 
-	<p class="mb-8 grow leading-relaxed text-foreground">
-		"{testimonial}"
-	</p>
+	<q class="mb-8 grow leading-relaxed text-foreground lg:text-lg">
+		{testimonial}
+	</q>
 
 	<div class="flex items-center gap-3 not-italic">
-		<div class="h-px w-8 bg-border"></div>
+		<div class="h-px w-8 bg-brand/60"></div>
 		{#if isAnonymous}
 			<!--"Redacted"-->
 			<span class="ml-2 text-[10px] tracking-tighter uppercase">
 				{i18n.t.testimonials.anonymized}</span
 			>
 		{:else}
-			<span class="text-xs font-bold tracking-widest text-brand uppercase">
+			<span
+				class="font-display text-lg leading-0 font-bold tracking-widest text-brand uppercase lg:text-xl"
+			>
 				{name}
 			</span>
 		{/if}

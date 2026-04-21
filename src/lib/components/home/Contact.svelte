@@ -40,19 +40,20 @@
 	></div>
 	<div class="relative z-10 container mx-auto px-6">
 		<div
-			class="mx-auto flex max-w-5xl flex-col overflow-hidden rounded-[3rem] bg-white shadow-xl shadow-brand/10 md:flex-row"
+			class="mx-auto flex max-w-5xl flex-col overflow-hidden rounded-[3rem] bg-white shadow-xl shadow-brand/15 md:flex-row"
 		>
 			<!-- Info Side -->
 			<div class="flex flex-col justify-between bg-brand p-12 text-white md:w-1/3">
 				<div class="space-y-6">
 					<h2 class="text-center font-serif text-3xl">{i18n.t.contact.section_title}</h2>
 				</div>
-
-				<div class="mt-12 text-xs">
-					<p class="text-center text-sm leading-relaxed text-on-brand">
-						{i18n.t.contact.section_subtitle}
-					</p>
-				</div>
+				{#if i18n.t.contact.section_subtitle}
+					<div class="mt-12 text-xs">
+						<p class="text-center text-sm leading-relaxed text-on-brand">
+							{i18n.t.contact.section_subtitle}
+						</p>
+					</div>
+				{/if}
 			</div>
 
 			<!-- Form Side -->
@@ -92,7 +93,8 @@
 							<Form.Control>
 								{#snippet children({ props })}
 									<Form.Label
-										>{i18n.t.contact.section_message}<span class="form-required">*</span></Form.Label
+										>{i18n.t.contact.section_message}<span class="form-required">*</span
+										></Form.Label
 									>
 									<Textarea
 										{...props}

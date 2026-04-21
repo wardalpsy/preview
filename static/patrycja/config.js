@@ -133,16 +133,16 @@ const translationFields = [
 		fields: [
 			{ label: 'Enable Testimonials', name: 'enable_testimonials', widget: 'boolean' },
 			{ label: 'Title', name: 'title', widget: 'string' },
-			{ label: 'Subtitle', name: 'subtitle', widget: 'text' },
+			{ label: 'Subtitle', name: 'subtitle', widget: 'string', required: 'false' },
 			{ label: 'CTA Button', name: 'cta_button', widget: 'string' },
 			{ label: 'Modal Title', name: 'modal_title', widget: 'string' },
 			{ label: 'Modal Description', name: 'modal_desc', widget: 'text' },
 			{ label: 'Name Label', name: 'name_label', widget: 'string' },
 			{ label: 'Message Label', name: 'msg_label', widget: 'string' },
 			{ label: 'Anonymity Label', name: 'anon_label', widget: 'string' },
-			{ label: 'Anonymity Hint', name: 'anon_hint', widget: 'text' },
+			{ label: 'Anonymity Hint', name: 'anon_hint', widget: 'string' },
 			{ label: 'Submit Button', name: 'submit_btn', widget: 'string' },
-			{ label: 'Success Message', name: 'success_msg', widget: 'text' },
+			{ label: 'Success Message', name: 'success_msg', widget: 'string' },
 			{ label: 'Policy Link Text', name: 'policy_link', widget: 'string' },
 			{ label: 'Policy Info', name: 'policy_info', widget: 'string' },
 			{ label: 'Anonymized Text', name: 'anonymized', widget: 'string' },
@@ -154,9 +154,9 @@ const translationFields = [
 				widget: 'list',
 				summary: '{{name}}',
 				fields: [
-					{ label: 'Name', name: 'name', widget: 'string' },
+					{ label: 'Name', name: 'name', widget: 'string', required: 'false' },
 					{ label: 'Testimonial', name: 'testimonial', widget: 'text' },
-					{ label: 'Is Anonymous', name: 'isAnonymous', widget: 'boolean' }
+					{ label: 'Is Anonymous', name: 'isAnonymous', widget: 'boolean', hint: 'If toggled the name will be replaced by the Anonymized Text' }
 				]
 			}
 		]
@@ -188,21 +188,31 @@ const translationFields = [
 		name: 'footer',
 		widget: 'object',
 		fields: [
-			{ label: 'Description', name: 'description', widget: 'text' },
-			{ label: 'Contact Title', name: 'contact_title', widget: 'string' },
-			{ label: 'Location', name: 'location', widget: 'string' },
-			{ label: 'Legal Title', name: 'legal_title', widget: 'string' },
-			{ label: 'Quick Links', name: 'quick_links', widget: 'string' },
-			{ label: 'Rights', name: 'rights', widget: 'string' },
-			{ label: 'VAT No', name: 'vat', widget: 'string' },
-			{ label: 'Register No', name: 'register', widget: 'string' },
-			{ label: 'Privacy Policy', name: 'privacy', widget: 'string' },
-			{ label: 'Cookie Policy', name: 'cookies', widget: 'string' },
-			{ label: 'Accessibility', name: 'accessibility', widget: 'string' },
-			{ label: 'Enable WhatsApp', name: 'whatsapp_Online', widget: 'boolean' },
-			{ label: 'WhatsApp Number', name: 'whatsapp', widget: 'string' },
-			{ label: 'WhatsApp Message', name: 'whatsapp_message', widget: 'string' }
-		]
+        { label: 'Description', name: 'description', widget: 'text', hint: 'Leave empty to disable', required: false },
+        { label: 'Contact Title', name: 'contact_title', widget: 'string' },
+        { label: 'Location', name: 'location', widget: 'string' },
+        { label: 'Standard Email', name: 'email', widget: 'string' },
+        { label: 'PEC Email', name: 'pec_email', widget: 'string' },
+        { label: 'Phone Number', name: 'phone', widget: 'string' },
+        { label: 'Enable WhatsApp', name: 'whatsapp_Online', widget: 'boolean' },
+        { label: 'WhatsApp Number', name: 'whatsapp', widget: 'string' },
+        { label: 'WhatsApp Message', name: 'whatsapp_message', widget: 'string' },
+        { label: 'Quick Links Title', name: 'quick_links', widget: 'string' },
+        { label: 'Availability Link Text', name: 'nav_availability', widget: 'string' },
+        { label: 'Appointments Link Text', name: 'nav_reserved', widget: 'string' },
+        { label: 'LinkedIn URL', name: 'linkedin', widget: 'string', required: false },
+        { label: 'Instagram URL', name: 'instagram', widget: 'string', required: false },
+        { label: 'Facebook URL', name: 'facebook', widget: 'string', required: false },
+        { label: 'Twitter/X URL', name: 'twitter', widget: 'string', required: false },
+        { label: 'Legal Title', name: 'legal_title', widget: 'string' },
+        { label: 'Rights Statement', name: 'rights', widget: 'string' },
+        { label: 'VAT No', name: 'vat', widget: 'string' },
+        { label: 'Register No', name: 'register', widget: 'string' },
+        { label: 'Privacy Policy Link', name: 'privacy', widget: 'string' },
+        { label: 'Cookie Policy Link', name: 'cookies', widget: 'string' },
+        { label: 'Accessibility Link', name: 'accessibility', widget: 'string' },
+				{label: 'Oxypteros Link', name: 'oxy_credit', widget:'boolean', required: 'false'}
+    ]
 	},
 	{
 		label: 'Informed Consent',
@@ -223,9 +233,10 @@ const translationFields = [
 		]
 	},
 	{
-		label: 'Contact Form',
+		label: 'Contact Forms',
 		name: 'contact',
 		widget: 'object',
+		hint: 'Control the Availability contact form and the homepage contact section.',
 		fields: [
 			{ label: 'Subject', name: 'subject', widget: 'string' },
 			{ label: 'First Name', name: 'first_name', widget: 'string' },
@@ -238,8 +249,20 @@ const translationFields = [
 			{ label: 'Sending', name: 'sending', widget: 'string' },
 			{ label: 'Complete Request', name: 'complete_request', widget: 'string' },
 			{ label: 'Appointment Info', name: 'request_appointment_info', widget: 'string' },
-			{ label: 'Request Info', name: 'request_info', widget: 'text' },
-			{ label: 'WhatsApp Message', name: 'whatsapp_appointment_message', widget: 'string' }
+			{ label: 'Request Info', name: 'request_info', widget: 'string' },
+			{ label: 'WhatsApp Message', name: 'whatsapp_appointment_message', widget: 'string' },
+			{ label: 'Target Email', name: 'contact_form_target', widget: 'string', hint: 'The email address where the form submissions will be sent.' },
+			{ label: 'My Email', name: 'my_email', widget: 'string', hint: 'Displayed contact email.' },
+			{ label: 'Section Title', name: 'section_title', widget: 'string' },
+			{ label: 'Section Subtitle', name: 'section_subtitle', widget: 'string', required: 'false' },
+			{ label: 'Section Name', name: 'section_name', widget: 'string' },
+			{ label: 'Section Email', name: 'section_email', widget: 'string' },
+			{ label: 'Section Message', name: 'section_message', widget: 'string' },
+			{ label: 'Section Required', name: 'section_required', widget: 'string' },
+			{ label: 'Section Policy Link', name: 'section_policy_link', widget: 'string' },
+			{ label: 'Section Policy Info', name: 'section_policy_info', widget: 'string' },
+			{ label: 'Section Send Message', name: 'section_send_message', widget: 'string' },
+			{ label: 'Section Sending', name: 'section_sending', widget: 'string' }
 		]
 	},
 	{

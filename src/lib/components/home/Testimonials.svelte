@@ -7,9 +7,14 @@
 	import IconChevronLeft from 'virtual:icons/tabler/chevron-left';
 	import IconChevronRight from 'virtual:icons/tabler/chevron-right';
 
+	import type { SuperValidated, Infer } from 'sveltekit-superforms';
+	import type { TestimonialSchema } from '$lib/components/forms/schema';
+
 	let { testimonials, data } = $props<{
 		testimonials: Array<{ name: string; testimonial: string; isAnonymous: boolean }>;
-		data: any;
+		data: {
+			testimonialForm: SuperValidated<Infer<TestimonialSchema>>;
+		};
 	}>();
 
 	let currentIndex = $state(0);
@@ -30,9 +35,11 @@
 			<h2 class="home-section_h2">
 				{i18n.t.testimonials.title}
 			</h2>
-			<p class="home-section_subtitle">
-				{i18n.t.testimonials.subtitle}
-			</p>
+			{#if i18n.t.testimonials.subtitle}
+				<p class="home-section_subtitle">
+					{i18n.t.testimonials.subtitle}
+				</p>
+			{/if}
 		</div>
 		<div class="relative mx-auto w-full max-w-4xl px-12">
 			<div class="overflow-hidden py-4">
