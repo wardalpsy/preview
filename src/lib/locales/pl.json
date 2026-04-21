@@ -1,319 +1,320 @@
 {
-	"a11y": {
-		"skip_to_content": "Przejdź do treści",
-		"open_menu": "Otwórz menu",
-		"toggle_menu": "Przełącz menu",
-		"home": "Strona główna",
-		"back": "Wstecz",
-		"back_home": "Powrót do strony głównej",
-		"close": "Zamknij",
-		"sig_canvas": "Pole podpisu odręcznego",
-		"loading_consent": "Ładowanie dokumentu zgody..."
-	},
-	"header": {
-		"title": "mgr.",
-		"name": "Patrycja Wardal",
-		"specialties": "Psycholog • Psychoterapeuta • Hipnoterapeuta"
-	},
-	"nav": {
-		"about": "O mnie",
-		"approach": "Podejście",
-		"practices": "Obszary pomocy",
-		"articles": "Artykuły",
-		"faq": "FAQ",
-		"testimonials": "Opinie",
-		"contact": "Kontakt"
-	},
-	"lang_switch": {
-		"flags": true,
-		"label_EN": "English",
-		"label_IT": "Italiano",
-		"label_PL": "Polski"
-	},
-	"hero": {
-		"image": "/src/lib/assets/images/wardal-hero.jpg",
-		"name": "Patrycja Wardal",
-		"role": "Psycholog",
-		"title": "Bezpieczna przestrzeń dla Twojego umysłu.",
-		"subtitle": "Indywidualne ścieżki psychoterapii, aby odnaleźć równowagę i spokój w codziennym życiu.",
-		"cta_primary": "Sprawdź dostępność",
-		"cta_secondary": "Umów wizytę",
-		"image_alt": "Patrycja Wardal w swoim gabinecie",
-		"quote": "Dobrostan zaczyna się od poczucia bycia wysłuchanym"
-	},
-	"about": {
-		"image": "/$lib/assets/images/about-wardal.jpg",
-		"image_alt": "Patrycja Wardal w swoim gabinecie",
-		"badge": "O mnie",
-		"title": "Nazywam się Patrycja Wardal",
-		"subtitle": "Przyjmuję Cię w Twojej teraźniejszości, abyśmy mogli wspólnie budować Twoją przyszłość.",
-		"quote": "Rozmowa to początek zmiany.",
-		"cta": "Poznaj moją drogę"
-	},
-	"approach": {
-		"title": "Podejście terapeutyczne",
-		"subtitle": "Wspólna podróż, w której Twoje doświadczenie spotyka się z moją wiedzą zawodową w bezpiecznym środowisku słuchania.",
-		"pillars": [
-			{
-				"title": "Dowody naukowe",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-				"icon": "brain"
-			},
-			{
-				"title": "Ludzka więź",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-				"icon": "heart"
-			},
-			{
-				"title": "Uważność",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-				"icon": "leaf"
-			}
-		]
-	},
-	"practices": {
-		"title": "Jak mogę Ci pomóc",
-		"subtitle": "Każda droga jest wyjątkowa. Wspólnie będziemy pracować nad zrozumieniem źródła Twojego cierpienia i znalezieniem zasobów, aby je pokonać.",
-		"not_found": "Nie możesz znaleźć tego, czego szukasz?",
-		"contact_me": "Skontaktuj się ze mną w sprawie spotkania wstępnego.",
-		"items": [
-			{
-				"id": "anxiety",
-				"title": "Lęk i stres",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-			},
-			{
-				"id": "mood",
-				"title": "Depresja i nastrój",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-			},
-			{
-				"id": "relationships",
-				"title": "Relacje i pary",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-			}
-		]
-	},
-	"faq": {
-		"title": "Najczęściej zadawane pytania",
-		"subtitle": "Wszystko, co musisz wiedzieć przed rozpoczęciem swojej drogi.",
-		"additional_question": "Masz więcej pytań? ",
-		"ask_me": "Skontaktuj się ze mną bezpośrednio.",
-		"items": [
-			{
-				"id": "duration",
-				"question": "Jak długo trwa sesja psychoterapii?",
-				"answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-			},
-			{
-				"id": "booking",
-				"question": "Jak mogę zarezerwować wizytę?",
-				"answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-			},
-			{
-				"id": "cancellation",
-				"question": "Czy można odwołać rezerwację?",
-				"answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-			},
-			{
-				"id": "online",
-				"question": "Czy sesje odbywają się online czy osobiście?",
-				"answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-			},
-			{
-				"id": "cost",
-				"question": "Jaki jest koszt sesji?",
-				"answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-			}
-		]
-	},
-	"articles": {
-		"title": "Miejsce na refleksję",
-		"subtitle": "Artykuły i spostrzeżenia na temat dobrostanu psychicznego, rozwoju osobistego i zdrowia psychicznego.",
-		"cta": "Przeczytaj wszystkie artykuły",
-		"read_more": "Przeczytaj artykuł"
-	},
-	"sessions": {
-		"title": "Sprawdź moją dostępność",
-		"subtitle": "Wybierz czas, aby zobaczyć, kiedy jestem dostępna. Po wybraniu terminu możesz skontaktować się ze mną przez WhatsApp lub telefonicznie w celu krótkiej wstępnej oceny.",
-		"cta_whatsapp": "Skontaktuj się na WhatsApp",
-		"cta_call": "Zadzwoń teraz"
-	},
-	"testimonials": {
-		"enable_testimonials": true,
-		"title": "Wspólne drogi",
-		"subtitle": "Głosy tych, którzy przeszli tę drogę, z poszanowaniem świętości przestrzeni terapeutycznej i prywatności.",
-		"cta_button": "Zostaw opinię",
-		"modal_title": "Podziel się swoim doświadczeniem",
-		"modal_desc": "Twoje słowa mogą pomóc innym znaleźć odwagę, by szukać wsparcia. Wszystkie zgłoszenia są weryfikowane pod kątem prywatności przed publikacją.",
-		"name_label": "Twoje imię lub inicjały",
-		"msg_label": "Twoje doświadczenie",
-		"anon_label": "Zachowaj anonimowość",
-		"anon_hint": "Jeśli zaznaczone, Twoje imię zostanie ukryte, aby zapewnić pełną prywatność.",
-		"submit_btn": "Wyślij opinię",
-		"success_msg": "Dziękuję. Twoja opinia została wysłana do weryfikacji.",
-		"policy_link": "Zobacz naszą politykę prywatności",
-		"policy_info": "aby uzyskać więcej informacji.",
-		"list": [
-			{
-				"name": "Sarah J.",
-				"testimonial": "Praca z Patrycją pomogła mi przejść przez okres głębokiego lęku. Jej podejście jest profesjonalne, a zarazem niezwykle ciepłe; po raz pierwszy poczułam się naprawdę wysłuchana.",
-				"isAnonymous": false
-			},
-			{
-				"name": "Michael Lowrey",
-				"testimonial": "Byłem sceptyczny wobec terapii, ale bezpieczna atmosfera stworzona tutaj pozwoliła mi zbadać moje wypalenie i odnaleźć drogę do samego siebie. Gorąco polecam.",
-				"isAnonymous": true
-			},
-			{
-				"name": "Elena M.",
-				"testimonial": "Sesje pomogły mi odbudować samoocenę po trudnym związku. Przestrzeń jest wolna od oceniania, a wzrost, który w sobie dostrzegam, jest ogromny.",
-				"isAnonymous": true
-			},
-			{
-				"name": "David",
-				"testimonial": "Bardzo skoncentrowane i oparte na dowodach podejście. Doceniam praktyczne narzędzia dostarczone do zarządzania codziennym stresem oraz jasną komunikację.",
-				"isAnonymous": false
-			}
-		],
-		"anonymized": "(Anonim)",
-		"previous": "Poprzednia opinia",
-		"next": "Następna opinia"
-	},
-	"footer": {
-		"description": "Psycholog i psychoterapeuta specjalizująca się w indywidualnych ścieżkach dla dobrostanu osobistego.",
-		"contact_title": "Kontakt",
-		"email": "test@example.com",
-		"linkedin": "https://linkedin.com",
-		"twitter": "https://twitter.com",
-		"instagram": "https://instagram.com",
-		"facebook": "https://facebook.com",
-		"location": "Praktyka zawodowa - dostępna również online",
-		"legal_title": "Informacje prawne",
-		"quick_links": "Szybkie linki",
-		"rights": "Wszelkie prawa zastrzeżone.",
-		"vat": "NIP: 01234567890",
-		"register": "Wpisana do Rejestru Psychologów pod nr 12345",
-		"privacy": "Polityka prywatności",
-		"cookies": "Polityka cookies",
-		"accessibility": "Dostępność",
-		"phone": "391234567890",
-		"whatsapp_Online": true,
-		"whatsapp": "391234567890",
-		"whatsapp_message": "Skontaktuj się ze mną przez WhatsApp",
-		"external_link": "(otwiera się w nowej karcie)"
-	},
-	"consent": {
-		"password": "Hasło",
-		"legal_title": "Świadoma zgoda na leczenie",
-		"legal_text_short": "Prosimy o zapoznanie się z dokumentem świadomej zgody przed podpisaniem.",
-		"label_name": "Imię i nazwisko",
-		"label_email": "Twój e-mail",
-		"signature": "Podpis",
-		"draw_sig": "Narysuj podpis",
-		"draw_sig_info": "(Narysuj swój podpis w polu za pomocą myszki lub ekranu dotykowego.)",
-		"type_sig": "Wpisz podpis",
-		"type_sig_full_name": "Wpisz swoje pełne imię i nazwisko, aby podpisać.",
-		"type_sig_disclaimer": "Wpisując swoje imię i nazwisko, zgadzasz się, że będzie to służyć jako Twój podpis elektroniczny.",
-		"delete_sig": "Usuń podpis",
-		"label_signature": "Podpis cyfrowy",
-		"read_consent": "Przeczytałem i zgadzam się na świadomą zgodę na leczenie.",
-		"view_consent": "Zobacz dokument zgody",
-		"accept_and_close": "Przeczytałem i akceptuję",
-		"submit": "Podpisz i kontynuuj",
-		"badge_step1": "Dostępność",
-		"badge_step2": "Zgoda",
-		"badge_step3": "Płatność",
-		"thanks": "Dziękuję",
-		"success_message": "Zgoda została podpisana. Wkrótce otrzymasz kopię e-mailem. Teraz możesz wybrać czas i potwierdzić sesję.",
-		"calendar_title": "Kalendarz wizyt i płatności",
-		"appointment_overview": "Przegląd wizyty",
-		"appointment_details": "Szczegóły wizyty",
-		"proceed_payment": "Przejdź do płatności",
-		"edit_details": "Edytuj szczegóły"
-	},
-	"fulfillment": {
-		"error_msg": "Coś poszło nie tak",
-		"error_info": "Nie mogliśmy znaleźć szczegółów Twojej rezerwacji. Jeśli otrzymałeś potwierdzenie płatności, skontaktuj się z Doktorem.",
-		"retry": "Ponów",
-		"process_appointment": "Przetwarzamy Twoją rezerwację i wysyłamy dokumenty.",
-		"confirming": "Potwierdzanie...",
-		"appointment": "Wizyta",
-		"confirmed_appointment": "Twoja wizyta została pomyślnie potwierdzona.",
-		"send_docs_heading": "Dokumenty wysłane",
-		"send_docs": "Wysłaliśmy kopię świadomej zgody na adres"
-	},
-	"cal": {
-		"slots": "Dostępne terminy",
-		"no_slots": "Brak dostępności. Skontaktuj się ze mną, aby uzyskać informacje.",
-		"slot_select": "Wybierz datę i godzinę wizyty.",
-		"select_day": "Wybierz dzień, aby zobaczyć dostępne godziny.",
-		"timezone": "Strefa czasowa:",
-		"slot_request": "Prośba o",
-		"slot_appointment": "Wizyta na",
-		"proceed": "Kontynuuj",
-		"proceed_payment": "Przejdź do płatności",
-		"time_preposition": "o godzinie"
-	},
-	"contact": {
-		"contact_form_target": "wardalpsycom@protonmail.com",
-		"my_email": "wardalpsycom@protonmail.com",
-		"section_title": "Skontaktuj się ze mną!",
-		"section_subtitle": "Zrób pierwszy krok, to już czas.",
-		"section_name": "Imię",
-		"section_email": "E-mail",
-		"section_message": "Wiadomość",
-		"section_required": "Pola oznaczone gwiazdką (*) są wymagane.",
-		"section_policy_link": "polityką prywatności",
-		"section_policy_info": "Korzystając z formularza, akceptujesz naszą",
-		"section_send_message": "Wyślij wiadomość",
-		"section_sending": "Wysyłanie...",
-		"subject": "Temat",
-		"first_name": "Imię",
-		"last_name": "Nazwisko",
-		"email": "E-mail",
-		"phone": "Telefon",
-		"message": "Wiadomość",
-		"avail_placeholder": "Krótko opisz powód wizyty",
-		"send_request": "Wyślij prośbę",
-		"sending": "Wysyłanie...",
-		"complete_request": "Uzupełnij swoją prośbę",
-		"request_appointment_info": "Prosisz o wizytę na:",
-		"request_info": "Wprowadź swoje dane poniżej, aby przesłać prośbę. Pola oznaczone gwiazdką (*) są wymagane.",
-		"whatsapp_appointment_message": "Prośba o wizytę..."
-	},
-	"validation": {
-		"firstName": {
-			"required": "Imię jest wymagane",
-			"min": "Imię musi mieć co najmniej {min} znaki"
-		},
-		"lastName": {
-			"required": "Nazwisko jest wymagane",
-			"min": "Nazwisko musi mieć co najmniej {min} znaki"
-		},
-		"email": {
-			"invalid": "Nieprawidłowy adres e-mail"
-		},
-		"subject": {
-			"min": "Temat musi mieć co najmniej {min} znaki"
-		},
-		"message": {
-			"min": "Wiadomość musi mieć co najmniej {min} znaki",
-			"max": "Wiadomość może mieć maksymalnie {max} znaków"
-		},
-		"password": {
-			"required": "Hasło jest wymagane"
-		},
-		"too_short": "Musi mieć co najmniej {min} znaki",
-		"too_long": "Musi mieć maksymalnie {max} znaków"
-	},
-	"reserved": {
-		"title": "Strefa zastrzeżona dla pacjenta",
-		"info": "Wprowadź hasło przekazane Ci w celu uzyskania dostępu do rezerwacji sesji.",
-		"no_pass_info": "Nie masz hasła?",
-		"no_pass_info_link": "Sprawdź dostępność i skontaktuj się ze mną."
-	},
-	"seo": {
-		"title": "Dr Patrycja Wardal | Psycholog, Psychoterapeuta, Hipnoterapeuta"
-	}
+  "header": {
+    "title": "mgr.",
+    "name": "Patrycja Wardal",
+    "specialties": "Psycholog • Psychoterapeuta • Hipnoterapeuta"
+  },
+  "nav": {
+    "about": "O mnie",
+    "approach": "Podejście",
+    "practices": "Obszary pomocy",
+    "articles": "Artykuły",
+    "contact": "Kontakt",
+    "faq": "FAQ",
+    "testimonials": "Opinie"
+  },
+  "lang_switch": {
+    "flags": true,
+    "label_EN": "English",
+    "label_IT": "Italiano",
+    "label_PL": "Polski"
+  },
+  "hero": {
+    "image": "/src/lib/assets/images/wardal-hero.jpg",
+    "title": "Bezpieczna przestrzeń dla Twojego umysłu.",
+    "subtitle": "Indywidualne ścieżki psychoterapii, aby odnaleźć równowagę i spokój w codziennym życiu.",
+    "cta_primary": "Sprawdź dostępność",
+    "cta_secondary": "Umów wizytę",
+    "image_alt": "Patrycja Wardal w swoim gabinecie",
+    "quote": "Lorem Ipsum Dolor",
+    "role": "Psycholog",
+    "name": "Patrycja Wardal"
+  },
+  "dummy": "",
+  "approach": {
+    "title": "Podejście terapeutyczne",
+    "subtitle": "Wspólna podróż, w której Twoje doświadczenie spotyka się z moją wiedzą zawodową w bezpiecznym środowisku słuchania.",
+    "pillars": [
+      {
+        "title": "Dowody naukowe",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "icon": "brain"
+      },
+      {
+        "title": "Ludzka więź",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "icon": "heart"
+      },
+      {
+        "title": "Uważność",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "icon": "leaf"
+      }
+    ]
+  },
+  "practices": {
+    "title": "Jak mogę Ci pomóc",
+    "subtitle": "Każda droga jest wyjątkowa. Wspólnie będziemy pracować nad zrozumieniem źródła Twojego cierpienia i znalezieniem zasobów, aby je pokonać.",
+    "not_found": "Nie możesz znaleźć tego, czego szukasz?",
+    "contact_me": "Skontaktuj się ze mną w sprawie spotkania wstępnego.",
+    "items": [
+      {
+        "id": "anxiety",
+        "title": "Lęk i stres",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "id": "mood",
+        "title": "Depresja i nastrój",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "id": "relationships",
+        "title": "Relacje i pary",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Najczęściej zadawane pytania",
+    "subtitle": "Wszystko, co musisz wiedzieć przed rozpoczęciem swojej drogi.",
+    "items": [
+      {
+        "id": "duration",
+        "question": "Jak długo trwa sesja psychoterapii?",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "id": "booking",
+        "question": "Jak mogę zarezerwować wizytę?",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "id": "cancellation",
+        "question": "Czy można odwołać rezerwację?",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "id": "online",
+        "question": "Czy sesje odbywają się online czy osobiście?",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "id": "cost",
+        "question": "Jaki jest koszt sesji?",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      }
+    ],
+    "ask_me": "Skontaktuj się ze mną bezpośrednio.",
+    "additional_question": "Masz więcej pytań?"
+  },
+  "articles": {
+    "title": "Miejsce na refleksję",
+    "subtitle": "Artykuły i spostrzeżenia na temat dobrostanu psychicznego, rozwoju osobistego i zdrowia psychicznego.",
+    "cta": "Przeczytaj wszystkie artykuły",
+    "read_more": "Przeczytaj artykuł"
+  },
+  "sessions": {
+    "title": "Sprawdź moją dostępność",
+    "subtitle": "Wybierz czas, aby zobaczyć, kiedy jestem dostępna. Po wybraniu terminu możesz skontaktować się ze mną przez WhatsApp lub telefonicznie w celu krótkiej wstępnej oceny.",
+    "cta_whatsapp": "Skontaktuj się na WhatsApp",
+    "cta_call": "Zadzwoń teraz"
+  },
+  "footer": {
+    "description": "Psycholog i psychoterapeuta specjalizująca się w indywidualnych ścieżkach dla dobrostanu osobistego.",
+    "contact_title": "Kontakt",
+    "location": "Praktyka zawodowa - dostępna również online",
+    "legal_title": "Informacje prawne",
+    "quick_links": "Szybkie linki",
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "vat": "NIP: 01234567890",
+    "register": "Wpisana do Rejestru Psychologów pod nr 12345",
+    "privacy": "Polityka prywatności",
+    "cookies": "Polityka cookies",
+    "accessibility": "Dostępność",
+    "whatsapp_Online": true,
+    "whatsapp": "391234567890",
+    "whatsapp_message": "Skontaktuj się ze mną przez WhatsApp",
+    "email": "test@example.com",
+    "linkedin": "https://linkedin.com",
+    "twitter": "https://twitter.com",
+    "instagram": "https://instagram.com",
+    "facebook": "https://facebook.com",
+    "phone": "391234567890",
+    "external_link": "(otwiera się w nowej karcie)"
+  },
+  "consent": {
+    "legal_title": "Świadoma zgoda na leczenie",
+    "legal_text_short": "Prosimy o zapoznanie się z dokumentem świadomej zgody przed podpisaniem.",
+    "label_name": "Imię i nazwisko",
+    "label_email": "Twój e-mail",
+    "label_signature": "Podpis cyfrowy",
+    "submit": "Podpisz i kontynuuj",
+    "badge_step1": "Dostępność",
+    "badge_step2": "Zgoda",
+    "thanks": "Dziękuję",
+    "success_message": "Zgoda została podpisana. Wkrótce otrzymasz kopię e-mailem. Teraz możesz wybrać czas i potwierdzić sesję.",
+    "calendar_title": "Kalendarz wizyt i płatności",
+    "password": "Hasło",
+    "signature": "Podpis",
+    "draw_sig": "Narysuj podpis",
+    "draw_sig_info": "(Narysuj swój podpis w polu za pomocą myszki lub ekranu dotykowego.)",
+    "type_sig": "Wpisz podpis",
+    "type_sig_full_name": "Wpisz swoje pełne imię i nazwisko, aby podpisać.",
+    "type_sig_disclaimer": "Wpisując swoje imię i nazwisko, zgadzasz się, że będzie to służyć jako Twój podpis elektroniczny.",
+    "delete_sig": "Usuń podpis",
+    "read_consent": "Przeczytałem i zgadzam się na świadomą zgodę na leczenie.",
+    "view_consent": "Zobacz dokument zgody",
+    "accept_and_close": "Przeczytałem i akceptuję",
+    "badge_step3": "Płatność",
+    "appointment_overview": "Przegląd wizyty",
+    "appointment_details": "Szczegóły wizyty",
+    "proceed_payment": "Przejdź do płatności",
+    "edit_details": "Edytuj szczegóły"
+  },
+  "contact": {
+    "subject": "Temat",
+    "first_name": "Imię",
+    "last_name": "Nazwisko",
+    "email": "E-mail",
+    "phone": "Telefon",
+    "message": "Wiadomość",
+    "avail_placeholder": "Krótko opisz powód wizyty",
+    "send_request": "Wyślij prośbę",
+    "sending": "Wysyłanie...",
+    "complete_request": "Uzupełnij swoją prośbę",
+    "request_appointment_info": "Prosisz o wizytę na:",
+    "request_info": "Wprowadź swoje dane poniżej, aby przesłać prośbę. Pola oznaczone gwiazdką (*) są wymagane.",
+    "whatsapp_appointment_message": "Prośba o wizytę...",
+    "contact_form_target": "wardalpsycom@protonmail.com",
+    "my_email": "wardalpsycom@protonmail.com",
+    "section_title": "Skontaktuj się ze mną!",
+    "section_subtitle": "Zrób pierwszy krok, to już czas.",
+    "section_name": "Imię",
+    "section_email": "E-mail",
+    "section_message": "Wiadomość",
+    "section_required": "Pola oznaczone gwiazdką (*) są wymagane.",
+    "section_policy_link": "polityką prywatności",
+    "section_policy_info": "Korzystając z formularza, akceptujesz naszą",
+    "section_send_message": "Wyślij wiadomość",
+    "section_sending": "Wysyłanie..."
+  },
+  "reserved": {
+    "title": "Strefa zastrzeżona dla pacjenta",
+    "info": "Wprowadź hasło przekazane Ci w celu uzyskania dostępu do rezerwacji sesji.",
+    "no_pass_info_link": "Sprawdź dostępność i skontaktuj się ze mną.",
+    "no_pass_info": "Nie masz hasła?"
+  },
+  "a11y": {
+    "skip_to_content": "Przejdź do treści",
+    "open_menu": "Otwórz menu",
+    "toggle_menu": "Przełącz menu",
+    "home": "Strona główna",
+    "loading_consent": "Ładowanie dokumentu zgody...",
+    "sig_canvas": "Pole podpisu odręcznego",
+    "close": "Zamknij",
+    "back_home": "Powrót do strony głównej",
+    "back": "Wstecz"
+  },
+  "seo": {
+    "title": "Dr Patrycja Wardal | Psycholog, Psychoterapeuta, Hipnoterapeuta"
+  },
+  "about": {
+    "image": "/$lib/assets/images/about-wardal.jpg",
+    "image_alt": "Patrycja Wardal w swoim gabinecie",
+    "badge": "O mnie",
+    "title": "Nazywam się Patrycja Wardal",
+    "subtitle": "Przyjmuję Cię w Twojej teraźniejszości, abyśmy mogli wspólnie budować Twoją przyszłość.",
+    "quote": "Rozmowa to początek zmiany.",
+    "cta": "Poznaj moją drogę"
+  },
+  "fulfillment": {
+    "error_msg": "Coś poszło nie tak",
+    "error_info": "Nie mogliśmy znaleźć szczegółów Twojej rezerwacji. Jeśli otrzymałeś potwierdzenie płatności, skontaktuj się z Doktorem.",
+    "retry": "Ponów",
+    "process_appointment": "Przetwarzamy Twoją rezerwację i wysyłamy dokumenty.",
+    "confirming": "Potwierdzanie...",
+    "appointment": "Wizyta",
+    "confirmed_appointment": "Twoja wizyta została pomyślnie potwierdzona.",
+    "send_docs_heading": "Dokumenty wysłane",
+    "send_docs": "Wysłaliśmy kopię świadomej zgody na adres"
+  },
+  "validation": {
+    "too_long": "Musi mieć maksymalnie {max} znaków",
+    "too_short": "Musi mieć co najmniej {min} znaki",
+    "password": {
+      "required": "Hasło jest wymagane"
+    },
+    "message": {
+      "max": "Wiadomość może mieć maksymalnie {max} znaków",
+      "min": "Wiadomość musi mieć co najmniej {min} znaki"
+    },
+    "subject": {
+      "min": "Temat musi mieć co najmniej {min} znaki"
+    },
+    "email": {
+      "invalid": "Nieprawidłowy adres e-mail"
+    },
+    "lastName": {
+      "min": "Nazwisko musi mieć co najmniej {min} znaki",
+      "required": "Nazwisko jest wymagane"
+    },
+    "firstName": {
+      "min": "Imię musi mieć co najmniej {min} znaki",
+      "required": "Imię jest wymagane"
+    }
+  },
+  "cal": {
+    "time_preposition": "o godzinie",
+    "proceed_payment": "Przejdź do płatności",
+    "proceed": "Kontynuuj",
+    "slot_appointment": "Wizyta na",
+    "slot_request": "Prośba o",
+    "timezone": "Strefa czasowa:",
+    "select_day": "Wybierz dzień, aby zobaczyć dostępne godziny.",
+    "slot_select": "Wybierz datę i godzinę wizyty.",
+    "no_slots": "Brak dostępności. Skontaktuj się ze mną, aby uzyskać informacje.",
+    "slots": "Dostępne terminy"
+  },
+  "testimonials": {
+    "next": "Następna opinia",
+    "previous": "Poprzednia opinia",
+    "anonymized": "(Anonim)",
+    "list": [
+      {
+        "isAnonymous": false,
+        "testimonial": "Praca z Patrycją pomogła mi przejść przez okres głębokiego lęku. Jej podejście jest profesjonalne, a zarazem niezwykle ciepłe; po raz pierwszy poczułam się naprawdę wysłuchana.",
+        "name": "Sarah J."
+      },
+      {
+        "isAnonymous": true,
+        "testimonial": "Byłem sceptyczny wobec terapii, ale bezpieczna atmosfera stworzona tutaj pozwoliła mi zbadać moje wypalenie i odnaleźć drogę do samego siebie. Gorąco polecam.",
+        "name": "Michael Lowrey"
+      },
+      {
+        "isAnonymous": true,
+        "testimonial": "Sesje pomogły mi odbudować samoocenę po trudnym związku. Przestrzeń jest wolna od oceniania, a wzrost, który w sobie dostrzegam, jest ogromny.",
+        "name": "Elena M."
+      },
+      {
+        "isAnonymous": false,
+        "testimonial": "Bardzo skoncentrowane i oparte na dowodach podejście. Doceniam praktyczne narzędzia dostarczone do zarządzania codziennym stresem oraz jasną komunikację.",
+        "name": "David"
+      }
+    ],
+    "policy_info": "aby uzyskać więcej informacji.",
+    "policy_link": "Zobacz naszą politykę prywatności",
+    "success_msg": "Dziękuję. Twoja opinia została wysłana do weryfikacji.",
+    "submit_btn": "Wyślij opinię",
+    "anon_hint": "Jeśli zaznaczone, Twoje imię zostanie ukryte, aby zapewnić pełną prywatność.",
+    "anon_label": "Zachowaj anonimowość",
+    "msg_label": "Twoje doświadczenie",
+    "name_label": "Twoje imię lub inicjały",
+    "modal_desc": "Twoje słowa mogą pomóc innym znaleźć odwagę, by szukać wsparcia. Wszystkie zgłoszenia są weryfikowane pod kątem prywatności przed publikacją.",
+    "modal_title": "Podziel się swoim doświadczeniem",
+    "cta_button": "Zostaw opinię",
+    "subtitle": "Głosy tych, którzy przeszli tę drogę, z poszanowaniem świętości przestrzeni terapeutycznej i prywatności.",
+    "title": "Wspólne drogi",
+    "enable_testimonials": true
+  }
 }
