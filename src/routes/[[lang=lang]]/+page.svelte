@@ -3,7 +3,7 @@
 	import Hero from '$lib/components/home/Hero.svelte';
 	import Practices from '$lib/components/home/Practices.svelte';
 	import About from '$lib/components/home/About.svelte';
-	import Approach2 from '$lib/components/home/Approach2.svelte';
+	import Approach from '$lib/components/home/Approach.svelte';
 	import FAQ from '$lib/components/home/FAQ.svelte';
 	import Articles from '$lib/components/home/Articles.svelte';
 	import Testimonials from '$lib/components/home/Testimonials.svelte';
@@ -13,7 +13,7 @@
 
 <Hero />
 <About about={data.about} content={data.aboutContent} />
-<Approach2 />
+<Approach />
 <Practices />
 {#if i18n.t.articles.enabled}
 	<Articles articles={data.articles} />
