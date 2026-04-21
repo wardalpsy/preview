@@ -206,6 +206,21 @@
 			@apply mt-0;
 		}
 	}
+	.prose-about {
+		@apply text-base text-foreground;
+		p {
+			@apply mb-6 leading-relaxed;
+		}
+		a {
+			@apply font-medium text-primary underline underline-offset-2 transition-colors hover:decoration-2 hover:underline-offset-3;
+		}
+		strong {
+			@apply font-bold text-foreground/90;
+		}
+		em {
+			@apply font-medium italic;
+		}
+	}
 	.text-content-consent {
 		@apply text-sm text-foreground md:text-base;
 

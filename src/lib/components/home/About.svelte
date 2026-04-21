@@ -39,24 +39,24 @@
 
 <section id="about" class="scroll-m-12 overflow-hidden border-y-2 border-border bg-white py-24">
 	<div class="container mx-auto px-6">
-		<div class="flex flex-col items-center gap-12 lg:flex-row lg:gap-20">
+		<div class="flex flex-col items-center gap-12 lg:flex-row lg:gap-16">
 			<!-- Image Container -->
-			<div class="relative w-full lg:w-1/2">
+			<div class="relative w-full lg:w-1/3">
 				<div class="absolute -bottom-10 -left-10 h-64 w-64 rounded-full bg-brand/20 blur-3xl"></div>
 
 				<div class="relative z-10">
 					<div
-						class="mx-auto aspect-[751/1000] max-w-[500px] overflow-hidden rounded-[10rem] border-12 border-border/50 shadow-2xl shadow-brand/15 lg:ml-0"
+						class="mx-auto aspect-751/1000 max-w-125 overflow-hidden rounded-[10rem] border-12 border-border/50 shadow-2xl shadow-brand/15 lg:ml-0"
 					>
 						{#if aboutImage}
 							<enhanced:img
 								src={aboutImage}
-								alt={about?.image_alt || i18n.t.about.image_alt}
+								alt={about?.image_alt}
 								class="h-full w-full object-cover"
 								loading="lazy"
 							/>
 						{:else}
-							<div class="flex aspect-[751/1000] w-full items-center justify-center bg-muted/20">
+							<div class="flex aspect-751/1000 w-full items-center justify-center bg-muted/20">
 								<span class="text-sm text-muted-foreground italic">Photo not found</span>
 							</div>
 						{/if}
@@ -64,11 +64,13 @@
 
 					{#if about?.quote}
 						<div
-							class="absolute -right-6 -bottom-6 hidden rounded-2xl bg-background p-6 shadow-xl md:block"
+							class="absolute right-0 -bottom-6 hidden rounded-2xl bg-background p-6 shadow-xl shadow-brand/15 md:block"
 						>
-							<p class="text-center font-serif leading-snug font-medium md:text-base">
-								"{about.quote}"
-							</p>
+							<q
+								class="text-center font-serif leading-snug font-medium text-foreground/90 italic md:text-lg"
+							>
+								{about.quote}
+							</q>
 						</div>
 					{/if}
 				</div>
@@ -80,25 +82,27 @@
 					<span
 						class="inline-block border-b-2 border-primary-container pb-1 text-xs font-semibold tracking-[0.2em] text-primary uppercase"
 					>
-						{i18n.t.about.badge}
+						{about?.sectionTitle}
 					</span>
 					<h2 class="font-display text-4xl leading-tight text-brand md:text-5xl">
-						{about?.title || i18n.t.about.title}
+						{about?.title}
 					</h2>
-					{#if about?.subtitle || i18n.t.about.subtitle}
+					{#if about?.subtitle}
 						<p class="text-xl font-light italic">
-							"{about?.subtitle || i18n.t.about.subtitle}"
+							"{about?.subtitle}"
 						</p>
 					{/if}
 				</div>
 
 				<div class="space-y-6 leading-relaxed">
 					{#if Content}
-						<div class="prose prose-wardal max-w-none">
+						<div class="prose-about max-w-none">
 							<Content />
 						</div>
 					{:else}
-						<p class="animate-pulse text-muted-foreground/50 italic">Loading content...</p>
+						<p class="animate-pulse text-center text-brand/90 italic">
+							{i18n.t.a11y.loading_content}
+						</p>
 					{/if}
 				</div>
 
@@ -118,18 +122,3 @@
 		</div>
 	</div>
 </section>
-
-<style>
-	/* Custom Typography for mdsvex content */
-	:global(.prose-wardal) {
-		--tw-prose-body: hsl(var(--foreground));
-		--tw-prose-headings: hsl(var(--brand));
-		--tw-prose-links: hsl(var(--brand));
-		--tw-prose-bold: hsl(var(--brand));
-	}
-
-	:global(.prose p) {
-		margin-bottom: 1.5rem;
-		line-height: 1.8;
-	}
-</style>

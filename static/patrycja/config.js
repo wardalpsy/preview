@@ -37,7 +37,7 @@ const translationFields = [
 			]		
 	},
 	{
-		label: 'Hero',
+		label: 'Hero Section',
 		name: 'hero',
 		widget: 'object',
 		fields: [
@@ -57,25 +57,13 @@ const translationFields = [
 		]
 	},
 	{
-		label: 'About Section',
-		name: 'about',
-		widget: 'object',
-		hint: "The about section is filled and from the About (Markdown) collection.",
-		fields: [
-			{
-				label: 'About Image',
-				name: 'image',
-				widget: 'image',
-				choose_url: false,
-				hint: 'Prefer images with aspect ratio 4/3. Max. resolution: 720x540 px'
-			},
-			{ label: 'Badge', name: 'badge', widget: 'string' },
-			{ label: 'Title', name: 'title', widget: 'string' },
-			{ label: 'Subtitle', name: 'subtitle', widget: 'string' },
-			{ label: 'Quote', name: 'quote', widget: 'string',required: false  },
-			{ label: 'CTA', name: 'cta', widget: 'string' },
-			{ label: 'Image Alt', name: 'image_alt', widget: 'string' }
-		]
+		label: 'About Section (Filled from the About (Markdown) collection.)',
+    name: 'dummy',
+    widget: 'string', 
+    readonly: true,   
+    required: false,  
+    default: '',    
+  	hint: "The about section is filled from the About (Markdown) collection."
 	},
 	{
 		label: 'Therapeutic Approach',
@@ -281,24 +269,13 @@ export const aboutCollection = {
 	public_folder: '/$lib/assets/images/about',
 	fields: [
 		{ label: 'Language', name: 'lang', widget: 'select', options: ['en', 'it', 'pl'], default: 'en' },
+		{ label: 'Section Title', name: 'sectionTitle', widget: 'string' },
 		{ label: 'Title', name: 'title', widget: 'string' },
-		{ label: 'Subtitle', name: 'subtitle', widget: 'string' },
-		{ label: 'Description', name: 'description', widget: 'string',hint: 'Populate meta description fo SEO' },
-		{ label: 'Excerpt First paragraph', name: 'excerpt_p1', widget: 'text', hint: 'Excerpt to show on homepage (Max 3 paragraphs)' },
-		{
-			label: 'Additional Excerpts',
-			name: 'content_meta',
-			widget: 'object',
-			collapsed: false,
-			required: false,
-			fields: [
-				{ label: 'Excerpt Second Paragraph', name: 'excerpt_p2', widget: 'text', required: false },
-				{ label: 'Excerpt Third Paragraph', name: 'excerpt_p3', widget: 'text', required: false },
-			]
-		},
-		{ label: 'Date', name: 'date', widget: 'string' },
+		{ label: 'Subtitle', name: 'subtitle', widget: 'string', hint: 'Leave empty to disable', required: false },
+		{ label: 'SEO Description', name: 'description', widget: 'string', hint: 'Populate meta description for SEO' },
 		{ label: 'Portrait Image', name: 'image', widget: 'image'},
 		{ label: 'Image Description', name: 'image_alt', widget: 'string', hint: 'Describe the image for people with visual impairments' },
+		{ label: 'Image Quote', name: 'quote', widget: 'string', hint: 'Leave empty to disable the quote overlay over the About Me image', required: false },
 		{ label: 'Body', name: 'body', widget: 'markdown' }
 
 	]

@@ -30,15 +30,6 @@
 		"role": "Psychologist",
 		"name": "Patrycja Wardal"
 	},
-	"about": {
-		"image": "/$lib/assets/images/about-wardal.jpg",
-		"badge": "About Me",
-		"title": "I am Patrycja Wardal",
-		"subtitle": "",
-		"quote": "",
-		"cta": "Discover my journey",
-		"image_alt": "Patrycja Wardal in her studio"
-	},
 	"approach": {
 		"title": "The Therapeutic Approach",
 		"subtitle": "A collaborative journey where your experience meets my professional expertise in a protected listening environment.",
@@ -222,7 +213,8 @@
 		"sig_canvas": "Handwritten signature box",
 		"close": "Close",
 		"back_home": "Back to Home",
-		"back": "Back"
+		"back": "Back",
+		"loading_content": "Loading content..."
 	},
 	"seo": {
 		"title": "Dr. Patrycja Wardal | Psychologist, Psychotherapist, Hypnotherapist"
@@ -315,5 +307,8 @@
 		"subtitle": "Voices of those who have walked this path, respecting the sanctity of the therapeutic space and personal privacy.",
 		"title": "Shared Journeys",
 		"enable_testimonials": true
+	},
+	"dummy": {
+		"empty": ""
 	}
 }
