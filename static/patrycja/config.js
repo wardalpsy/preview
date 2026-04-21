@@ -111,7 +111,7 @@ const translationFields = [
 		widget: 'object',
 		fields: [
 			{ label: 'Title', name: 'title', widget: 'string' },
-			{ label: 'Subtitle', name: 'subtitle', widget: 'string', required: 'false' },
+			{ label: 'Subtitle', name: 'subtitle', widget: 'string', required: 'false', hint: 'Leave empty to disable' },
 			{ label: 'Additional Question', name: 'additional_question', widget: 'string', hint:'Control the contact me link at the bottom of the section. If one of the Additional Question fiels is empty will disable the link', required: 'false'},
 			{ label: 'Additional Question Link Text', name: 'ask_me', widget: 'string', hint:'Control the contact me link at the bottom of the section. If one of the Additional Question fiels is empty will disable the link', required: 'false'},
 			{
