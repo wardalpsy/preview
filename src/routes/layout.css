@@ -190,11 +190,11 @@
 		}
 
 		strong {
-			@apply font-bold text-brand;
+			@apply font-bold text-foreground/90;
 		}
 
 		em {
-			@apply italic;
+			@apply font-medium italic;
 		}
 
 		img {

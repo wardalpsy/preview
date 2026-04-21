@@ -311,7 +311,7 @@ export const articlesCollection = {
 		{ label: 'Title', name: 'title', widget: 'string' },
 		{ label: 'Description', name: 'description', widget: 'text' },
 		{ label: 'Date', name: 'date', widget: 'string' },
-		{ label: 'Featured Image', name: 'image', widget: 'image'},
+		{ label: 'Featured Image', name: 'image', widget: 'image', hint: 'Prefer image in landskape and not wider that 1000px.'},
 		{ label: 'Body', name: 'body', widget: 'markdown' }
 	]
 };
