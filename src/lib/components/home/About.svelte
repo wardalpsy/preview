@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { i18n } from '$lib/i18n.svelte';
 	import type { Picture } from '@sveltejs/enhanced-img';
+	import ImgDefault from '$lib/assets/about-wardal.jpg';
 	//Icons
 	//import IconArrowRight from 'virtual:icons/tabler/arrow-right';
 
@@ -56,9 +57,12 @@
 								loading="lazy"
 							/>
 						{:else}
-							<div class="flex aspect-751/1000 w-full items-center justify-center bg-muted/20">
-								<span class="text-sm text-muted-foreground italic">Photo not found</span>
-							</div>
+							<enhanced:img
+								src={ImgDefault}
+								alt={about?.image_alt}
+								class="h-full w-full object-cover"
+								loading="lazy"
+							/>
 						{/if}
 					</div>
 
