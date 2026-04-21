@@ -15,7 +15,9 @@
 <About about={data.about} content={data.aboutContent} />
 <Approach2 />
 <Practices />
-<Articles articles={data.articles} />
+{#if i18n.t.articles.enabled}
+	<Articles articles={data.articles} />
+{/if}
 <FAQ />
 {#if i18n.t.testimonials.enable_testimonials}
 	<Testimonials testimonials={i18n.t.testimonials.list} {data} />

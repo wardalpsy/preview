@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { i18n } from '$lib/i18n.svelte';
+	import { Button } from '$lib/components/ui/button/index.js';
 	import { base } from '$app/paths';
 
 	interface Article {
@@ -27,12 +28,11 @@
 	title: string,
 	excerpt: string,
 	date: string,
-	category: string,
 	image: string | undefined
 )}
 	<a
 		href={l(`/articles/${slug}`)}
-		class="group hover:shadow-wardal-brown/5 border-wardal-sand flex h-full flex-col overflow-hidden rounded-3xl border bg-white transition-all hover:shadow-xl"
+		class="group flex h-full flex-col overflow-hidden rounded-3xl border bg-secondary text-on-secondary transition-all hover:shadow-xl hover:shadow-brand/15"
 	>
 		<!-- Image Container -->
 		<div class="relative aspect-video overflow-hidden">
@@ -41,34 +41,26 @@
 					src={image}
 					alt={title}
 					class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+					loading="lazy"
 				/>
 			{:else}
 				<div class="h-full w-full bg-muted transition-colors group-hover:bg-muted/80"></div>
 			{/if}
-			<div class="absolute top-4 left-4">
-				<span
-					class="text-wardal-purple rounded-full bg-white/90 px-3 py-1 text-[10px] font-bold tracking-widest uppercase backdrop-blur-sm"
-				>
-					{category}
-				</span>
-			</div>
 		</div>
 
 		<!-- Content -->
 		<div class="flex grow flex-col p-8">
-			<time class="text-wardal-brown/50 mb-3 text-[11px] tracking-tighter uppercase">{date}</time>
-			<h3
-				class="text-wardal-purple group-hover:text-wardal-green mb-4 font-serif text-xl transition-colors"
-			>
+			<time class="mb-3 text-[11px] tracking-tighter text-foreground uppercase">{date}</time>
+			<h3 class="mb-4 font-serif text-xl text-brand transition-colors">
 				{title}
 			</h3>
-			<p class="text-wardal-brown/80 mb-6 grow text-sm leading-relaxed">
+			<p class="mb-6 grow text-sm leading-relaxed text-foreground">
 				{excerpt}
 			</p>
 
-			<div class="border-wardal-sand/50 border-t pt-4">
+			<div class="border-t pt-4">
 				<span
-					class="text-wardal-purple group-hover:text-wardal-green inline-flex items-center gap-2 text-xs font-semibold transition-colors"
+					class="inline-flex items-center gap-2 text-xs font-semibold text-brand transition-colors group-hover:text-primary"
 				>
 					{i18n.t.articles.read_more}
 					<svg
@@ -97,28 +89,26 @@
 				<h2 class="home-section_h2">
 					{i18n.t.articles.title}
 				</h2>
-				<p class="home-section_subtitle">
-					{i18n.t.articles.subtitle}
-				</p>
+				{#if i18n.t.articles.subtitle}
+					<p class="home-section_subtitle">
+						{i18n.t.articles.subtitle}
+					</p>
+				{/if}
 			</div>
 
-			<a
-				href={l('/articles')}
-				class="border-wardal-purple/20 text-wardal-purple hover:bg-wardal-purple rounded-full border px-8 py-4 text-sm font-medium whitespace-nowrap transition-all hover:text-white"
-			>
+			<Button href={l('/articles')} variant="secondary" size="xl">
 				{i18n.t.articles.cta}
-			</a>
+			</Button>
 		</div>
 
 		<!-- Grid -->
-		<div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+		<div class="mt:24 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 			{#each articles as article (article.slug)}
 				{@render articleCard(
 					article.slug,
 					article.title,
 					article.description || article.excerpt || '',
 					article.date,
-					article.category,
 					article.image
 				)}
 			{/each}

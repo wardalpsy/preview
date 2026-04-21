@@ -99,6 +99,7 @@
 		"ask_me": "Contact me directly."
 	},
 	"articles": {
+		"enabled": true,
 		"title": "Space for Reflection",
 		"subtitle": "Articles and insights on psychological well-being, personal growth, and mental health.",
 		"cta": "Read all articles",
@@ -211,7 +212,8 @@
 		"close": "Close",
 		"sig_canvas": "Handwritten signature box",
 		"loading_consent": "Loading consent document...",
-		"external_link": "(opens in a new tab)"
+		"external_link": "(opens in a new tab)",
+		"articles": "Articles"
 	},
 	"seo": {
 		"title": "Dr. Patrycja Wardal | Psychologist, Psychotherapist, Hypnotherapist"

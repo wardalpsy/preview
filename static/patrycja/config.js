@@ -166,8 +166,9 @@ const translationFields = [
 		name: 'articles',
 		widget: 'object',
 		fields: [
+			{ label: 'Enable Section', name: 'enabled', widget: 'boolean', hint: 'Enable/Disable articles section' },
 			{ label: 'Title', name: 'title', widget: 'string' },
-			{ label: 'Subtitle', name: 'subtitle', widget: 'text' },
+			{ label: 'Subtitle', name: 'subtitle', widget: 'string', required: 'false' },
 			{ label: 'CTA', name: 'cta', widget: 'string' },
 			{ label: 'Read More', name: 'read_more', widget: 'string' }
 		]
@@ -303,15 +304,14 @@ export const articlesCollection = {
 	create: true,
 	slug: '{{slug}}',
 	path: '{{lang}}/{{slug}}',
-	media_folder: '/src/lib/assets/images/articles',
-	public_folder: '/$lib/assets/images/articles',
+	media_folder: 'src/lib/assets/images/articles',
+	public_folder: '$lib/assets/images/articles',
 	fields: [
 		{ label: 'Language', name: 'lang', widget: 'select', options: ['en', 'it', 'pl'], default: 'en' },
 		{ label: 'Title', name: 'title', widget: 'string' },
 		{ label: 'Description', name: 'description', widget: 'text' },
 		{ label: 'Date', name: 'date', widget: 'string' },
-		{ label: 'Category', name: 'category', widget: 'string' },
-		{ label: 'Featured Image', name: 'image', widget: 'image', required: false },
+		{ label: 'Featured Image', name: 'image', widget: 'image'},
 		{ label: 'Body', name: 'body', widget: 'markdown' }
 	]
 };
@@ -325,8 +325,8 @@ export const aboutCollection = {
 	create: true,
 	slug: '{{slug}}',
 	path: '{{lang}}/{{slug}}',
-	media_folder: '/src/lib/assets/images/about',
-	public_folder: '/$lib/assets/images/about',
+	media_folder: 'src/lib/assets/images/about',
+	public_folder: '$lib/assets/images/about',
 	fields: [
 		{ label: 'Language', name: 'lang', widget: 'select', options: ['en', 'it', 'pl'], default: 'en' },
 		{ label: 'Section Title', name: 'sectionTitle', widget: 'string' },

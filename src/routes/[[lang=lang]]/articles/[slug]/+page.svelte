@@ -19,7 +19,7 @@
 	<meta name="description" content={meta.excerpt || meta.description} />
 </svelte:head>
 
-<article class="text-content min-h-screen bg-background px-6 py-20 lg:py-32">
+<article class=" min-h-screen bg-background px-6 py-20 lg:py-32">
 	<div class="mx-auto max-w-3xl">
 		<!-- Breadcrumbs & Meta -->
 		<div
@@ -27,7 +27,7 @@
 		>
 			<a href={l('/')} class="transition-colors hover:text-brand">Home</a>
 			<span>/</span>
-			<a href={l('/articles')} class="transition-colors hover:text-brand">Articles</a>
+			<a href={l('/articles')} class="transition-colors hover:text-brand">{i18n.t.a11y.articles}</a>
 			<span>/</span>
 			<span class="text-brand">{meta.category}</span>
 		</div>
@@ -48,24 +48,19 @@
 
 		<!-- Featured Image -->
 		{#if meta.image}
-			<div class="mb-16 overflow-hidden rounded-3xl shadow-xl">
-				<img src={meta.image} alt={meta.title} class="h-auto w-full object-cover" />
+			<div
+				class="mb-16 overflow-hidden rounded-3xl border-12 border-border/50 shadow-xl shadow-brand/15"
+			>
+				<img src={meta.image} alt={meta.title} class="h-auto w-full object-cover" loading="eager" />
 			</div>
 		{/if}
 
 		<!-- Markdown Content -->
-		<div class="prose prose-lg prose-wardal prose-serif max-w-none">
+		<div class="text-content max-w-none">
 			<!-- Render the mdsvex component -->
 			{#if Content}
 				<Content />
 			{/if}
 		</div>
-
-		<!-- Footer / Share -->
-		<footer class="mt-20 border-t border-border pt-10">
-			<p class="font-serif text-brand italic">
-				{i18n.t.articles.read_more}
-			</p>
-		</footer>
 	</div>
 </article>

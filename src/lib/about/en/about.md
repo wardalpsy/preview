@@ -4,7 +4,7 @@ sectionTitle: About Me
 title: I am Patrycja Wardal!
 subtitle: Lorem Ipsum Dolor
 description: Dr. Patrycja Wardal, psychologist, psychotherapist, and hypnotherapist about me page.
-image: /$lib/assets/images/about/about-wardal.jpg
+image: $lib/assets/images/about/about-wardal.jpg
 image_alt: Headshot of Dr. Patrycja Wardal, a psychologist with wavy hair and glasses, smiling with her hand under her chin against a light background.
 quote: Lorem Ipsum Dolor
 ---

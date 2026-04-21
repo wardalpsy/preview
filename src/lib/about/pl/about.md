@@ -4,7 +4,7 @@ sectionTitle: O mnie
 title: Nazywam się Patrycja Wardal
 subtitle: Lorem Ipsum Dolor
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-image: /$lib/assets/images/about/about-wardal.jpg
+image: $lib/assets/images/about/about-wardal.jpg
 image_alt: Portret mgr. Patrycji Wardal, psycholog z falowanymi włosami i w okularach, uśmiechniętej z ręką pod brodą na jasnym tle.
 quote: Lorem Ipsum Dolor
 excerpt_p1: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio.
