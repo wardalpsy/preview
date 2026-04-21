@@ -4,7 +4,7 @@ sectionTitle: Chi Sono
 title: Sono Patrycja Wardal!
 subtitle: Lorem Ipsum Dolor
 description: Lorem Ipsum Dolor
-image: $lib/assets/images/about/about-wardal.jpg
+image: /$lib/assets/images/about/about-wardal.jpg
 image_alt: Primo piano della dott.ssa Patrycja Wardal, psicologa con capelli mossi e occhiali, che sorride con la mano sotto il mento su uno sfondo chiaro.
 quote: Lorem Ipsum Dolor
 ---
