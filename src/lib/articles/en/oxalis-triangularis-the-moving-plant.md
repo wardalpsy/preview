@@ -3,7 +3,7 @@ lang: en
 title: 'Oxalis Triangularis: The moving plant'
 description: Lorem Ipsum
 date: 21 April 2026
-image: images/articles/susan-wilkinson-yBmcu_XXanU-unsplash.jpg
+image: /images/articles/susan-wilkinson-yBmcu_XXanU-unsplash.jpg
 ---
 
 ## Exploring the path to emotional balance
@@ -18,7 +18,7 @@ It is important to remember that _mental health is a journey_, not a destination
 - **Resilience:** Building the tools to bounce back from stress.
 - **Empathy:** Practicing kindness toward yourself and others.
 
-***
+---
 
 ## Therapeutic Approaches
 
@@ -32,13 +32,13 @@ In our practice, we follow a structured methodology to ensure progress:
 > "The privilege of a lifetime is to become who you truly are."  
 > — _Carl Jung_
 
-***
+---
 
 ## Multimedia and Links
 
 Visual aids and external resources are often used to supplement the path to well-being.
 
-![Oxialis triangularis plant close up](images/articles/griselidis-gaillet-AA9zFLLJBIc-unsplash.jpg "Oxialis Triangualris")
+![Oxialis triangularis plant close up](/images/articles/griselidis-gaillet-AA9zFLLJBIc-unsplash.jpg 'Oxialis Triangualris')
 
 You can find more information about my professional background on the [About Me](/about) page or contact me directly via email at `info@example.com`.
 
@@ -53,4 +53,4 @@ Status: Encrypted
 Connection: Stable
 ```
 
-***
+---

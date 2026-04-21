@@ -304,7 +304,7 @@ export const articlesCollection = {
 	create: true,
 	slug: '{{slug}}',
 	path: '{{lang}}/{{slug}}',
-	media_folder: 'static/images/articles',
+	media_folder: '/static/images/articles',
 	public_folder: '/images/articles',
 	fields: [
 		{ label: 'Language', name: 'lang', widget: 'select', options: ['en', 'it', 'pl'], default: 'en' },
