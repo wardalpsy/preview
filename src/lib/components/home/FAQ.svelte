@@ -11,9 +11,11 @@
 				<h2 class="home-section_h2">
 					{i18n.t.faq.title}
 				</h2>
-				<p class="home-section_subtitle mx-auto max-w-xl">
-					{i18n.t.faq.subtitle}
-				</p>
+				{#if i18n.t.faq.subtitle}
+					<p class="home-section_subtitle mx-auto max-w-xl">
+						{i18n.t.faq.subtitle}
+					</p>
+				{/if}
 			</div>
 
 			<Accordion.Root type="single" class="w-full space-y-4">
@@ -27,7 +29,9 @@
 						>
 							{item.question}
 						</Accordion.Trigger>
-						<Accordion.Content class="pb-6 text-base leading-relaxed text-foreground">
+						<Accordion.Content
+							class="pb-6 text-base leading-relaxed whitespace-pre-line text-foreground"
+						>
 							{item.answer}
 						</Accordion.Content>
 					</Accordion.Item>
@@ -35,16 +39,18 @@
 			</Accordion.Root>
 
 			<!-- Support text -->
-			<div class="mt-16 text-center">
-				<p class="text-sm italic">
-					{i18n.t.faq.additional_question}
-					<a
-						href="#contact"
-						class="text-primary underline underline-offset-4 transition-colors hover:text-brand hover:decoration-2"
-						>{i18n.t.faq.ask_me}</a
-					>
-				</p>
-			</div>
+			{#if i18n.t.faq.additional_question && i18n.t.faq.ask_me}
+				<div class="mt-16 text-center">
+					<p class="text-sm italic">
+						{i18n.t.faq.additional_question}
+						<a
+							href="#contact"
+							class="text-primary underline underline-offset-4 transition-colors hover:text-brand hover:decoration-2"
+							>{i18n.t.faq.ask_me}</a
+						>
+					</p>
+				</div>
+			{/if}
 		</div>
 	</div>
 </section>
