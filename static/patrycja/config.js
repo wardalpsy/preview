@@ -127,6 +127,41 @@ const translationFields = [
 		]
 	},
 	{
+		label: 'Testimonials',
+		name: 'testimonials',
+		widget: 'object',
+		fields: [
+			{ label: 'Enable Testimonials', name: 'enable_testimonials', widget: 'boolean' },
+			{ label: 'Title', name: 'title', widget: 'string' },
+			{ label: 'Subtitle', name: 'subtitle', widget: 'text' },
+			{ label: 'CTA Button', name: 'cta_button', widget: 'string' },
+			{ label: 'Modal Title', name: 'modal_title', widget: 'string' },
+			{ label: 'Modal Description', name: 'modal_desc', widget: 'text' },
+			{ label: 'Name Label', name: 'name_label', widget: 'string' },
+			{ label: 'Message Label', name: 'msg_label', widget: 'string' },
+			{ label: 'Anonymity Label', name: 'anon_label', widget: 'string' },
+			{ label: 'Anonymity Hint', name: 'anon_hint', widget: 'text' },
+			{ label: 'Submit Button', name: 'submit_btn', widget: 'string' },
+			{ label: 'Success Message', name: 'success_msg', widget: 'text' },
+			{ label: 'Policy Link Text', name: 'policy_link', widget: 'string' },
+			{ label: 'Policy Info', name: 'policy_info', widget: 'string' },
+			{ label: 'Anonymized Text', name: 'anonymized', widget: 'string' },
+			{ label: 'Previous Aria Label', name: 'previous', widget: 'string' },
+			{ label: 'Next Aria Label', name: 'next', widget: 'string' },
+			{
+				label: 'Testimonials List',
+				name: 'list',
+				widget: 'list',
+				summary: '{{name}}',
+				fields: [
+					{ label: 'Name', name: 'name', widget: 'string' },
+					{ label: 'Testimonial', name: 'testimonial', widget: 'text' },
+					{ label: 'Is Anonymous', name: 'isAnonymous', widget: 'boolean' }
+				]
+			}
+		]
+	},
+	{
 		label: 'Articles',
 		name: 'articles',
 		widget: 'object',
