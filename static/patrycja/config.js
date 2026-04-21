@@ -193,7 +193,7 @@ const translationFields = [
         { label: 'Location', name: 'location', widget: 'string' },
         { label: 'Standard Email', name: 'email', widget: 'string' },
         { label: 'PEC Email', name: 'pec_email', widget: 'string' },
-        { label: 'Phone Number', name: 'phone', widget: 'string' },
+        { label: 'Phone', name: 'phone', widget: 'string' },
         { label: 'Enable WhatsApp', name: 'whatsapp_Online', widget: 'boolean' },
         { label: 'WhatsApp Number', name: 'whatsapp', widget: 'string' },
         { label: 'WhatsApp Message', name: 'whatsapp_message', widget: 'string' },
