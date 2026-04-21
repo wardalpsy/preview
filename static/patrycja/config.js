@@ -325,8 +325,8 @@ export const aboutCollection = {
 	create: true,
 	slug: '{{slug}}',
 	path: '{{lang}}/{{slug}}',
-	media_folder: '/src/lib/assets/images/about',
-	public_folder: '/$lib/assets/images/about',
+	media_folder: 'src/lib/assets/images/about',
+	public_folder: 'src/lib/assets/images/about',
 	fields: [
 		{ label: 'Language', name: 'lang', widget: 'select', options: ['en', 'it', 'pl'], default: 'en' },
 		{ label: 'Section Title', name: 'sectionTitle', widget: 'string' },
