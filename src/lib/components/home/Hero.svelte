@@ -88,11 +88,11 @@
 					<!-- Quote Badge -->
 					{#if i18n.t.hero.quote}
 						<div
-							class="absolute right-6 bottom-6 left-6 rounded-2xl border border-white/40 bg-white/90 p-5 backdrop-blur-sm"
+							class="absolute right-6 bottom-6 left-6 inline-flex justify-center rounded-2xl bg-secondary p-5 text-on-secondary shadow-md shadow-brand/15"
 						>
-							<p class="text-center font-serif leading-snug md:text-base">
+							<q class="w-full text-center font-serif leading-snug italic md:text-lg">
 								{i18n.t.hero.quote}
-							</p>
+							</q>
 						</div>
 					{/if}
 				</div>

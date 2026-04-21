@@ -64,11 +64,9 @@
 
 					{#if about?.quote}
 						<div
-							class="absolute right-0 -bottom-6 hidden rounded-2xl bg-background p-6 shadow-xl shadow-brand/15 md:block"
+							class="absolute -bottom-6 hidden rounded-2xl bg-secondary p-5 text-on-secondary shadow-xl shadow-brand/15 md:right-16 md:block lg:right-0"
 						>
-							<q
-								class="text-center font-serif leading-snug font-medium text-foreground/90 italic md:text-lg"
-							>
+							<q class="text-center font-serif leading-snug italic md:text-lg">
 								{about.quote}
 							</q>
 						</div>
