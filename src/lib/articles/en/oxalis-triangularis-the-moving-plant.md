@@ -1,44 +1,46 @@
 ---
 lang: en
 title: 'Oxalis Triangularis: The moving plant'
-description: Lorem Ipsum
+description: Lorem Ipsum Dolor
 date: 21 April 2026
-image: /images/articles/susan-wilkinson-yBmcu_XXanU-unsplash.jpg
+image: /images/articles/pexels-plantsandgraphics-9507863.jpg
 ---
 
-## Exploring the path to emotional balance
+## Lorem Ipsum Dolor (Heading 2)
 
 Lorem ipsum dolor sit amet, **consectetur adipiscing elit**. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-### 1. Key Principles of Therapy
+### Lorem Ipsum Dolor (Heading 3)
 
 It is important to remember that _mental health is a journey_, not a destination. During this process, we often focus on:
 
-- **Self-Awareness:** Understanding your emotional triggers.
-- **Resilience:** Building the tools to bounce back from stress.
-- **Empathy:** Practicing kindness toward yourself and others.
+- **Bulleted list**
+- **Another item**
+- **A third one**.
 
----
+***
 
-## Therapeutic Approaches
+### Lorem Ipsum Dolor (Heading 3)
 
-In our practice, we follow a structured methodology to ensure progress:
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua:
 
-1.  Initial consultation and assessment.
-2.  Identification of core challenges.
-3.  Development of a personalized strategy.
-4.  Periodic review of emotional goals.
+1.  Numbered list.
+2.  Second item
+3.  Thirdf Item
+4.  Forth Item
+
+#### Lorem Ipsum Dolor (Heading 3): A quote
 
 > "The privilege of a lifetime is to become who you truly are."  
 > — _Carl Jung_
 
----
+***
 
-## Multimedia and Links
+#### Lorem Ipsum Dolor (Heading 4)
 
-Visual aids and external resources are often used to supplement the path to well-being.
+An in text image
 
-![Oxialis triangularis plant close up](/images/articles/griselidis-gaillet-AA9zFLLJBIc-unsplash.jpg 'Oxialis Triangualris')
+![Oxialis triangularis plant close up](/images/articles/susan-wilkinson-yBmcu_XXanU-unsplash.jpg)
 
 You can find more information about my professional background on the [About Me](/about) page or contact me directly via email at `info@example.com`.
 
@@ -53,4 +55,4 @@ Status: Encrypted
 Connection: Stable
 ```
 
----
+***
