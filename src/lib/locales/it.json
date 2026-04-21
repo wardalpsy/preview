@@ -27,8 +27,8 @@
     "cta_secondary": "Prenota Appuntamento",
     "image_alt": "Patrycja Wardal nel suo studio",
     "quote": "Lorem Ipsum Dolor",
-    "role": "Psicologa",
-    "name": "Patrycja Wardal"
+    "name": "Patrycja Wardal",
+    "role": "Psicologa"
   },
   "dummy": "",
   "approach": {
@@ -77,36 +77,26 @@
   },
   "faq": {
     "title": "Domande Frequenti",
-    "subtitle": "Tutto quello che c'è da sapere prima di iniziare il tuo percorso.",
+    "subtitle": "Lorem Ipsum Dolor",
     "items": [
       {
-        "id": "duration",
-        "question": "Quanto dura una sessione di psicoterapia?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "id": "1",
+        "question": "Qual è la differenza tra uno psicologo-psicoterapeuta e uno psichiatra?",
+        "answer": "La differenza principale riguarda la formazione, il tipo di intervento e la prescrizione di farmaci. \nLo psicologo-psicoterapeuta è uno psicologo specializzato in psicoterapia: aiuta la persona attraverso colloqui e tecniche terapeutiche per affrontare il disagio emotivo, relazionale o psicologico, ma non prescrive farmaci. \nLo psichiatra è un medico specializzato in psichiatria: si occupa dei disturbi mentali con un approccio medico (prevalentemente biologico), può fare diagnosi cliniche e prescrivere farmaci. \nSpesso le due figure collaborano tra loro."
       },
       {
-        "id": "booking",
-        "question": "Come posso prenotare un appuntamento?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "id": "2",
+        "question": "La psicoterapia online funziona?",
+        "answer": "Sì, funziona.\nNon è una “seconda scelta”, è semplicemente una modalità diversa.\n\nLa letteratura scientifica conferma che ci sono diversi fattori che determinano l'efficacia della psicoterapia, tra cui l'alleanza terapeutica, nonché la relazione speciale tra psicoterapeuta e paziente. \nL'alleanza terapeutica viene instaurata indipendentemente dal luogo in cui ci troviamo e in cui facciamo le sedute.\nInoltre, la terapia online può essere una modalità consigliata alle persone che non hanno la possibilità di spostarsi oppure a quelle che viaggiano spesso. Facendo la terapia online, possono mantenere la continuità del proprio percorso terapeutico."
       },
       {
-        "id": "cancellation",
-        "question": "È possibile cancellare una prenotazione?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      },
-      {
-        "id": "online",
-        "question": "Le sessioni si svolgono online o di persona?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      },
-      {
-        "id": "cost",
-        "question": "Qual è il costo di una sessione?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "id": "3",
+        "question": "Posso fissare l'appuntamento anche se non ho chiaro cosa ho?",
+        "answer": "Sì, certo.\nAnzi, proprio durante i primi incontri sarà possibile dare forma e significato alle tue esperienze personali."
       }
     ],
-    "ask_me": "Contattami direttamente.",
-    "additional_question": "Hai altre domande?"
+    "additional_question": "Hai altre domande?",
+    "ask_me": "Contattami direttamente."
   },
   "articles": {
     "title": "Spazio di Riflessione",
@@ -202,19 +192,19 @@
   "reserved": {
     "title": "Area Riservata Pazienti",
     "info": "Inserisci la password che ti è stata fornita per accedere alla prenotazione delle sessioni.",
-    "no_pass_info_link": "Verifica la disponibilità e contattami.",
-    "no_pass_info": "Non hai una password?"
+    "no_pass_info": "Non hai una password?",
+    "no_pass_info_link": "Verifica la disponibilità e contattami."
   },
   "a11y": {
     "skip_to_content": "Vai al contenuto principale",
     "open_menu": "Apri Menu",
     "toggle_menu": "Attiva/Disattiva Menu",
     "home": "Home",
-    "loading_consent": "Caricamento documento di consenso...",
-    "sig_canvas": "Riquadro firma autografa",
-    "close": "Chiudi",
+    "back": "Indietro",
     "back_home": "Torna alla Home",
-    "back": "Indietro"
+    "close": "Chiudi",
+    "sig_canvas": "Riquadro firma autografa",
+    "loading_consent": "Caricamento documento di consenso..."
   },
   "seo": {
     "title": "Dr.ssa Patrycja Wardal | Psicologa, Psicoterapeuta, Ipnoterapeuta"
@@ -239,82 +229,82 @@
     "send_docs_heading": "Documenti Inviati",
     "send_docs": "Abbiamo inviato una copia del consenso informato a"
   },
+  "testimonials": {
+    "enable_testimonials": true,
+    "title": "Percorsi Condivisi",
+    "subtitle": "Voci di chi ha percorso questo cammino, nel rispetto della sacralità dello spazio terapeutico e della privacy personale.",
+    "cta_button": "Lascia una Testimonianza",
+    "modal_title": "Condividi la tua esperienza",
+    "modal_desc": "Le tue parole possono aiutare altri a trovare il coraggio di cercare supporto. Tutte le testimonianze vengono revisionate per la privacy prima della pubblicazione.",
+    "name_label": "Il tuo Nome o Iniziali",
+    "msg_label": "La tua Esperienza",
+    "anon_label": "Mantieni l'Anonimato",
+    "anon_hint": "Se selezionato, il tuo nome sarà nascosto per garantire la totale privacy.",
+    "submit_btn": "Invia Recensione",
+    "success_msg": "Grazie. La tua testimonianza è stata inviata per la revisione.",
+    "policy_link": "Visualizza la nostra informativa sulla privacy",
+    "policy_info": "per ulteriori informazioni.",
+    "list": [
+      {
+        "name": "Sarah J.",
+        "testimonial": "Lavorare con Patrycja mi ha aiutato a navigare in un periodo di profonda ansia. Il suo approccio è professionale ma incredibilmente caloroso; mi sono sentita veramente ascoltata per la prima volta.",
+        "isAnonymous": false
+      },
+      {
+        "name": "Michael Lowrey",
+        "testimonial": "Ero scettico riguardo alla terapia, ma l'ambiente sicuro creato qui mi ha permesso di esplorare il mio burnout e ritrovare me stesso. Altamente raccomandato.",
+        "isAnonymous": true
+      },
+      {
+        "name": "Elena M.",
+        "testimonial": "Le sessioni mi hanno aiutato a ricostruire la mia autostima dopo una relazione difficile. Lo spazio è privo di giudizio e la crescita che ho visto in me stessa è profonda.",
+        "isAnonymous": true
+      },
+      {
+        "name": "David",
+        "testimonial": "Un approccio molto mirato e basato su evidenze scientifiche. Ho apprezzato gli strumenti pratici forniti per gestire lo stress quotidiano e la comunicazione chiara.",
+        "isAnonymous": false
+      }
+    ],
+    "anonymized": "(Anonimo)",
+    "previous": "Testimonianza precedente",
+    "next": "Prossima testimonianza"
+  },
+  "cal": {
+    "slots": "Orari disponibili",
+    "no_slots": "Nessuna disponibilità. Contattami per informazioni.",
+    "slot_select": "Seleziona una data e un'ora per il tuo appuntamento.",
+    "select_day": "Seleziona un giorno per vedere gli orari disponibili.",
+    "timezone": "Fuso orario:",
+    "slot_request": "Richiesta per",
+    "slot_appointment": "Appuntamento per",
+    "proceed": "Procedi",
+    "proceed_payment": "Procedi al pagamento",
+    "time_preposition": "alle"
+  },
   "validation": {
-    "too_long": "Deve contenere al massimo {max} caratteri",
-    "too_short": "Deve contenere almeno {min} caratteri",
-    "password": {
-      "required": "La password è obbligatoria"
+    "firstName": {
+      "required": "Il nome è obbligatorio",
+      "min": "Il nome deve contenere almeno {min} caratteri"
     },
-    "message": {
-      "max": "Il messaggio deve contenere al massimo {max} caratteri",
-      "min": "Il messaggio deve contenere almeno {min} caratteri"
-    },
-    "subject": {
-      "min": "L'oggetto deve contenere almeno {min} caratteri"
+    "lastName": {
+      "required": "Il cognome è obbligatorio",
+      "min": "Il cognome deve contenere almeno {min} caratteri"
     },
     "email": {
       "invalid": "Indirizzo email non valido"
     },
-    "lastName": {
-      "min": "Il cognome deve contenere almeno {min} caratteri",
-      "required": "Il cognome è obbligatorio"
+    "subject": {
+      "min": "L'oggetto deve contenere almeno {min} caratteri"
     },
-    "firstName": {
-      "min": "Il nome deve contenere almeno {min} caratteri",
-      "required": "Il nome è obbligatorio"
-    }
-  },
-  "cal": {
-    "time_preposition": "alle",
-    "proceed_payment": "Procedi al pagamento",
-    "proceed": "Procedi",
-    "slot_appointment": "Appuntamento per",
-    "slot_request": "Richiesta per",
-    "timezone": "Fuso orario:",
-    "select_day": "Seleziona un giorno per vedere gli orari disponibili.",
-    "slot_select": "Seleziona una data e un'ora per il tuo appuntamento.",
-    "no_slots": "Nessuna disponibilità. Contattami per informazioni.",
-    "slots": "Orari disponibili"
-  },
-  "testimonials": {
-    "next": "Prossima testimonianza",
-    "previous": "Testimonianza precedente",
-    "anonymized": "(Anonimo)",
-    "list": [
-      {
-        "isAnonymous": false,
-        "testimonial": "Lavorare con Patrycja mi ha aiutato a navigare in un periodo di profonda ansia. Il suo approccio è professionale ma incredibilmente caloroso; mi sono sentita veramente ascoltata per la prima volta.",
-        "name": "Sarah J."
-      },
-      {
-        "isAnonymous": true,
-        "testimonial": "Ero scettico riguardo alla terapia, ma l'ambiente sicuro creato qui mi ha permesso di esplorare il mio burnout e ritrovare me stesso. Altamente raccomandato.",
-        "name": "Michael Lowrey"
-      },
-      {
-        "isAnonymous": true,
-        "testimonial": "Le sessioni mi hanno aiutato a ricostruire la mia autostima dopo una relazione difficile. Lo spazio è privo di giudizio e la crescita che ho visto in me stessa è profonda.",
-        "name": "Elena M."
-      },
-      {
-        "isAnonymous": false,
-        "testimonial": "Un approccio molto mirato e basato su evidenze scientifiche. Ho apprezzato gli strumenti pratici forniti per gestire lo stress quotidiano e la comunicazione chiara.",
-        "name": "David"
-      }
-    ],
-    "policy_info": "per ulteriori informazioni.",
-    "policy_link": "Visualizza la nostra informativa sulla privacy",
-    "success_msg": "Grazie. La tua testimonianza è stata inviata per la revisione.",
-    "submit_btn": "Invia Recensione",
-    "anon_hint": "Se selezionato, il tuo nome sarà nascosto per garantire la totale privacy.",
-    "anon_label": "Mantieni l'Anonimato",
-    "msg_label": "La tua Esperienza",
-    "name_label": "Il tuo Nome o Iniziali",
-    "modal_desc": "Le tue parole possono aiutare altri a trovare il coraggio di cercare supporto. Tutte le testimonianze vengono revisionate per la privacy prima della pubblicazione.",
-    "modal_title": "Condividi la tua esperienza",
-    "cta_button": "Lascia una Testimonianza",
-    "subtitle": "Voci di chi ha percorso questo cammino, nel rispetto della sacralità dello spazio terapeutico e della privacy personale.",
-    "title": "Percorsi Condivisi",
-    "enable_testimonials": true
+    "message": {
+      "min": "Il messaggio deve contenere almeno {min} caratteri",
+      "max": "Il messaggio deve contenere al massimo {max} caratteri"
+    },
+    "password": {
+      "required": "La password è obbligatoria"
+    },
+    "too_short": "Deve contenere almeno {min} caratteri",
+    "too_long": "Deve contenere al massimo {max} caratteri"
   }
 }
