@@ -304,8 +304,8 @@ export const articlesCollection = {
 	create: true,
 	slug: '{{slug}}',
 	path: '{{lang}}/{{slug}}',
-	media_folder: 'src/lib/assets/images/articles',
-	public_folder: '$lib/assets/images/articles',
+	media_folder: 'static/images/articles',
+	public_folder: '/images/articles',
 	fields: [
 		{ label: 'Language', name: 'lang', widget: 'select', options: ['en', 'it', 'pl'], default: 'en' },
 		{ label: 'Title', name: 'title', widget: 'string' },
@@ -326,7 +326,7 @@ export const aboutCollection = {
 	slug: '{{slug}}',
 	path: '{{lang}}/{{slug}}',
 	media_folder: 'src/lib/assets/images/about',
-	public_folder: '$lib/assets/images/about',
+	public_folder: '../../assets/images/about',
 	fields: [
 		{ label: 'Language', name: 'lang', widget: 'select', options: ['en', 'it', 'pl'], default: 'en' },
 		{ label: 'Section Title', name: 'sectionTitle', widget: 'string' },

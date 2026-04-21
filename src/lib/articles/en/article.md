@@ -40,7 +40,7 @@ In our practice, we follow a structured methodology to ensure progress:
 
 Visual aids and external resources are often used to supplement the path to well-being.
 
-![Placeholder Image for Headshot]($lib/assets/images/articles/1000063839.jpg)
+![Placeholder Image for Headshot](/images/articles/1000063839.jpg)
 
 You can find more information about my professional background on the [About Me](/about) page or contact me directly via email at `info@example.com`.
 
