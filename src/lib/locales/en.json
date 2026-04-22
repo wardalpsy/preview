@@ -50,26 +50,46 @@
 			}
 		]
 	},
-	"practices": {
-		"title": "How I Can Help You",
-		"subtitle": "Every journey is unique. Together we will work to understand the origin of your distress and find the resources to overcome it.",
+	"services": {
+		"title": "Services",
+		"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus.",
 		"not_found": "Can't find what you're looking for?",
 		"contact_me": "Contact me for an introductory meeting.",
 		"items": [
 			{
-				"id": "anxiety",
-				"title": "Anxiety and Stress",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+				"id": "1",
+				"no_decoration": false,
+				"icon": "user",
+				"title": "Individual Psychotherapy",
+				"description": "A dedicated space to overcome your difficulties and foster personal growth."
 			},
 			{
-				"id": "mood",
-				"title": "Depression and Mood",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+				"id": "2",
+				"no_decoration": false,
+				"icon": "play-football",
+				"title": "Sports and Artistic Performance Sessions",
+				"description": "Sessions designed for professional athletes and artists looking to regain peak performance. These can be held individually or in groups for team-based activities."
 			},
 			{
-				"id": "relationships",
-				"title": "Relationships and Couples",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+				"id": "3",
+				"no_decoration": false,
+				"icon": "school",
+				"title": "Educational Training & Consultation",
+				"description": "Supporting schools and training centres to raise awareness among educators on the bio-psycho-social dynamics of learning."
+			},
+			{
+				"id": "4",
+				"no_decoration": false,
+				"icon": "building-estate",
+				"title": "Workplace and Organisational Consultations",
+				"description": "Aimed at companies seeking to take care of their employees wellbeing and improve the corporate climate."
+			},
+			{
+				"id": "5",
+				"no_decoration": false,
+				"icon": "brain",
+				"title": "Psychological Consultation",
+				"description": "Dedicated to individuals seeking to understand which form of psychological support is best suited to their current needs."
 			}
 		]
 	},

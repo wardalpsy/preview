@@ -67,7 +67,7 @@
 										<Form.Label
 											>{i18n.t.contact.section_name}<span class="form-required">*</span></Form.Label
 										>
-										<Input {...props} bind:value={$formData.name} />
+										<Input {...props} bind:value={$formData.name} class="h-10" />
 									{/snippet}
 								</Form.Control>
 								<Form.FieldErrors />
@@ -81,7 +81,7 @@
 											>{i18n.t.contact.section_email}<span class="form-required">*</span
 											></Form.Label
 										>
-										<Input {...props} type="email" bind:value={$formData.email} />
+										<Input {...props} type="email" bind:value={$formData.email} class="h-10" />
 									{/snippet}
 								</Form.Control>
 								<Form.FieldErrors />
