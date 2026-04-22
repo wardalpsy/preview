@@ -31,25 +31,48 @@
 	"dummy": "",
 	"approach": {
 		"title": "The Therapeutic Approach",
-		"subtitle": "A collaborative journey where your experience meets my professional expertise in a protected listening environment.",
-		"pillars": [
+		"image": "/src/lib/assets/images/patrycja-nikki.jpg",
+		"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus.",
+		"nikki_note": "In the therapy room, you may also meet my co-therapist Nikki, a dog who intervenes when needed.",
+		"nikki_caption": "With Nikki, my co-therapist",
+		"target_title": "I mainly work with",
+		"paragraphs": [
 			{
-				"title": "Scientific Evidence",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-				"icon": "brain"
+				"id": "1",
+				"paragraph": "I see the therapeutic encounter as a journey—sometimes a bumpy one, but always shared. My role in this journey is to be there with you, helping you discover and strengthen your resources."
 			},
 			{
-				"title": "Human Connection",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-				"icon": "heart"
+				"id": "2",
+				"paragraph": "I believe that you already have the resources necessary to overcome your difficulties, even if you might not be aware of them yet. "
 			},
 			{
-				"title": "Awareness",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-				"icon": "leaf"
+				"id": "3",
+				"paragraph": "Together, we will change that."
 			}
-		]
+		],
+		"targets": [
+			{
+				"id": "1",
+				"target": "Adolescents"
+			},
+			{
+				"id": "2",
+				"target": "Young Adults"
+			},
+			{
+				"id": "3",
+				"target": "Adults"
+			}
+		],
+		"dialogs_title": "My clinical practice is based on",
+		"dialog1_trigger": "Ericksonian psychotherapy",
+		"dialog1_title": "Approach",
+		"dialog1_content": "According to the Ericksonian approach, change occurs through the individual's active participation in the sessions, regardless of conscious understanding or insight. This allows them, through their own experience, to formulate positive goals and focus on solutions and possibilities, thereby enhancing their sensitivity, expressiveness, and flexibility.\n\nThe therapist is future-oriented and focused on the creative reorganisation of the individual's responses, with the aim of optimising their development and growth.\n\nThe therapist is active and responsible for recognising and valuing the uniqueness of each person, as well as for creating the conditions for change.The therapist utilises the person's resources and everything the individual brings into therapy. This includes the use of humour, paradox, and various indirect techniques, such as storytelling and metaphors.",
+		"dialog2_trigger": "Hypnosis",
+		"dialog2_title": "Method",
+		"dialog2_content": "Hypnosis is a state of consciousness involving focused attention and reduced awareness of external stimuli, characterised by an enhanced capacity to respond to suggestions. The ability to narrow and concentrate our attention is a natural process with neurobiological basis.\nMany everyday activities involve a hypnotic response, such as watching TV, reading, or running.\n\nIn psychotherapy, hypnosis is used to facilitate change, find tailored solutions, explore and understand oneself, and access the unconscious and its resources.Scientific literature confirms the effectiveness of hypnosis in various medical and psychological fields, such as pain management, and the treatment of addictions, anxiety, mood disorders, sleep issues, and trauma.\n\nIn Italy, hypnosis may only be practised by psychologists, psychotherapists, medical doctors, and dentists who hold a specialisation recognised by the MIUR (Ministry of University and Research)."
 	},
+
 	"services": {
 		"title": "Services",
 		"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus.",

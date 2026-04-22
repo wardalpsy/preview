@@ -31,25 +31,46 @@
 	"dummy": "",
 	"approach": {
 		"title": "Podejście terapeutyczne",
+		"image": "/src/lib/assets/images/patrycja-nikki.jpg",
 		"subtitle": "Wspólna podróż, w której Twoje doświadczenie spotyka się z moją wiedzą zawodową w bezpiecznym środowisku słuchania.",
-		"pillars": [
+		"nikki_note": "W gabinecie terapeutycznym możesz również spotkać moją współterapeutkę Nikki, psa, który interweniuje w razie potrzeby.",
+		"nikki_caption": "Z Nikki, moją współterapeutką",
+		"target_title": "Pracuję głównie z",
+		"paragraphs": [
 			{
-				"title": "Dowody naukowe",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-				"icon": "brain"
+				"id": "1",
+				"paragraph": "Spotkanie terapeutyczne postrzegam jako podróż – czasem wyboistą, ale zawsze wspólną. Moją rolą w tej podróży jest bycie przy Tobie, pomaganie Ci w odkrywaniu i wspieraniu Twoich zasobów."
 			},
 			{
-				"title": "Ludzka więź",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-				"icon": "heart"
+				"id": "2",
+				"paragraph": "Wierzę, że posiadasz już zasoby niezbędne do pokonania trudności, nawet jeśli jeszcze nie jesteś ich świadomy. Razem to zmienimy."
 			},
 			{
-				"title": "Uważność",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-				"icon": "leaf"
+				"id": "3",
+				"paragraph": "Moja praktyka kliniczna opiera się na podejściu ericksonowskim i hipnozie."
+			}
+		],
+		"targets": [
+			{
+				"id": "1",
+				"target": "Młodzieżą"
+			},
+			{
+				"id": "2",
+				"target": "Młodymi dorosłymi"
+			},
+			{
+				"id": "3",
+				"target": "Dorosłymi"
 			}
 		]
 	},
+	"dialog1_trigger": "Psychoterapia ericksonowska",
+	"dialog1_title": "Psychoterapia ericksonowska",
+	"dialog1_content": "Podejście ericksonowskie to forma psychoterapii wykorzystująca hipnozę i sugestię pośrednią, aby pomóc pacjentom dotrzeć do ich nieświadomych zasobów. Nazwana na cześć Miltona H. Ericksona metoda ta koncentruje się na wyjątkowości każdej osoby i jej naturalnej zdolności do powrotu do zdrowia.",
+	"dialog2_trigger": "Hipnoza",
+	"dialog2_title": "Hipnoza",
+	"dialog2_content": "Hipnoza kliniczna to stan skupionej uwagi i zwiększonej sugestywności. Jest to naturalny stan, którego często doświadczamy w życiu codziennym. W terapii stosuje się go, aby ominąć krytyczne bariery świadomości i ułatwić pozytywne zmiany oraz nowe perspektywy.",
 	"services": {
 		"title": "Jak mogę Ci pomóc",
 		"subtitle": "Każda droga jest wyjątkowa. Wspólnie będziemy pracować nad zrozumieniem źródła Twojego cierpienia i znalezieniem zasobów, aby je pokonać.",

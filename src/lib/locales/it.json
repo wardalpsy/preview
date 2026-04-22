@@ -31,25 +31,46 @@
 	"dummy": "",
 	"approach": {
 		"title": "L'Approccio Terapeutico",
+		"image": "/src/lib/assets/images/patrycja-nikki.jpg",
 		"subtitle": "Un viaggio collaborativo dove la tua esperienza incontra la mia competenza professionale in un ambiente di ascolto protetto.",
-		"pillars": [
+		"nikki_note": "Nella stanza di terapia potresti incontrare anche la mia co-terapeuta Nikki, un cane che interviene quando necessario.",
+		"nikki_caption": "Con Nikki, la mia co-terapeuta",
+		"target_title": "Lavoro principalmente con",
+		"paragraphs": [
 			{
-				"title": "Evidenza Scientifica",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-				"icon": "brain"
+				"id": "1",
+				"paragraph": "Vedo l'incontro terapeutico come un viaggio: a volte accidentato, ma sempre condiviso. Il mio ruolo in questo viaggio è quello di essere lì con te, aiutandoti a scoprire e rafforzare le tue risorse."
 			},
 			{
-				"title": "Connessione Umana",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-				"icon": "heart"
+				"id": "2",
+				"paragraph": "Credo che tu possieda già le risorse necessarie per superare le tue difficoltà, anche se forse non ne sei ancora consapevole. Insieme cambieremo questa situazione."
 			},
 			{
-				"title": "Consapevolezza",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-				"icon": "leaf"
+				"id": "3",
+				"paragraph": "La mia pratica clinica si basa sull'approccio ericksoniano e sull'ipnosi."
+			}
+		],
+		"targets": [
+			{
+				"id": "1",
+				"target": "Adolescenti"
+			},
+			{
+				"id": "2",
+				"target": "Giovani Adulti"
+			},
+			{
+				"id": "3",
+				"target": "Adulti"
 			}
 		]
 	},
+	"dialog1_trigger": "Psicoterapia ericksoniana",
+	"dialog1_title": "Psicoterapia ericksoniana",
+	"dialog1_content": "L'approccio ericksoniano è una forma di psicoterapia che utilizza l'ipnosi e la suggestione indiretta per aiutare i pazienti ad accedere alle proprie risorse inconsce. Prende il nome da Milton H. Erickson e si focalizza sull'unicità di ogni individuo e sulla sua naturale capacità di guarigione.",
+	"dialog2_trigger": "Ipnosi",
+	"dialog2_title": "Ipnosi",
+	"dialog2_content": "L'ipnosi clinica è uno stato di attenzione focalizzata e di aumentata suggestionabilità. È uno stato naturale che spesso sperimentiamo nella vita quotidiana. In terapia, viene utilizzata per superare le barriere critiche della coscienza e facilitare cambiamenti positivi e nuove prospettive.",
 	"services": {
 		"title": "Come Posso Aiutarti",
 		"subtitle": "Ogni percorso è unico. Insieme lavoreremo per comprendere l'origine del tuo disagio e trovare le risorse per superarlo.",
