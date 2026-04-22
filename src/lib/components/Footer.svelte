@@ -20,20 +20,55 @@
 
 <footer class="border-t-2 border-border bg-white pt-20 pb-10">
 	<div class="container mx-auto px-6">
-		<div class="mb-16 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
+		<div class="mb-16 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr]">
 			<!-- Brand & Mission -->
-			<div class="space-y-6">
+			<div class=" space-y-6">
 				<div class="mt-4 flex flex-col">
-					<span class="font-serif text-sm">{i18n.t.header.title}</span>
-					<span class="font-display text-xl font-bold tracking-tight text-brand">
-						{i18n.t.header.name}
+					<div>
+						<span class="font-serif text-sm">{i18n.t.header.title}</span>
+						<span class="font-display text-xl font-bold tracking-tight text-brand">
+							{i18n.t.header.name}
+						</span>
+					</div>
+					<span class="text-xs tracking-tight text-foreground uppercase">
+						{i18n.t.footer.specialties}
 					</span>
-					{#if i18n.t.footer.description}
-						<p class="mt-2 max-w-xs text-sm leading-relaxed text-foreground/90">
-							{i18n.t.footer.description}
-						</p>
-					{/if}
 				</div>
+				<ul class="space-y-1.5 text-sm leading-relaxed text-foreground/90">
+					<li>
+						{i18n.t.footer.register}
+						<a
+							href="https://www.psicologipuglia.it/single-professionista/?id=7134"
+							class="footer-legal_link"
+							target="_blank"
+							rel="noopener"
+							>{i18n.t.footer.register_no}<span class="sr-only">{i18n.t.a11y.external_link}</span
+							></a
+						>&nbsp;since 2022.
+					</li>
+					{#if i18n.t.footer.specialization}
+						<li>
+							<p class="leading-relaxed whitespace-pre-line">
+								{i18n.t.footer.specialization}
+							</p>
+						</li>
+					{/if}
+					{#if i18n.t.footer.member}
+						<li>
+							<p class="leading-relaxed whitespace-pre-line">
+								{i18n.t.footer.member}
+							</p>
+						</li>
+					{/if}
+				</ul>
+			</div>
+
+			<!-- Contact -->
+			<div>
+				<h2 class="footer-headings">
+					{i18n.t.footer.contact_title}
+				</h2>
+				<SocialLinks />
 			</div>
 
 			<!-- Navigation -->
@@ -56,36 +91,6 @@
 				</ul>
 			</div>
 
-			<!-- Contact -->
-			<div>
-				<h2 class="footer-headings">
-					{i18n.t.footer.contact_title}
-				</h2>
-
-				<SocialLinks />
-
-				<!--<div class="mt-4 flex items-start gap-3">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="20"
-						height="20"
-						viewBox="0 0 24 24"
-						fill="none"
-						stroke="currentColor"
-						stroke-width="2"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						class="text-wardal-primary-hover"
-						><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
-							d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"
-						/><path
-							d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0"
-						/></svg
-					>
-					<span>{i18n.t.footer.location}</span>
-				</div>-->
-			</div>
-
 			<!-- Legal -->
 			<div>
 				<h2 class="footer-headings">
@@ -93,17 +98,6 @@
 				</h2>
 				<ul class="space-y-4 text-xs leading-relaxed">
 					<li>{i18n.t.footer.vat}</li>
-					<li>
-						{i18n.t.footer.register}
-						<a
-							href="https://www.psicologipuglia.it/single-professionista/?id=7134"
-							class="footer-legal_link"
-							target="_blank"
-							rel="noopener"
-							>{i18n.t.footer.register_no}
-							<span class="sr-only">{i18n.t.a11y.external_link}</span></a
-						>
-					</li>
 					<li>
 						<a href={l('/')} class="footer-legal_link">{i18n.t.footer.privacy}</a>
 					</li>

@@ -4,16 +4,6 @@
 	import { base } from '$app/paths';
 	import { Button } from '$lib/components/ui/button/index.js';
 
-	// Dynamically import all images in the assets directory with the enhanced query
-	const images = import.meta.glob<Picture>(
-		'$lib/assets/images/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp,svg}',
-		{
-			query: { enhanced: true },
-			import: 'default',
-			eager: true
-		}
-	);
-
 	const l = (path: string) => {
 		const lang = i18n.currentLang;
 		const prefix = lang === 'en' ? '' : `/${lang}`;
@@ -21,24 +11,35 @@
 		return `${base}${prefix}${cleanPath === '/' && lang !== 'en' ? '' : cleanPath}`;
 	};
 
-	// Robust lookup: find the image that matches the filename from the JSON
-	const getHeroImage = () => {
-		const targetPath = i18n.t.hero.image || '';
-		// Get just the filename ("wardal-hero.jpg")
-		const filename = targetPath.split('/').pop();
-		const defaultImage = images['/src/lib/assets/wardal-hero.jpg'];
-		if (!filename) return defaultImage;
+	// Dynamically import all images in the assets directory with the enhanced query
+	const images = import.meta.glob<Picture>(
+		'$lib/assets/images/**/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp,svg}',
+		{
+			query: { enhanced: true },
+			import: 'default',
+			eager: true
+		}
+	);
 
-		// Look through all globbed images for one that ends with this filename
-		for (const globPath in images) {
-			if (globPath.endsWith(filename)) {
-				return images[globPath];
-			}
+	// Image lookup with failsafe
+	const ULTIMATE_FALLBACK = `/src/lib/assets/images/failsafe/wardal-hero-en.jpg`;
+
+	const getHeroImage = (): Picture | undefined => {
+		const lang = i18n.currentLang;
+		const targetPath: string = i18n.t.hero.image ?? '';
+		const filename = targetPath.split('/').pop();
+
+		const langDefault = `/src/lib/assets/images/failsafe/wardal-hero-${lang}.jpg`;
+
+		if (filename) {
+			const key = `/src/lib/assets/images/${filename}`;
+			return images[key] ?? images[langDefault] ?? images[ULTIMATE_FALLBACK];
 		}
 
-		// Fallback to default if not found
-		return defaultImage;
+		return images[langDefault] ?? images[ULTIMATE_FALLBACK];
 	};
+
+	const heroImage = $derived(getHeroImage());
 </script>
 
 <div class="relative flex min-h-[90vh] items-center overflow-hidden bg-background pb-18">
@@ -75,9 +76,9 @@
 				<div
 					class="relative rotate-1 transform overflow-hidden rounded-3xl bg-transparent shadow-2xl shadow-brand/15"
 				>
-					{#if getHeroImage()}
+					{#if heroImage}
 						<enhanced:img
-							src={getHeroImage()}
+							src={heroImage}
 							alt={i18n.t.hero.image_alt}
 							class="aspect-4/5 h-auto w-full rounded-3xl border-12 border-border/50 object-cover"
 							loading="eager"

@@ -20,15 +20,13 @@
 		"label_PL": "Polski"
 	},
 	"hero": {
-		"image": "/src/lib/assets/images/wardal-hero.jpg",
+		"image": "/src/lib/assets/images/wardal-hero-en.jpg",
 		"title": "Psychotherapy and Hypnotherapy",
 		"subtitle": "Online and Onsite in Bari, Italy",
 		"cta_primary": "Begin your therapeutic journey",
 		"cta_secondary": "My approach",
-		"image_alt": "A sketch by Charlie Mackesy featuring a small boy and a mole kneeling, gently observing a small plant with a few leaves. Above and below them, handwritten Italian text says, Be patient with yourself. Shouting at a flower won't make it bloom.",
-		"quote": "Lorem Ipsum Dolor",
-		"name": "Patrycja Wardal",
-		"role": "Psychologist"
+		"image_alt": "A illustration by Charlie Mackesy featuring a young boy and a mole sitting and looking at a tiny green sprout. The text reads: Be patient with yourself. Shouting at a flower won't make it bloom.",
+		"quote": "Lorem Ipsum Dolor"
 	},
 	"dummy": "",
 	"approach": {
@@ -98,6 +96,18 @@
 		"additional_question": "Have more questions?",
 		"ask_me": "Contact me directly."
 	},
+	"mid_hero": {
+		"h2_title": "Take all the time you need",
+		"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus.",
+		"image": "/src/lib/assets/images/wardal-mid-hero-en.jpg",
+		"image_alt": "A illustration by Charlie Mackesy showing a mole and a boy  looking at a single blue flower blooming between them. The text says: Some flowers bloom later than others, and they are spectacular when they do. Take all the time you need.",
+		"cta_primary": "Start your Journey",
+		"cta_secondary": "Book an Appointment",
+		"reserved_title": "Reserved Area",
+		"reserved_desc": "For current patients: Enter your password to book your session.",
+		"public_title": "New Patients",
+		"public_desc": "View my general availability and contact me directly for a brief initial assessment."
+	},
 	"articles": {
 		"enabled": true,
 		"title": "Space for Reflection",
@@ -112,14 +122,15 @@
 		"cta_call": "Call me now"
 	},
 	"footer": {
-		"description": "Psychologist and Psychotherapist specialized in individual paths for personal well-being.",
+		"specialties": "Psychologist - Psychotherapist - Hypnotherapist",
+		"specialization": "Specialised in Ericksonian Psychotherapy and Hypnosis at SIIPE, Rome",
+		"member": "Member of the Italian Society of Hypnosis",
 		"contact_title": "Contact",
-		"location": "Professional Practice -  Also available online",
 		"legal_title": "Legal Information",
 		"quick_links": "Quick Links",
 		"rights": "All rights reserved.",
 		"vat": "VAT No: 08814610724",
-		"register": "Registered with the Apulian Register of Psychologists No.",
+		"register": "Chartered with Apulian Register of Psychologists, n°",
 		"register_no": "7277",
 		"privacy": "Privacy Policy",
 		"cookies": "Cookie Policy",
@@ -133,8 +144,11 @@
 		"twitter": "https://twitter.com",
 		"instagram": "https://instagram.com",
 		"facebook": "https://facebook.com",
-		"phone": "393924759170",
-		"external_link": "(opens in a new tab)",
+		"phone": "+393924759170",
+		"phone_formatted": "+39 392 4759170",
+		"phone_aria": "Call Dr. Patrycja Wardal:",
+		"location": "Bari, 70124",
+		"location_info": "In-person and Online Sessions\nBy appointment only",
 		"nav_availability": "Availability",
 		"nav_reserved": "Appointments",
 		"oxy_credit": true

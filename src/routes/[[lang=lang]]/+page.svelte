@@ -4,6 +4,7 @@
 	import Practices from '$lib/components/home/Practices.svelte';
 	import About from '$lib/components/home/About.svelte';
 	import Approach from '$lib/components/home/Approach.svelte';
+	import MidHero from '$lib/components/home/MidHero.svelte';
 	import FAQ from '$lib/components/home/FAQ.svelte';
 	import Articles from '$lib/components/home/Articles.svelte';
 	import Testimonials from '$lib/components/home/Testimonials.svelte';
@@ -19,6 +20,7 @@
 	<Articles articles={data.articles} />
 {/if}
 <FAQ />
+<MidHero />
 {#if i18n.t.testimonials.enable_testimonials}
 	<Testimonials testimonials={i18n.t.testimonials.list} {data} />
 {/if}

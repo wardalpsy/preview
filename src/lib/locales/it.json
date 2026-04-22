@@ -20,15 +20,13 @@
 		"label_PL": "Polski"
 	},
 	"hero": {
-		"image": "/src/lib/assets/images/wardal-hero.jpg",
+		"image": "/src/lib/assets/images/wardal-hero-it.jpg",
 		"title": "Uno spazio sicuro per la tua mente.",
 		"subtitle": "Percorsi di psicoterapia individuale per ritrovare equilibrio e serenità nella vita quotidiana.",
 		"cta_primary": "Vedi Disponibilità",
 		"cta_secondary": "Prenota Appuntamento",
-		"image_alt": "Patrycja Wardal nel suo studio",
-		"quote": "Lorem Ipsum Dolor",
-		"role": "Psicologa",
-		"name": "Patrycja Wardal"
+		"image_alt": "Un'illustrazione di Charlie Mackesy che mostra un bambino e una talpa seduti su un prato bianco, intenti a osservare un piccolo germoglio verde. Sopra e sotto di loro appare la scritta: Sii paziente con te stesso. Urlare contro un fiore non lo farà sbocciare",
+		"quote": "Lorem Ipsum Dolor"
 	},
 	"dummy": "",
 	"approach": {
@@ -97,6 +95,18 @@
 				"answer": "Sì, certo! \nAnzi, proprio durante i primi incontri sarà possibile dare forma e significato alle tue esperienze personali."
 			}
 		]
+	},
+	"mid_hero": {
+		"h2_title": "Prenditi tutto il tempo che ti occorre",
+		"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus.",
+		"image": "/src/lib/assets/images/wardal-mid-hero-it.jpg",
+		"image_alt": "Un'illustrazione di Charlie Mackesy che ritrae una talpa e un bambino che osservano un unico fiore blu che sboccia tra di loro. Il testo recita: Ci sono fiori che sbocciano in ritardo rispetto agli altri, ed è uno spettacolo quando succede. Prenditi tutto il tempo che ti occorre.",
+		"cta_primary": "Inizia il tuo percorso",
+		"cta_secondary": "Prenota un appuntamento",
+		"reserved_title": "Area Riservata",
+		"reserved_desc": "Per i pazienti attuali: inserisci la tua password per prenotare la sessione.",
+		"public_title": "Nuovi Pazienti",
+		"public_desc": "Visualizza la mia disponibilità generale e contattami direttamente per una breve valutazione iniziale."
 	},
 	"testimonials": {
 		"enable_testimonials": true,
