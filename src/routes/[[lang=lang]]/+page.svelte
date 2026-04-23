@@ -7,8 +7,8 @@
 	import MidHero from '$lib/components/home/MidHero.svelte';
 	import FAQ from '$lib/components/home/FAQ.svelte';
 	import Articles from '$lib/components/home/Articles.svelte';
-	import Testimonials from '$lib/components/home/Testimonials.svelte';
-	import Contact from '$lib/components/home/Contact.svelte';
+	import LazyComponent from '$lib/components/LazyComponent.svelte';
+
 	let { data } = $props();
 </script>
 
@@ -22,6 +22,10 @@
 <FAQ />
 <MidHero />
 {#if i18n.t.testimonials.enable_testimonials}
-	<Testimonials testimonials={i18n.t.testimonials.list} {data} />
+	<LazyComponent
+		component={() => import('$lib/components/home/Testimonials.svelte')}
+		testimonials={i18n.t.testimonials.list}
+		{data}
+	/>
 {/if}
-<Contact {data} />
+<LazyComponent component={() => import('$lib/components/home/Contact.svelte')} {data} />
