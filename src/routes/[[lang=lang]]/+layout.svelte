@@ -38,9 +38,14 @@
 			rafId = requestAnimationFrame(raf);
 		};
 
-		initLenis();
+		if (document.readyState === 'complete') {
+			initLenis();
+		} else {
+			window.addEventListener('load', initLenis, { once: true });
+		}
 
 		return () => {
+			window.removeEventListener('load', initLenis);
 			if (lenis) lenis.destroy();
 			if (rafId) cancelAnimationFrame(rafId);
 		};
