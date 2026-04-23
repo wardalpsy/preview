@@ -9,13 +9,13 @@
 	import * as Tooltip from '$lib/components/ui/tooltip/index.js';
 	import { Toaster } from '$lib/components/ui/sonner/index.js';
 	// import Lenis from 'lenis'; // Lazy loaded below
-	import 'lenis/dist/lenis.css';
+	//import 'lenis/dist/lenis.css';
 
 	let { children } = $props();
 	$effect(() => {
 		document.documentElement.lang = i18n.currentLang;
 	});
-
+ /*
 	// Lazy load Lenis for better performance
 	onMount(async () => {
 		const { default: Lenis } = await import('lenis');
@@ -41,7 +41,7 @@
 			lenis.destroy();
 			cancelAnimationFrame(rafId);
 		};
-	});
+	});*/
 </script>
 
 <SEO
