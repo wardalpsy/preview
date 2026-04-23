@@ -31,9 +31,10 @@
 	"dummy": "",
 	"approach": {
 		"title": "The Therapeutic Approach",
+		"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus.",
 		"image": "/src/lib/assets/images/patrycja-nikki.jpg",
 		"image_alt": "Dr. Patrycja Wardal with her co-therapist dog, Nikki",
-		"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus.",
+
 		"quote": "In the therapy room, you may also meet my co-therapist Nikki, a dog who intervenes when needed.",
 		"target_title": "I mainly work with",
 		"paragraphs": [
@@ -80,6 +81,8 @@
 		"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus.",
 		"not_found": "Can't find what you're looking for?",
 		"contact_me": "Contact me for an introductory meeting.",
+		"disable_decorations": false,
+		"disable_icons": false,
 		"items": [
 			{
 				"id": "1",

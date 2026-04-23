@@ -66,33 +66,63 @@ const translationFields = [
   	hint: "The about section is filled from the About (Markdown) collection."
 	},
 	{
-		label: 'Therapeutic Approach',
+		label: 'Approach',
 		name: 'approach',
 		widget: 'object',
 		fields: [
 			{ label: 'Title', name: 'title', widget: 'string' },
-			{ label: 'Subtitle', name: 'subtitle', widget: 'text' },
+			{ label: 'Subtitle', name: 'subtitle', widget: 'string', required: 'false' },
 			{
-				label: 'Approach Pillars',
-				name: 'pillars',
+				label: 'Approach Image',
+				name: 'image',
+				widget: 'image',
+				choose_url: false,
+				hint: 'Prefer images with aspect ratio 4/5. Max. resolution: 800x1000px'
+			},
+			{ label: 'Image Alt', name: 'image_alt', widget: 'string' },
+			{ label: 'Quote', name: 'quote', widget: 'string', hint:'Leave empty to disable the quote overlay over the Approach image', required: false },
+			{
+				label: 'Approach Paragraphs',
+				name: 'paragraphs',
 				widget: 'list',
+				hint: 'Each child will be rendered as a paragraph',
 				fields: [
-					{ label: 'Title', name: 'title', widget: 'string' },
-					{ label: 'Description', name: 'description', widget: 'text' },
-					{ label: 'Icon', name: 'icon', widget: 'string', hint: 'Go to https://icon-sets.iconify.design/tabler/  select an icon and copy the name without the "tabler:" prefix.' }
+					{ label: 'ID', name: 'id', widget: 'string', hint: 'Use incremental numbers' },
+					{ label: 'Paragraph', name: 'paragraph', widget: 'text' }
 				]
-			}
+			},
+			{
+				label: 'Target Groups',
+				name: 'target',
+				widget: 'list',
+				hint: 'Your target groups.',
+				fields: [
+					{ label: 'ID', name: 'id', widget: 'string', hint: 'Use incremental numbers' },
+					{ label: 'group', name: 'target', widget: 'string' }
+				]
+			},
+			{ label: 'Dialogs Title', name: 'dialogs_title', widget: 'string' },
+			{ label: 'First Dialog Trigger Title', name: 'dialog1_trigger_title', widget: 'string' },
+			{ label: 'Ericksonian psychotherapy', name: 'dialog1_trigger', widget: 'string' },
+			{ label: 'First dialog internal title', name: 'dialog1_title', widget: 'string' },
+			{ label: 'First dialog content', name: 'dialog1_content', widget: 'text' },
+			{ label: 'Second Dialog Trigger Title', name: 'dialog2_trigger_title', widget: 'string' },
+			{ label: 'Hypnosis', name: 'dialog2_trigger', widget: 'string' },
+			{ label: 'Second dialog internal title', name: 'dialog2_title', widget: 'string' },
+			{ label: 'Second dialog content', name: 'dialog2_content', widget: 'text' },
 		]
 	},
 	{
-		label: 'Practices',
-		name: 'practices',
+		label: 'Services',
+		name: 'services',
 		widget: 'object',
 		fields: [
 			{ label: 'Title', name: 'title', widget: 'string' },
-			{ label: 'Subtitle', name: 'subtitle', widget: 'string' },
+			{ label: 'Subtitle', name: 'subtitle', widget: 'string', required: 'false' },
 			{ label: 'Not Found Text', name: 'not_found', widget: 'string' },
 			{ label: 'Contact Me Text', name: 'contact_me', widget: 'string' },
+			{ label: 'Disable Decorations', name: 'disable_decorations', widget: 'boolean', hint: 'Will disable card icons and decoration'},
+			{ label: 'Disable Icons', name: 'disable_icons', widget: 'boolean', hint: 'Will disable the card icons'},
 			{
 				label: 'Items',
 				name: 'items',

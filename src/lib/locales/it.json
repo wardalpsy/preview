@@ -83,16 +83,22 @@
 		"items": [
 			{
 				"id": "anxiety",
+				"no_decoration": false,
+				"icon": "brain",
 				"title": "Ansia e Stress",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 			},
 			{
 				"id": "mood",
+				"no_decoration": false,
+				"icon": "mood-sad",
 				"title": "Depressione e Umore",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 			},
 			{
 				"id": "relationships",
+				"no_decoration": false,
+				"icon": "users",
 				"title": "Relazioni e Coppia",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 			}

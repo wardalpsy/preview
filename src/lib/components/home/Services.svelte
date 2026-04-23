@@ -1,18 +1,24 @@
 <script lang="ts">
 	import { i18n } from '$lib/i18n.svelte';
-	import Icon from '@iconify/svelte';
+	import { getIcon } from 'virtual:cms-icons';
 </script>
 
-{#snippet serviceCard(title: string, description: string, iconName: string, no_decoration: boolean)}
+{#snippet serviceCard(
+	title: string,
+	description: string,
+	iconName: string,
+	no_decoration: boolean
+)}
+	{@const Icon = iconName ? getIcon(iconName) : null}
 	<div
 		class="group relative rounded-3xl border border-border bg-white p-8 transition-all duration-500 hover:border-primary/30 hover:shadow-xl hover:shadow-brand/10"
 	>
 		{#if !no_decoration}
-			{#if iconName}
+			{#if Icon}
 				<div
 					class="mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-brand/10 text-brand"
 				>
-					<Icon icon="tabler:{iconName}" class="size-6" aria-hidden="true" />
+					<Icon class="size-6" aria-hidden="true" />
 				</div>
 			{:else}
 				<!-- Minimalist Icon/Indicator if icon is empty -->
