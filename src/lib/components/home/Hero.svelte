@@ -49,7 +49,7 @@
 			<!-- Text Content -->
 			<div class="z-10 lg:col-span-7">
 				<h1
-					class="mt-18 mb-8 font-display text-5xl leading-[1.05] text-brand italic md:text-6xl lg:mt-0 lg:text-7xl"
+					class="mt-18 mb-8 font-display text-5xl leading-[1.05] text-brand md:text-6xl lg:mt-0 lg:text-7xl"
 				>
 					{i18n.t.hero.title}
 				</h1>
