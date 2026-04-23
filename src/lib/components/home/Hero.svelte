@@ -48,11 +48,11 @@
 		<div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-12">
 			<!-- Text Content -->
 			<div class="z-10 mb-18 lg:col-span-7">
-				<!--<h1
+				<h1
 					class="mb-8 font-display text-5xl leading-[1.05] text-brand italic md:text-6xl lg:mt-0 lg:text-7xl"
 				>
 					{i18n.t.hero.title}
-				</h1>-->
+				</h1>
 
 				<p class="mb-18 max-w-xl text-xl leading-relaxed font-light tracking-wide md:text-2xl">
 					{i18n.t.hero.subtitle}
@@ -68,7 +68,7 @@
 				</div>
 			</div>
 
-			<!-- Image Section 
+			<!-- Image Section -->
 			<div class="relative lg:col-span-5">
 				<div
 					class="absolute -top-12 -right-12 h-64 w-64 rounded-full bg-brand opacity-20 mix-blend-multiply blur-3xl filter"
@@ -85,19 +85,19 @@
 							fetchpriority="high"
 						/>
 					{/if}
--->
-			<!-- Quote Badge 
+
+					<!-- Quote Badge -->
 					{#if i18n.t.hero.quote}
 						<div
 							class="absolute right-6 bottom-6 left-6 inline-flex justify-center rounded-2xl bg-secondary p-5 text-on-secondary shadow-md shadow-brand/15"
 						>
-							<q class="w-full text-center font-serif leading-snug italic md:text-lg">
+							<q class="w-full text-center font-display leading-snug italic md:text-lg">
 								{i18n.t.hero.quote}
 							</q>
 						</div>
 					{/if}
 				</div>
-			</div>-->
+			</div>
 		</div>
 	</div>
 </div>
