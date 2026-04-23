@@ -8,17 +8,19 @@
 	import WhatsAppFab from '$lib/components/ui/whatsAppFab.svelte';
 	import * as Tooltip from '$lib/components/ui/tooltip/index.js';
 	import { Toaster } from '$lib/components/ui/sonner/index.js';
-	import Lenis from 'lenis';
+	// import Lenis from 'lenis'; // Lazy loaded below
 	import 'lenis/dist/lenis.css';
 
 	let { children } = $props();
 	$effect(() => {
 		document.documentElement.lang = i18n.currentLang;
 	});
-	//Lenis
-	onMount(() => {
+
+	// Lazy load Lenis for better performance
+	onMount(async () => {
+		const { default: Lenis } = await import('lenis');
+
 		const lenis = new Lenis({
-			// 'lerp' is the secret to buttery smoothness (0.05 to 0.1 is the sweet spot)
 			lerp: 0.07,
 			wheelMultiplier: 1,
 			infinite: false,
@@ -54,8 +56,6 @@
 	{i18n.t.a11y.skip_to_content}
 </a>
 <Tooltip.Provider>
-	<!-- SKIP LINK -->
-
 	<Header />
 	<main id="main-content">{@render children()}</main>
 	<Footer />

@@ -74,7 +74,7 @@
 				></div>
 
 				<div
-					class="relative rotate-1 transform overflow-hidden rounded-3xl bg-transparent shadow-2xl shadow-brand/15"
+					class="relative rotate-1 transform overflow-hidden rounded-3xl bg-background shadow-2xl shadow-brand/15"
 				>
 					{#if heroImage}
 						<enhanced:img

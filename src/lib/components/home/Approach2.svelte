@@ -55,9 +55,9 @@
 
 					<!-- Target Audience -->
 					<div class="space-y-4 pt-4">
-						<h4 class="text-xs font-bold tracking-widest text-foreground/90 uppercase">
+						<h3 class="text-xs font-bold tracking-widest text-foreground/90 uppercase">
 							{i18n.t.approach.target_title}
-						</h4>
+						</h3>
 						<ul class="flex flex-wrap gap-3">
 							{#each i18n.t.approach.targets as t (t.id)}
 								<li
@@ -69,9 +69,9 @@
 						</ul>
 					</div>
 					<div class="space-y-4 pt-4">
-						<h4 class="text-xs font-bold tracking-widest text-foreground/90 uppercase">
+						<h3 class="text-xs font-bold tracking-widest text-foreground/90 uppercase">
 							{i18n.t.approach.dialogs_title}
-						</h4>
+						</h3>
 						<!-- Interaction Boxes (Dialog Triggers) -->
 						<div class="grid gap-4 pt-4 sm:grid-cols-2">
 							<!-- Dialog 1: Ericksoniano -->
