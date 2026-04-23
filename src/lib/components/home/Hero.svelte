@@ -47,12 +47,12 @@
 	<div class="container mx-auto px-6 py-12 lg:py-24">
 		<div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-12">
 			<!-- Text Content -->
-			<div class="z-10 lg:col-span-7">
-				<h1
-					class="mt-18 mb-8 font-display text-5xl leading-[1.05] text-brand md:text-6xl lg:mt-0 lg:text-7xl"
+			<div class="z-10 mb-18 lg:col-span-7">
+				<!--<h1
+					class="mb-8 font-display text-5xl leading-[1.05] text-brand italic md:text-6xl lg:mt-0 lg:text-7xl"
 				>
 					{i18n.t.hero.title}
-				</h1>
+				</h1>-->
 
 				<p class="mb-18 max-w-xl text-xl leading-relaxed font-light tracking-wide md:text-2xl">
 					{i18n.t.hero.subtitle}
