@@ -81,6 +81,7 @@
 							src={heroImage}
 							alt={i18n.t.hero.image_alt}
 							class="aspect-4/5 h-auto w-full rounded-3xl border-12 border-border/50 object-cover"
+							fetchpriority="high"
 						/>
 					{/if}
 
