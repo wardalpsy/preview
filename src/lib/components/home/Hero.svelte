@@ -12,15 +12,15 @@
 	};
 
 	// Dynamically import all images in the assets directory with the enhanced query
-	//const images = import.meta.glob<Picture>(
-	//	'$lib/assets/images/**/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp,svg}',
-	//	{
-	//		query: { enhanced: true },
-	//		import: 'default',
-	//		eager: true
-	//	}
-	//);
-	/*
+	const images = import.meta.glob<Picture>(
+		'$lib/assets/images/**/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp,svg}',
+		{
+			query: { enhanced: true },
+			import: 'default',
+			eager: true
+		}
+	);
+
 	// Image lookup with failsafe
 	const ULTIMATE_FALLBACK = `/src/lib/assets/images/failsafe/wardal-hero-en.jpg`;
 
@@ -40,7 +40,6 @@
 	};
 
 	const heroImage = $derived(getHeroImage());
-	*/
 </script>
 
 <div class="relative flex min-h-[90vh] items-center overflow-hidden bg-background pb-18">
