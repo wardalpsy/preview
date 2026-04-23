@@ -74,62 +74,109 @@
 		"dialog2_title": "Hipnoza",
 		"dialog2_content": "Hipnoza to stan świadomości charakteryzujący się głęboką koncentracją uwagi oraz ograniczoną świadomością bodźców zewnętrznych, co pozwala na zwiększoną podatność na sugestie.\n\nZdolność do zawężania i skupiania uwagi jest procesem naturalnym, mającym swoje podstawy neurobiologiczne.\n\nWiele codziennych czynności wiąże się z naturalną reakcją hipnotyczną – dzieje się tak na przykład podczas oglądania telewizji, czytania książki czy biegania.\n\nW psychoterapii hipnoza jest wykorzystywana, aby ułatwić proces zmiany, znajdować rozwiązania dopasowane do indywidualnych potrzeb, lepiej rozumieć siebie oraz uzyskać dostęp do nieświadomości i jej zasobów.\n\nLiteratura naukowa potwierdza skuteczność hipnozy w wielu dziedzinach medycznych i psychologicznych, takich jak: leczenie bólu, terapia uzależnień, zaburzenia lękowe i nastroju, problemy ze snem, praca z traumą.\n\nWe Włoszech hipnoza może być praktykowana wyłącznie przez psychologów, psychoterapeutów, lekarzy oraz dentystów posiadających specjalizację uznawaną przez MIUR (Ministerstwo Szkolnictwa Wyższego i Nauki)."
 	},
-
 	"services": {
-		"title": "Jak mogę Ci pomóc",
-		"subtitle": "Każda droga jest wyjątkowa. Wspólnie będziemy pracować nad zrozumieniem źródła Twojego cierpienia i znalezieniem zasobów, aby je pokonać.",
-		"not_found": "Nie możesz znaleźć tego, czego szukasz?",
-		"contact_me": "Skontaktuj się ze mną w sprawie spotkania wstępnego.",
+		"title": "Usługi",
+		"subtitle": "Profesjonalne wsparcie psychologiczne i terapeutyczne dostosowane do Twoich indywidualnych potrzeb i celów.",
+		"not_found": "Nie znajdujesz tego, czego szukasz?",
+		"contact_me": "Skontaktuj się ze mną w celu umówienia spotkania zapoznawczego.",
 		"items": [
 			{
-				"id": "anxiety",
-				"title": "Lęk i stres",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+				"id": "1",
+				"no_decoration": false,
+				"icon": "user",
+				"title": "Psychoterapia indywidualna",
+				"description": "Miejsce, w którym wspólnie pracujemy nad Twoim rozwojem i rozwiązaniem problemów, z którymi się mierzysz."
 			},
 			{
-				"id": "mood",
-				"title": "Depresja i nastrój",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+				"id": "2",
+				"no_decoration": false,
+				"icon": "play-football",
+				"title": "Praca nad osiągnięciami sportowymi i artystycznymi",
+				"description": "Spotkania skierowane do profesjonalnych sportowców i artystów, którzy chcą na nowo czerpać satysfakcję ze swoich dokonań i lepiej zarządzać własnym potencjałem. Sesje mogą odbywać się indywidualnie lub grupowo (w przypadku zespołów/drużyn)."
 			},
 			{
-				"id": "relationships",
-				"title": "Relacje i pary",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+				"id": "3",
+				"no_decoration": false,
+				"icon": "school",
+				"title": "Szkolenia i projekty edukacyjne",
+				"description": "Oferta skierowana do placówek oświatowych (szkół, ośrodków szkoleniowych itp.) mająca na celu kształcenie oraz podnoszenie świadomości kadry pedagogicznej w zakresie bio-psycho-społecznych uwarunkowań procesu uczenia się."
+			},
+			{
+				"id": "4",
+				"no_decoration": false,
+				"icon": "building-estate",
+				"title": "Konsultacje dla organizacji i firm",
+				"description": "Oferta skierowana do przedsiębiorstw, które pragną zadbać o dobrostan (well-being) swoich pracowników oraz poprawić atmosferę i kulturę organizacyjną."
+			},
+			{
+				"id": "5",
+				"no_decoration": false,
+				"icon": "brain",
+				"title": "Konsultacja psychologiczna",
+				"description": "Spotkanie dedykowane osobom, które chcą zrozumieć swoje aktualne potrzeby i dowiedzieć się, jaka forma wsparcia będzie dla nich najbardziej odpowiednia."
 			}
-		]
+		],
+		"disable_decorations": false,
+		"disable_icons": false
 	},
 	"faq": {
 		"title": "Najczęściej zadawane pytania",
-		"subtitle": "Wszystko, co musisz wiedzieć przed rozpoczęciem swojej drogi.",
+		"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus.",
 		"items": [
 			{
-				"id": "duration",
-				"question": "Jak długo trwa sesja psychoterapii?",
-				"answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+				"id": "1",
+				"question": "Jaka jest różnica między psychologiem-psychoterapeutą a psychiatrą?",
+				"answer": "Główna różnica dotyczy wykształcenia, sposobu prowadzenia interwencji terapeutycznych oraz uprawnień do przepisywania leków.\n\nPsycholog-psychoterapeuta to psycholog, który ukończył podyplomową specjalizację z psychoterapii. Pomaga on pacjentowi poprzez rozmowę (dialog terapeutyczny) oraz konkretne techniki terapeutyczne, pracując nad trudnościami emocjonalnymi, relacyjnymi czy psychologicznymi. Psychoterapeuta nie posiada uprawnień do przepisywania leków.\n\nPsychiatra jest lekarzem medycyny ze specjalizacją w psychiatrii. Zajmuje się zaburzeniami psychicznymi z perspektywy medycznej (przede wszystkim biologicznej). Stawia diagnozy kliniczne i posiada uprawnienia do przepisywania leków (farmakoterapii).\n\nObaj specjaliści bardzo często ze sobą współpracują, aby zapewnić pacjentowi kompleksowe wsparcie."
 			},
 			{
-				"id": "booking",
-				"question": "Jak mogę zarezerwować wizytę?",
-				"answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+				"id": "2",
+				"question": "Czy psychoterapia online jest skuteczna?",
+				"answer": "Tak, psychoterapia online jest skuteczna.\nNie jest to wybór „drugiej kategorii”, a jedynie inna forma kontaktu.\n\nLiteratura naukowa potwierdza, że o efektywności procesu terapeutycznego decyduje wiele czynników, takich jak na przykład relacja terapeutyczna. Jest to szczególna więź, która tworzy się między psychoterapeutą a pacjentem i buduje się niezależnie od miejsca, w którym się znajdujemy, czy też w którym odbywa się sesja.\n\nTerapia online jest doskonałym rozwiązaniem dla osób, które mają trudności z dotarciem do gabinetu lub często podróżują. Wybór tej formy spotkań pozwala zachować ciągłość procesu terapeutycznego, co jest kluczowe dla osiągnięcia trwałych efektów."
 			},
 			{
-				"id": "cancellation",
-				"question": "Czy można odwołać rezerwację?",
-				"answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-			},
-			{
-				"id": "online",
-				"question": "Czy sesje odbywają się online czy osobiście?",
-				"answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-			},
-			{
-				"id": "cost",
-				"question": "Jaki jest koszt sesji?",
-				"answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+				"id": "3",
+				"question": "Czy mogę umówić się na wizytę, jeśli nie mam pewności, na czym polega mój problem?",
+				"answer": "Tak, oczywiście.\n\nPierwsze spotkania są idealną przestrzenią do tego, abyśmy mogli przyjrzeć się Twoim doświadczeniom i wspólnie nadać im znaczenie. Nie musisz przychodzić z gotową diagnozą, moją rolą jest pomóc Ci uporządkować to, co czujesz, i zrozumieć, co dzieje się w Twoim życiu."
 			}
 		],
 		"ask_me": "Skontaktuj się ze mną bezpośrednio.",
 		"additional_question": "Masz więcej pytań?"
+	},
+	"testimonials": {
+		"enable_testimonials": true,
+		"title": "Wspólne Drogi",
+		"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus.",
+		"cta_button": "Zostaw opinię",
+		"modal_title": "Podziel się swoim doświadczeniem",
+		"modal_desc": "Twoje słowa mogą pomóc innym odnaleźć odwagę do szukania wsparcia. Wszystkie zgłoszenia są weryfikowane pod kątem ochrony prywatności przed ich opublikowaniem.",
+		"name_label": "Twoje imię lub inicjały",
+		"msg_label": "Twoje doświadczenie",
+		"anon_label": "Zachowaj anonimowość",
+		"anon_hint": "Jeśli wybierzesz tę opcję, Twoje imię zostanie ukryte w celu zapewnienia pełnej prywatności.",
+		"submit_btn": "Wyślij opinię",
+		"success_msg": "Dziękuję. Twoja opinia została przesłana do weryfikacji.",
+		"policy_link": "Zobacz naszą politykę prywatności",
+		"policy_info": "aby uzyskać więcej informacji.",
+		"list": [
+			{
+				"name": "K.",
+				"testimonial": "Serdecznie polecam panią Patrycję! Wspaniała i wyrozumiała specjalistka, tworzy bardzo komfortową atmosferę podczas sesji, bardzo mi pomogła.",
+				"isAnonymous": false
+			},
+			{
+				"name": "N.",
+				"testimonial": "Przemiła Pani, która daje poczucie wysłuchania i zrozumienia. Spotkanie redukuje stres. Bardzo polecam rozmowę z Panią Patrycją.",
+				"isAnonymous": false
+			},
+			{
+				"name": "A.",
+				"testimonial": "Bardzo rzeczowa rozmowa i pełne zrozumienie, oraz tematy do samodzielnej pracy i przemyślenia. Jestem bardzo wdzięczna!",
+				"isAnonymous": false
+			}
+		],
+		"anonymized": "(Anonimowo)",
+		"previous": "Poprzednia opinia",
+		"next": "Następna opinia"
 	},
 	"mid_hero": {
 		"h2_title": "Daj sobie tyle czasu, ile potrzebujesz",
@@ -144,6 +191,7 @@
 		"public_desc": "Sprawdź moją ogólną dostępność i skontaktuj się ze mną bezpośrednio w celu krótkiej wstępnej oceny."
 	},
 	"articles": {
+		"enabled": true,
 		"title": "Miejsce na refleksję",
 		"subtitle": "Artykuły i spostrzeżenia na temat dobrostanu psychicznego, rozwoju osobistego i zdrowia psychicznego.",
 		"cta": "Przeczytaj wszystkie artykuły",
@@ -156,27 +204,36 @@
 		"cta_call": "Zadzwoń teraz"
 	},
 	"footer": {
-		"description": "Psycholog i psychoterapeuta specjalizująca się w indywidualnych ścieżkach dla dobrostanu osobistego.",
-		"contact_title": "Kontakt",
-		"location": "Praktyka zawodowa - dostępna również online",
-		"legal_title": "Informacje prawne",
-		"quick_links": "Szybkie linki",
-		"rights": "Wszelkie prawa zastrzeżone.",
-		"vat": "NIP: 01234567890",
-		"register": "Wpisana do Rejestru Psychologów pod nr 12345",
-		"privacy": "Polityka prywatności",
-		"cookies": "Polityka cookies",
-		"accessibility": "Dostępność",
+		"specialties": "Psycholog - Psychoterapeuta - Hipnoterapeuta",
+		"specialization": "Ukończyła specjalizację z psychoterapii ericksonowskiej i z hipnozy we włoskim instytucie SIIPE w Rzymie",
+		"member": "Członkini Włoskiego Towarzystwa Hipnozy (SII)",
+		"contact_title": "Contact",
+		"legal_title": "Legal Information",
+		"quick_links": "Quick Links",
+		"rights": "All rights reserved.",
+		"vat": "VAT No: 08814610724",
+		"register": "Chartered with Apulian Register of Psychologists, n°",
+		"register_no": "7277",
+		"privacy": "Privacy Policy",
+		"cookies": "Cookie Policy",
+		"accessibility": "Accessibility",
 		"whatsapp_Online": true,
-		"whatsapp": "391234567890",
-		"whatsapp_message": "Skontaktuj się ze mną przez WhatsApp",
-		"email": "test@example.com",
+		"whatsapp": "393924759170",
+		"whatsapp_message": "Contact me with WhatsApp",
+		"pec_email": "wardal.patrycja@psypec.it",
+		"email": "wardal.psy@gmail.com",
 		"linkedin": "https://linkedin.com",
 		"twitter": "https://twitter.com",
 		"instagram": "https://instagram.com",
 		"facebook": "https://facebook.com",
-		"phone": "391234567890",
-		"external_link": "(otwiera się w nowej karcie)"
+		"phone": "+393924759170",
+		"phone_formatted": "+39 392 4759170",
+		"phone_aria": "Call Dr. Patrycja Wardal:",
+		"location": "Bari, 70124",
+		"location_info": "Sesje: stacjonarnie i online\nPo uprzednim umówieniu",
+		"nav_availability": "Availability",
+		"nav_reserved": "Appointments",
+		"oxy_credit": true
 	},
 	"consent": {
 		"legal_title": "Świadoma zgoda na leczenie",
@@ -241,27 +298,21 @@
 		"no_pass_info": "Nie masz hasła?"
 	},
 	"a11y": {
-		"skip_to_content": "Przejdź do treści",
+		"skip_to_content": "Przejdź do głównej treści",
 		"open_menu": "Otwórz menu",
 		"toggle_menu": "Przełącz menu",
 		"home": "Strona główna",
-		"loading_consent": "Ładowanie dokumentu zgody...",
-		"sig_canvas": "Pole podpisu odręcznego",
+		"loading_content": "Ładowanie treści...",
+		"back": "Powrót",
+		"back_home": "Wróć do strony głównej",
 		"close": "Zamknij",
-		"back_home": "Powrót do strony głównej",
-		"back": "Wstecz"
+		"sig_canvas": "Pole podpisu odręcznego",
+		"loading_consent": "Ładowanie dokumentu zgody...",
+		"external_link": "(otwiera się w nowej karcie)",
+		"articles": "Artykuły"
 	},
 	"seo": {
 		"title": "Dr Patrycja Wardal | Psycholog, Psychoterapeuta, Hipnoterapeuta"
-	},
-	"about": {
-		"image": "/$lib/assets/images/about-wardal.jpg",
-		"image_alt": "Patrycja Wardal w swoim gabinecie",
-		"badge": "O mnie",
-		"title": "Nazywam się Patrycja Wardal",
-		"subtitle": "Przyjmuję Cię w Twojej teraźniejszości, abyśmy mogli wspólnie budować Twoją przyszłość.",
-		"quote": "Rozmowa to początek zmiany.",
-		"cta": "Poznaj moją drogę"
 	},
 	"fulfillment": {
 		"error_msg": "Coś poszło nie tak",
@@ -310,46 +361,5 @@
 		"slot_select": "Wybierz datę i godzinę wizyty.",
 		"no_slots": "Brak dostępności. Skontaktuj się ze mną, aby uzyskać informacje.",
 		"slots": "Dostępne terminy"
-	},
-	"testimonials": {
-		"next": "Następna opinia",
-		"previous": "Poprzednia opinia",
-		"anonymized": "(Anonim)",
-		"list": [
-			{
-				"isAnonymous": false,
-				"testimonial": "Praca z Patrycją pomogła mi przejść przez okres głębokiego lęku. Jej podejście jest profesjonalne, a zarazem niezwykle ciepłe; po raz pierwszy poczułam się naprawdę wysłuchana.",
-				"name": "Sarah J."
-			},
-			{
-				"isAnonymous": true,
-				"testimonial": "Byłem sceptyczny wobec terapii, ale bezpieczna atmosfera stworzona tutaj pozwoliła mi zbadać moje wypalenie i odnaleźć drogę do samego siebie. Gorąco polecam.",
-				"name": "Michael Lowrey"
-			},
-			{
-				"isAnonymous": true,
-				"testimonial": "Sesje pomogły mi odbudować samoocenę po trudnym związku. Przestrzeń jest wolna od oceniania, a wzrost, który w sobie dostrzegam, jest ogromny.",
-				"name": "Elena M."
-			},
-			{
-				"isAnonymous": false,
-				"testimonial": "Bardzo skoncentrowane i oparte na dowodach podejście. Doceniam praktyczne narzędzia dostarczone do zarządzania codziennym stresem oraz jasną komunikację.",
-				"name": "David"
-			}
-		],
-		"policy_info": "aby uzyskać więcej informacji.",
-		"policy_link": "Zobacz naszą politykę prywatności",
-		"success_msg": "Dziękuję. Twoja opinia została wysłana do weryfikacji.",
-		"submit_btn": "Wyślij opinię",
-		"anon_hint": "Jeśli zaznaczone, Twoje imię zostanie ukryte, aby zapewnić pełną prywatność.",
-		"anon_label": "Zachowaj anonimowość",
-		"msg_label": "Twoje doświadczenie",
-		"name_label": "Twoje imię lub inicjały",
-		"modal_desc": "Twoje słowa mogą pomóc innym znaleźć odwagę, by szukać wsparcia. Wszystkie zgłoszenia są weryfikowane pod kątem prywatności przed publikacją.",
-		"modal_title": "Podziel się swoim doświadczeniem",
-		"cta_button": "Zostaw opinię",
-		"subtitle": "Głosy tych, którzy przeszli tę drogę, z poszanowaniem świętości przestrzeni terapeutycznej i prywatności.",
-		"title": "Wspólne drogi",
-		"enable_testimonials": true
 	}
 }

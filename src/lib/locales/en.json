@@ -123,7 +123,7 @@
 	},
 	"faq": {
 		"title": "Frequently Asked Questions",
-		"subtitle": "Lorem Ipsum Dolor",
+		"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus.",
 		"items": [
 			{
 				"id": "1",
@@ -155,6 +155,42 @@
 		"reserved_desc": "For current patients: Enter your password to book your session.",
 		"public_title": "New Patients",
 		"public_desc": "View my general availability and contact me directly for a brief initial assessment."
+	},
+	"testimonials": {
+		"enable_testimonials": true,
+		"title": "Shared Journeys",
+		"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus.",
+		"cta_button": "Leave a Testimonial",
+		"modal_title": "Share your experience",
+		"modal_desc": "Your words can help others find the courage to seek support. All submissions are reviewed for privacy before publishing.",
+		"name_label": "Your Name or Initials",
+		"msg_label": "Your Experience",
+		"anon_label": "Maintain Anonymity",
+		"anon_hint": "If selected, your name will be hidden to ensure total privacy.",
+		"submit_btn": "Submit Review",
+		"success_msg": "Thank you. Your testimonial has been sent for review.",
+		"policy_link": "View our privacy policy",
+		"policy_info": "for more information.",
+		"list": [
+			{
+				"name": "K.",
+				"testimonial": "Dr. Patrycja is a wonderful and understanding specialist; she creates a very comfortable atmosphere during the sessions and has helped me tremendously.",
+				"isAnonymous": false
+			},
+			{
+				"name": "N.",
+				"testimonial": "A very kind person who makes you feel truly heard and understood. The sessions reduce stress. I highly recommend a consultation with the doctor.",
+				"isAnonymous": false
+			},
+			{
+				"name": "A.",
+				"testimonial": "Very practical sessions with a sense of full understanding, along with insights for self-work and personal reflection. I am very grateful!",
+				"isAnonymous": false
+			}
+		],
+		"anonymized": "(Anonymous)",
+		"previous": "Previous testimonial",
+		"next": "Next testimonial"
 	},
 	"articles": {
 		"enabled": true,
@@ -290,42 +326,6 @@
 		"confirmed_appointment": "Your appointment has been successfully confirmed.",
 		"send_docs_heading": "Documents Sent",
 		"send_docs": "We've sent a copy of the informed consent to"
-	},
-	"testimonials": {
-		"enable_testimonials": true,
-		"title": "Shared Journeys",
-		"subtitle": "Lorem Ipsum Dolor",
-		"cta_button": "Leave a Testimonial",
-		"modal_title": "Share your experience",
-		"modal_desc": "Your words can help others find the courage to seek support. All submissions are reviewed for privacy before publishing.",
-		"name_label": "Your Name or Initials",
-		"msg_label": "Your Experience",
-		"anon_label": "Maintain Anonymity",
-		"anon_hint": "If selected, your name will be hidden to ensure total privacy.",
-		"submit_btn": "Submit Review",
-		"success_msg": "Thank you. Your testimonial has been sent for review.",
-		"policy_link": "View our privacy policy",
-		"policy_info": "for more information.",
-		"list": [
-			{
-				"name": "K.",
-				"testimonial": "Dr. Patrycja is a wonderful and understanding specialist; she creates a very comfortable atmosphere during the sessions and has helped me tremendously.",
-				"isAnonymous": false
-			},
-			{
-				"name": "N.",
-				"testimonial": "A very kind person who makes you feel truly heard and understood. The sessions reduce stress. I highly recommend a consultation with the doctor.",
-				"isAnonymous": false
-			},
-			{
-				"name": "A.",
-				"testimonial": "Very practical sessions with a sense of full understanding, along with insights for self-work and personal reflection. I am very grateful!",
-				"isAnonymous": false
-			}
-		],
-		"anonymized": "(Anonymous)",
-		"previous": "Previous testimonial",
-		"next": "Next terstimonial"
 	},
 	"cal": {
 		"slots": "Available times",

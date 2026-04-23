@@ -81,7 +81,7 @@
 						<enhanced:img
 							src={heroImage}
 							alt={i18n.t.hero.image_alt}
-							class="aspect-4/5 h-130 w-auto rounded-3xl border-12 border-border/50 sm:h-150 xl:h-160"
+							class="h-130 w-auto rounded-3xl border-12 border-border/50 sm:h-150 xl:h-160"
 							fetchpriority="high"
 						/>
 					{/if}

@@ -9,9 +9,9 @@
 		"approach": "Approccio",
 		"practices": "Aree di intervento",
 		"articles": "Articoli",
-		"contact": "Contatti",
 		"faq": "FAQ",
-		"testimonials": "Testimonianze"
+		"testimonials": "Testimonianze",
+		"contact": "Contatti"
 	},
 	"lang_switch": {
 		"flags": true,
@@ -31,19 +31,19 @@
 	"dummy": "",
 	"approach": {
 		"title": "L'Approccio Terapeutico",
-		"image": "/src/lib/assets/images/patrycja-nikki.jpg",
-		"image_alt": "Dr. Patrycja Wardal with her co-therapist dog, Nikki",
 		"subtitle": "Un viaggio collaborativo dove la tua esperienza incontra la mia competenza professionale in un ambiente di ascolto protetto.",
+		"image": "/src/lib/assets/images/patrycja-nikki.jpg",
+		"image_alt": "Dott.ssa Patrycja Wardal con il suo cane co-terapeuta, Nikki",
 		"quote": "Nella stanza di terapia potresti incontrare anche la mia co-terapeuta Nikki, un cane che interviene quando necessario.",
 		"target_title": "Lavoro principalmente con",
 		"paragraphs": [
 			{
 				"id": "1",
-				"paragraph": "Considero l'incontro terapeutico come un viaggio, a volte impegnativo e turbulento, ma sempre condiviso. Il mio ruolo in questo viaggio è quello di esserci con te e aiutarti a scoprire e rafforzare le tue risorse. "
+				"paragraph": "Considero l'incontro terapeutico come un viaggio, a volte impegnativo e turbulento, ma sempre condiviso. Il mio ruolo in questo viaggio è quello di esserci con te e aiutarti a scoprire e rafforzare le tue risorse."
 			},
 			{
 				"id": "2",
-				"paragraph": "Credo che tu possieda già le risorse necessarie per superare le tue difficoltà, anche se a volte non ne sei ancora consapevole. "
+				"paragraph": "Credo che tu possieda già le risorse necessarie per superare le tue difficoltà, anche se a volte non ne sei ancora consapevole."
 			},
 			{
 				"id": "3",
@@ -74,41 +74,54 @@
 		"dialog2_title": "Ipnosi",
 		"dialog2_content": "L'ipnosi è uno stato di coscienza che implica attenzione focalizzata e ridotta consapevolezza degli stimoli esterni, caratterizzato da una maggiore capacità di rispondere alle suggestioni. La capacità di restringere e concentrare la nostra attenzione è un processo naturale e ha basi neurobiologiche.\nEsistono molte attività quotidiane nella vita di ogni persona che comprendono una risposta ipnotica basata sull'attenzione focalizzata, come ad esempio: guardare la televisione, leggere o correre.\n\nIn psicoterapia, l'ipnosi viene utilizzata per facilitare il cambiamento, trovare soluzioni specifiche per il soggetto, esplorare e conoscere se stessi, accedere al proprio inconscio e alle proprie risorse.\nLa letteratura scientifica conferma l'efficacia dell'ipnosi in vari ambiti, sia medici che psicologici, come per esempio nella gestione del dolore, nel trattare dipendenze, ansia, disturbi dell'umore, problemi del sonno, traumi e tanti altri.\n\nL'ipnosi (in Italia) può essere svolta solo da psicologi, psicoterapeuti, medici e odontoiatri in possesso di una specifica specializzazione riconosciuta dal MIUR."
 	},
-
 	"services": {
-		"title": "Come Posso Aiutarti",
-		"subtitle": "Ogni percorso è unico. Insieme lavoreremo per comprendere l'origine del tuo disagio e trovare le risorse per superarlo.",
+		"title": "Servizi",
+		"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus.",
 		"not_found": "Non trovi quello che cerchi?",
 		"contact_me": "Contattami per un incontro conoscitivo.",
+		"disable_decorations": false,
+		"disable_icons": false,
 		"items": [
 			{
-				"id": "anxiety",
+				"id": "1",
+				"no_decoration": false,
+				"icon": "user",
+				"title": "Psicoterapia individuale",
+				"description": "Uno spazio dedicato al lavoro individuale sul superare delle difficoltà che ti portano in terapia e sulla tua crescita personale."
+			},
+			{
+				"id": "2",
+				"no_decoration": false,
+				"icon": "play-football",
+				"title": "Interventi sulla performance sportiva e/o artistica",
+				"description": "Incontri dedicati ad atleti e artisti professionisti che sentono il bisogno di riappropriarsi della propria performance. Possono essere individuali o di gruppo in caso di attività di squadra."
+			},
+			{
+				"id": "3",
+				"no_decoration": false,
+				"icon": "school",
+				"title": "Interventi nell'ambito della formazione",
+				"description": "Rivolti agli enti di formazione (scuole, centri di formazione, ecc.) per formare e sensibilizzare i docenti sull'apprendimento e le sue dinamiche bio-psico-sociali."
+			},
+			{
+				"id": "4",
+				"no_decoration": false,
+				"icon": "building-estate",
+				"title": "Interventi nell'ambito del lavoro e delle organizzazioni",
+				"description": "Rivolti alle aziende che vogliono tutelare il benessere dei propri dipendenti e/o migliorare il clima aziendale."
+			},
+			{
+				"id": "5",
 				"no_decoration": false,
 				"icon": "brain",
-				"title": "Ansia e Stress",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-			},
-			{
-				"id": "mood",
-				"no_decoration": false,
-				"icon": "mood-sad",
-				"title": "Depressione e Umore",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-			},
-			{
-				"id": "relationships",
-				"no_decoration": false,
-				"icon": "users",
-				"title": "Relazioni e Coppia",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+				"title": "Consulenza psicologica",
+				"description": "Dedicata alle persone che stanno cercando di capire quale forma di aiuto psicologico possa essere più adatta alla loro situazione attuale."
 			}
 		]
 	},
 	"faq": {
 		"title": "Domande Frequenti",
-		"subtitle": "Lorem Ipsum Dolor",
-		"additional_question": "Hai altre domande?",
-		"ask_me": "Contattami direttamente.",
+		"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus.",
 		"items": [
 			{
 				"id": "1",
@@ -125,7 +138,9 @@
 				"question": "Posso fissare l'appuntamento anche se non ho chiaro cosa ho?",
 				"answer": "Sì, certo! \nAnzi, proprio durante i primi incontri sarà possibile dare forma e significato alle tue esperienze personali."
 			}
-		]
+		],
+		"additional_question": "Hai altre domande?",
+		"ask_me": "Contattami direttamente."
 	},
 	"mid_hero": {
 		"h2_title": "Prenditi tutto il tempo che ti occorre",
@@ -142,7 +157,7 @@
 	"testimonials": {
 		"enable_testimonials": true,
 		"title": "Dicono di me",
-		"subtitle": "Lorem Ipsum Dolor",
+		"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus.",
 		"cta_button": "Lascia una Testimonianza",
 		"modal_title": "Condividi la tua esperienza",
 		"modal_desc": "Le tue parole possono aiutare altri a trovare il coraggio di cercare supporto. Tutte le testimonianze vengono revisionate per la privacy prima della pubblicazione.",
@@ -154,13 +169,10 @@
 		"success_msg": "Grazie. La tua testimonianza è stata inviata per la revisione.",
 		"policy_link": "Visualizza la nostra informativa sulla privacy",
 		"policy_info": "per ulteriori informazioni.",
-		"anonymized": "(Anonimo)",
-		"previous": "Testimonianza precedente",
-		"next": "Prossima testimonianza",
 		"list": [
 			{
 				"name": "K.",
-				"testimonial": "La dott.ssa Patrycja è una specialista meravigliosa e comprensiva, crea un’atmosfera molto confortevole durante le sedute e mi ha aiutato moltissimo.",
+				"testimonial": "La dott.ssa Patrycja è una specialista meravigliosa e comprensiva, crea un'atmosfera molto confortevole durante le sedute e mi ha aiutato moltissimo.",
 				"isAnonymous": false
 			},
 			{
@@ -173,9 +185,13 @@
 				"testimonial": "Sedute molto concrete con la sensazione di piena comprensione, oltre a spunti per un lavoro autonomo e riflessioni personali. Sono molto grata!",
 				"isAnonymous": false
 			}
-		]
+		],
+		"anonymized": "(Anonimo)",
+		"previous": "Testimonianza precedente",
+		"next": "Prossima testimonianza"
 	},
 	"articles": {
+		"enabled": true,
 		"title": "Spazio di Riflessione",
 		"subtitle": "Articoli e approfondimenti sul benessere psicologico, la crescita personale e la salute mentale.",
 		"cta": "Leggi tutti gli articoli",
@@ -188,28 +204,33 @@
 		"cta_call": "Chiamami ora"
 	},
 	"footer": {
-		"description": "Psicologa e Psicoterapeuta specializzata in percorsi individuali per il benessere personale.",
+		"specialties": "Psicologa - Psicoterapeuta - Ipnoterapeuta",
+		"specialization": "Specializzata in Psicoterapia Ericksoniana e Ipnosi presso la SIIPE, Roma",
+		"member": "Membro della Società Italiana di Ipnosi",
 		"contact_title": "Contatti",
-		"location": "Studio Professionale - Disponibile anche online",
 		"legal_title": "Informazioni Legali",
 		"quick_links": "Link Rapidi",
 		"rights": "Tutti i diritti riservati.",
 		"vat": "P. IVA: 08814610724",
-		"register": "Iscritta all'Ordine degli Psicologi n. 12345",
+		"register": "Iscritta all'Ordine degli Psicologi della Puglia, n°",
+		"register_no": "7277",
 		"privacy": "Privacy Policy",
 		"cookies": "Cookie Policy",
 		"accessibility": "Accessibilità",
 		"whatsapp_Online": true,
 		"whatsapp": "393924759170",
 		"whatsapp_message": "Contattami su WhatsApp",
-		"email": "test@example.com",
+		"pec_email": "wardal.patrycja@psypec.it",
+		"email": "wardal.psy@gmail.com",
 		"linkedin": "https://linkedin.com",
 		"twitter": "https://twitter.com",
 		"instagram": "https://instagram.com",
 		"facebook": "https://facebook.com",
-		"phone": "393924759170",
-		"external_link": "(si apre in una nuova scheda)",
-		"pec_email": "wardal.patrycja@psypec.it",
+		"phone": "+393924759170",
+		"phone_formatted": "+39 392 4759170",
+		"phone_aria": "Chiama la dott.ssa Patrycja Wardal:",
+		"location": "Bari, 70124",
+		"location_info": "Sessioni in presenza e online\nSolo su appuntamento",
 		"nav_availability": "Disponibilità",
 		"nav_reserved": "Appuntamenti",
 		"oxy_credit": true
@@ -268,38 +289,30 @@
 		"section_policy_link": "privacy policy",
 		"section_policy_info": "Utilizzando il modulo accetti la nostra",
 		"section_send_message": "Invia Messaggio",
-		"section_sending": "Invio in corso...",
-		"nav_availability": "Disponibilita",
-		"nav_reserved": "Appuntamenti"
+		"section_sending": "Invio in corso..."
 	},
 	"reserved": {
 		"title": "Area Riservata Pazienti",
 		"info": "Inserisci la password che ti è stata fornita per accedere alla prenotazione delle sessioni.",
-		"no_pass_info_link": "Verifica la disponibilità e contattami.",
-		"no_pass_info": "Non hai una password?"
+		"no_pass_info": "Non hai una password?",
+		"no_pass_info_link": "Verifica la disponibilità e contattami."
 	},
 	"a11y": {
 		"skip_to_content": "Vai al contenuto principale",
-		"open_menu": "Apri Menu",
-		"toggle_menu": "Attiva/Disattiva Menu",
+		"open_menu": "Apri il menu",
+		"toggle_menu": "Attiva/disattiva menu",
 		"home": "Home",
-		"loading_consent": "Caricamento documento di consenso...",
-		"sig_canvas": "Riquadro firma autografa",
-		"close": "Chiudi",
+		"loading_content": "Caricamento contenuti...",
+		"back": "Indietro",
 		"back_home": "Torna alla Home",
-		"back": "Indietro"
+		"close": "Chiudi",
+		"sig_canvas": "Riquadro per firma autografa",
+		"loading_consent": "Caricamento del modulo di consenso...",
+		"external_link": "(si apre in una nuova scheda)",
+		"articles": "Articoli"
 	},
 	"seo": {
 		"title": "Dr.ssa Patrycja Wardal | Psicologa, Psicoterapeuta, Ipnoterapeuta"
-	},
-	"about": {
-		"image": "/$lib/assets/images/about-wardal.jpg",
-		"image_alt": "Patrycja Wardal nel suo studio",
-		"badge": "Su di me",
-		"title": "Mi chiamo Patrycja Wardal",
-		"subtitle": "Accoglierti nel tuo momento presente per costruire insieme il tuo futuro.",
-		"quote": "Parlare è l'inizio del cambiamento.",
-		"cta": "Scopri il mio percorso"
 	},
 	"fulfillment": {
 		"error_msg": "Qualcosa è andato storto",
@@ -312,41 +325,41 @@
 		"send_docs_heading": "Documenti Inviati",
 		"send_docs": "Abbiamo inviato una copia del consenso informato a"
 	},
+	"cal": {
+		"slots": "Orari disponibili",
+		"no_slots": "Nessuna disponibilità. Contattami per informazioni.",
+		"slot_select": "Seleziona una data e un'ora per il tuo appuntamento.",
+		"select_day": "Seleziona un giorno per vedere gli orari disponibili.",
+		"timezone": "Fuso orario:",
+		"slot_request": "Richiesta per",
+		"slot_appointment": "Appuntamento per",
+		"proceed": "Procedi",
+		"proceed_payment": "Procedi al pagamento",
+		"time_preposition": "alle"
+	},
 	"validation": {
-		"too_long": "Deve contenere al massimo {max} caratteri",
-		"too_short": "Deve contenere almeno {min} caratteri",
-		"password": {
-			"required": "La password è obbligatoria"
+		"firstName": {
+			"required": "Il nome è obbligatorio",
+			"min": "Il nome deve contenere almeno {min} caratteri"
 		},
-		"message": {
-			"max": "Il messaggio deve contenere al massimo {max} caratteri",
-			"min": "Il messaggio deve contenere almeno {min} caratteri"
-		},
-		"subject": {
-			"min": "L'oggetto deve contenere almeno {min} caratteri"
+		"lastName": {
+			"required": "Il cognome è obbligatorio",
+			"min": "Il cognome deve contenere almeno {min} caratteri"
 		},
 		"email": {
 			"invalid": "Indirizzo email non valido"
 		},
-		"lastName": {
-			"min": "Il cognome deve contenere almeno {min} caratteri",
-			"required": "Il cognome è obbligatorio"
+		"subject": {
+			"min": "L'oggetto deve contenere almeno {min} caratteri"
 		},
-		"firstName": {
-			"min": "Il nome deve contenere almeno {min} caratteri",
-			"required": "Il nome è obbligatorio"
-		}
-	},
-	"cal": {
-		"time_preposition": "alle",
-		"proceed_payment": "Procedi al pagamento",
-		"proceed": "Procedi",
-		"slot_appointment": "Appuntamento per",
-		"slot_request": "Richiesta per",
-		"timezone": "Fuso orario:",
-		"select_day": "Seleziona un giorno per vedere gli orari disponibili.",
-		"slot_select": "Seleziona una data e un'ora per il tuo appuntamento.",
-		"no_slots": "Nessuna disponibilità. Contattami per informazioni.",
-		"slots": "Orari disponibili"
+		"message": {
+			"min": "Il messaggio deve contenere almeno {min} caratteri",
+			"max": "Il messaggio deve contenere al massimo {max} caratteri"
+		},
+		"password": {
+			"required": "La password è obbligatoria"
+		},
+		"too_short": "Deve contenere almeno {min} caratteri",
+		"too_long": "Deve contenere al massimo {max} caratteri"
 	}
 }
