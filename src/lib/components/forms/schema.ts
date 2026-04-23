@@ -4,21 +4,21 @@ import type { TranslationSchema } from '$lib/i18n.svelte';
 // Contact Form
 export const getContactSchema = (t: TranslationSchema) =>
 	z.object({
-		firstName: z.string().min(2, t.contact?.first_name_required || 'First name is required'),
-		lastName: z.string().min(2, t.contact?.last_name_required || 'Last name is required'),
-		email: z.string().email(t.contact?.invalid_email || 'Invalid email address'),
+		firstName: z.string().min(2, t.validation.firstName.required),
+		lastName: z.string().min(2, t.validation.lastName.required),
+		email: z.string().email(t.validation.email.invalid),
 		phone: z.string().optional(),
-		subject: z.string().min(5, t.contact?.subject_min || 'Subject must be at least 5 characters'),
+		subject: z.string().min(5, t.validation.subject.min.replace('{min}', '5')),
 		message: z
 			.string()
-			.min(10, t.contact?.message_min || 'Message must be at least 10 characters')
-			.max(1000, t.contact?.message_max || 'Message must be shorter than 1000 characters')
+			.min(10, t.validation.message.min.replace('{min}', '10'))
+			.max(1000, t.validation.message.max.replace('{max}', '1000'))
 	});
 
 // Reserved Area Password
 export const getPasswordSchema = (t: TranslationSchema) =>
 	z.object({
-		password: z.string().min(1, t.reserved?.password_required || 'Password is required')
+		password: z.string().min(1, t.validation.password.required)
 	});
 
 // Testimonials
@@ -26,39 +26,39 @@ export const getTestimonialSchema = (t: TranslationSchema) =>
 	z.object({
 		name: z
 			.string()
-			.max(50, t.testimonials?.name_max || "Name shouldn't be longer than 50 characters")
+			.max(50, t.validation.too_long.replace('{max}', '50'))
 			.optional(),
 		testimonial: z
 			.string()
-			.min(10, t.testimonials?.message_min || 'Message must be at least 10 characters')
-			.max(500, t.testimonials?.message_max || 'Message must be shorter than 500 characters'),
+			.min(10, t.validation.message.min.replace('{min}', '10'))
+			.max(500, t.validation.message.max.replace('{max}', '500')),
 		isAnonymous: z.boolean().default(false)
 	});
 
 // Contact Section (Home)
 export const getContactSectionSchema = (t: TranslationSchema) =>
 	z.object({
-		name: z.string().min(2, t.contact?.name_required || 'Name is required'),
-		email: z.string().email(t.contact?.invalid_email || 'Invalid email address'),
+		name: z.string().min(2, t.validation.name.required),
+		email: z.string().email(t.validation.email.invalid),
 		message: z
 			.string()
-			.min(10, t.contact?.message_min || 'Message must be at least 10 characters')
-			.max(500, t.contact?.message_max || 'Message must be shorter than 500 characters')
+			.min(10, t.validation.message.min.replace('{min}', '10'))
+			.max(500, t.validation.message.max.replace('{max}', '500'))
 	});
 
 // Consent Form
 export const getConsentSchema = (t: TranslationSchema) =>
 	z
 		.object({
-			firstName: z.string().min(2, t.contact?.first_name_required || 'First name is required'),
-			lastName: z.string().min(2, t.contact?.last_name_required || 'Last name is required'),
-			email: z.string().email(t.contact?.invalid_email || 'Invalid email address'),
+			firstName: z.string().min(2, t.validation.firstName.required),
+			lastName: z.string().min(2, t.validation.lastName.required),
+			email: z.string().email(t.validation.email.invalid),
 			phone: z.string().optional(),
 			signature: z.string().optional(),
 			typedSignature: z.string().optional(),
 			signatureType: z.enum(['draw', 'type']).default('draw'),
 			isRead: z.boolean().refine((v) => v === true, {
-				message: t.consent?.read_required || 'Please confirm that you have read the consent.'
+				message: t.validation.consent.read_required
 			})
 		})
 		.refine(
@@ -66,7 +66,7 @@ export const getConsentSchema = (t: TranslationSchema) =>
 				return data.signature || data.typedSignature;
 			},
 			{
-				message: t.consent?.signature_required || 'Please provide a signature',
+				message: t.validation.consent.signature_required,
 				path: ['signature']
 			}
 		);

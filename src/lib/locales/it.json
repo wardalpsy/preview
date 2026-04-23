@@ -233,9 +233,10 @@
 		"location_info": "Sessioni in presenza e online\nSolo su appuntamento",
 		"nav_availability": "Disponibilità",
 		"nav_reserved": "Appuntamenti",
+		"external_link": "(si apre in una nuova scheda)",
 		"oxy_credit": true
-	},
-	"consent": {
+		},
+		"consent": {
 		"legal_title": "Consenso Informato al Trattamento",
 		"legal_text_short": "Si prega di prendere visione del documento di consenso informato prima di firmare.",
 		"label_name": "Nome e Cognome",
@@ -261,10 +262,11 @@
 		"badge_step3": "Pagamento",
 		"appointment_overview": "Riepilogo Appuntamento",
 		"appointment_details": "Dettagli Appuntamento",
-		"proceed_payment": "Procedi al Pagamento",
-		"edit_details": "Modifica Dettagli"
-	},
-	"contact": {
+		"proceed_payment": "Proceed to Payment",
+		"edit_details": "Modifica Dettagli",
+		"error_fill_all": "Si prega di compilare tutti i campi e firmare il modulo.",
+		"access": "Accesso"
+		},	"contact": {
 		"subject": "Oggetto",
 		"first_name": "Nome",
 		"last_name": "Cognome",
@@ -357,9 +359,15 @@
 			"max": "Il messaggio deve contenere al massimo {max} caratteri"
 		},
 		"password": {
-			"required": "La password è obbligatoria"
+		        "required": "La password è obbligatoria"
 		},
-		"too_short": "Deve contenere almeno {min} caratteri",
-		"too_long": "Deve contenere al massimo {max} caratteri"
+		"name": {
+		        "required": "Il nome è obbligatorio"
+		},
+		"consent": {
+		        "read_required": "Per favore conferma di aver letto il consenso.",
+		        "signature_required": "Per favore inserisci una firma"
+		},
+		"too_short": "Deve contenere almeno {min} caratteri",		"too_long": "Deve contenere al massimo {max} caratteri"
 	}
 }

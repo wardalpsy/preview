@@ -235,6 +235,7 @@
 		"location_info": "In-person and Online Sessions\nBy appointment only",
 		"nav_availability": "Availability",
 		"nav_reserved": "Appointments",
+		"external_link": "(opens in a new tab)",
 		"oxy_credit": true
 	},
 	"consent": {
@@ -264,7 +265,9 @@
 		"appointment_overview": "Appointment Overview",
 		"appointment_details": "Appointment Details",
 		"proceed_payment": "Proceed to Payment",
-		"edit_details": "Edit Details"
+		"edit_details": "Edit Details",
+		"error_fill_all": "Please fill in all fields and sign the form.",
+		"access": "Access"
 	},
 	"contact": {
 		"subject": "Subject",
@@ -360,6 +363,13 @@
 		},
 		"password": {
 			"required": "Password is required"
+		},
+		"name": {
+			"required": "Name is required"
+		},
+		"consent": {
+			"read_required": "Please confirm that you have read the consent.",
+			"signature_required": "Please provide a signature"
 		},
 		"too_short": "Must be at least {min} characters",
 		"too_long": "Must be at most {max} characters"

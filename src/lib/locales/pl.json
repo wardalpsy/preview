@@ -233,9 +233,10 @@
 		"location_info": "Sesje: stacjonarnie i online\nPo uprzednim umówieniu",
 		"nav_availability": "Availability",
 		"nav_reserved": "Appointments",
+		"external_link": "(otwiera się w nowej karcie)",
 		"oxy_credit": true
-	},
-	"consent": {
+		},
+		"consent": {
 		"legal_title": "Świadoma zgoda na leczenie",
 		"legal_text_short": "Prosimy o zapoznanie się z dokumentem świadomej zgody przed podpisaniem.",
 		"label_name": "Imię i nazwisko",
@@ -262,9 +263,10 @@
 		"appointment_overview": "Przegląd wizyty",
 		"appointment_details": "Szczegóły wizyty",
 		"proceed_payment": "Przejdź do płatności",
-		"edit_details": "Edytuj szczegóły"
-	},
-	"contact": {
+		"edit_details": "Edytuj szczegóły",
+		"error_fill_all": "Proszę wypełnić wszystkie pola i podpisać formularz.",
+		"access": "Dostęp"
+		},	"contact": {
 		"subject": "Temat",
 		"first_name": "Imię",
 		"last_name": "Nazwisko",
@@ -329,10 +331,16 @@
 		"too_long": "Musi mieć maksymalnie {max} znaków",
 		"too_short": "Musi mieć co najmniej {min} znaki",
 		"password": {
-			"required": "Hasło jest wymagane"
+		        "required": "Hasło jest wymagane"
 		},
-		"message": {
-			"max": "Wiadomość może mieć maksymalnie {max} znaków",
+		"name": {
+		        "required": "Imię jest wymagane"
+		},
+		"consent": {
+		        "read_required": "Proszę potwierdzić przeczytanie zgody.",
+		        "signature_required": "Proszę złożyć podpis"
+		},
+		"message": {			"max": "Wiadomość może mieć maksymalnie {max} znaków",
 			"min": "Wiadomość musi mieć co najmniej {min} znaki"
 		},
 		"subject": {

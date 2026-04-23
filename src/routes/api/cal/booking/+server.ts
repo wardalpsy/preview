@@ -54,7 +54,7 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 			body: JSON.stringify(requestBody)
 		});
 
-		const calResult = await calResponse.json();
+		const calResult = (await calResponse.json()) as any;
 		
 		if (!calResponse.ok) {
 			console.error('Cal.com booking error:', calResult);

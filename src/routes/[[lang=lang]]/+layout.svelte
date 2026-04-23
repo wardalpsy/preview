@@ -16,30 +16,33 @@
 		document.documentElement.lang = i18n.currentLang;
 	});
 
-	// Lazy load Lenis for better performance
-	onMount(async () => {
-		const { default: Lenis } = await import('lenis');
-
-		const lenis = new Lenis({
-			lerp: 0.07,
-			wheelMultiplier: 1,
-			infinite: false,
-			gestureOrientation: 'vertical',
-			smoothWheel: true
-		});
-
+	onMount(() => {
+		let lenis: any;
 		let rafId: number;
 
-		function raf(time: number) {
-			lenis.raf(time);
-			rafId = requestAnimationFrame(raf);
-		}
+		const initLenis = async () => {
+			const { default: Lenis } = await import('lenis');
+			lenis = new Lenis({
+				lerp: 0.07,
+				wheelMultiplier: 1,
+				infinite: false,
+				gestureOrientation: 'vertical',
+				smoothWheel: true
+			});
 
-		rafId = requestAnimationFrame(raf);
+			function raf(time: number) {
+				lenis.raf(time);
+				rafId = requestAnimationFrame(raf);
+			}
+
+			rafId = requestAnimationFrame(raf);
+		};
+
+		initLenis();
 
 		return () => {
-			lenis.destroy();
-			cancelAnimationFrame(rafId);
+			if (lenis) lenis.destroy();
+			if (rafId) cancelAnimationFrame(rafId);
 		};
 	});
 </script>
