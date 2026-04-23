@@ -12,15 +12,15 @@
 	};
 
 	// Dynamically import all images in the assets directory with the enhanced query
-	const images = import.meta.glob<Picture>(
-		'$lib/assets/images/**/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp,svg}',
-		{
-			query: { enhanced: true },
-			import: 'default',
-			eager: true
-		}
-	);
-
+	//const images = import.meta.glob<Picture>(
+	//	'$lib/assets/images/**/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp,svg}',
+	//	{
+	//		query: { enhanced: true },
+	//		import: 'default',
+	//		eager: true
+	//	}
+	//);
+	/*
 	// Image lookup with failsafe
 	const ULTIMATE_FALLBACK = `/src/lib/assets/images/failsafe/wardal-hero-en.jpg`;
 
@@ -40,6 +40,7 @@
 	};
 
 	const heroImage = $derived(getHeroImage());
+	*/
 </script>
 
 <div class="relative flex min-h-[90vh] items-center overflow-hidden bg-background pb-18">
@@ -76,14 +77,14 @@
 				<div
 					class="relative rotate-1 transform overflow-hidden rounded-3xl bg-background shadow-2xl shadow-brand/15"
 				>
-					{#if heroImage}
+					<!--{#if heroImage}
 						<enhanced:img
 							src={heroImage}
 							alt={i18n.t.hero.image_alt}
 							class="aspect-4/5 h-auto w-full rounded-3xl border-12 border-border/50 object-cover"
 							fetchpriority="high"
 						/>
-					{/if}
+					{/if}-->
 
 					<!-- Quote Badge -->
 					{#if i18n.t.hero.quote}
