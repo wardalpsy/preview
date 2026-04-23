@@ -75,14 +75,16 @@
 					class="absolute -top-12 -right-12 h-64 w-64 rounded-full bg-brand opacity-20 mix-blend-multiply blur-3xl filter"
 				></div>
 				<div
-					class="relative mx-auto w-fit rotate-1 transform overflow-hidden rounded-3xl bg-background shadow-2xl shadow-brand/15"
+					class="relative mx-auto h-130 w-fit rotate-1 transform overflow-hidden rounded-3xl border-12 border-border/50 bg-background shadow-2xl shadow-brand/15 sm:h-150 xl:h-160"
 				>
 					{#if heroImage}
 						<enhanced:img
 							src={heroImage}
 							alt={i18n.t.hero.image_alt}
-							class="h-130 w-auto rounded-3xl border-12 border-border/50 sm:h-150 xl:h-160"
+							class="h-full w-auto rounded-2xl object-cover"
 							fetchpriority="high"
+							width="768"
+							height="1000"
 						/>
 					{/if}
 
