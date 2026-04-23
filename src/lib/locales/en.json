@@ -7,11 +7,11 @@
 	"nav": {
 		"about": "About me",
 		"approach": "Approach",
-		"practices": "Practices",
+		"practices": "Services",
 		"articles": "Articles",
-		"contact": "Contact",
 		"faq": "FAQ",
-		"testimonials": "Testimonials"
+		"testimonials": "Testimonials",
+		"contact": "Contact"
 	},
 	"lang_switch": {
 		"flags": true,
@@ -20,21 +20,21 @@
 		"label_PL": "Polski"
 	},
 	"hero": {
-		"image": "/src/lib/assets/images/wardal-hero-en.jpg",
+		"image": "/src/lib/assets/images/wardalpsy-hero-en.jpg",
 		"title": "Psychotherapy and Hypnotherapy",
 		"subtitle": "Online and Onsite in Bari, Italy",
 		"cta_primary": "Begin your therapeutic journey",
 		"cta_secondary": "My approach",
-		"image_alt": "A illustration by Charlie Mackesy featuring a young boy and a mole sitting and looking at a tiny green sprout. The text reads: Be patient with yourself. Shouting at a flower won't make it bloom.",
+		"image_alt": "A gentle watercolor illustration showing a blonde girl sitting on the ground, facing a small black and tan puppy. Between them is a delicate purple plant. Below the illustration, the text reads: A flower needs tending and its own time to bloom.",
 		"quote": "Lorem Ipsum Dolor"
 	},
 	"dummy": "",
 	"approach": {
 		"title": "The Therapeutic Approach",
 		"image": "/src/lib/assets/images/patrycja-nikki.jpg",
+		"image_alt": "Dr. Patrycja Wardal with her co-therapist dog, Nikki",
 		"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus.",
-		"nikki_note": "In the therapy room, you may also meet my co-therapist Nikki, a dog who intervenes when needed.",
-		"nikki_caption": "With Nikki, my co-therapist",
+		"quote": "In the therapy room, you may also meet my co-therapist Nikki, a dog who intervenes when needed.",
 		"target_title": "I mainly work with",
 		"paragraphs": [
 			{
@@ -65,11 +65,13 @@
 			}
 		],
 		"dialogs_title": "My clinical practice is based on",
+		"dialog1_trigger_title": "Approach",
 		"dialog1_trigger": "Ericksonian psychotherapy",
-		"dialog1_title": "Approach",
+		"dialog1_title": "Ericksonian psychotherapy",
 		"dialog1_content": "According to the Ericksonian approach, change occurs through the individual's active participation in the sessions, regardless of conscious understanding or insight. This allows them, through their own experience, to formulate positive goals and focus on solutions and possibilities, thereby enhancing their sensitivity, expressiveness, and flexibility.\n\nThe therapist is future-oriented and focused on the creative reorganisation of the individual's responses, with the aim of optimising their development and growth.\n\nThe therapist is active and responsible for recognising and valuing the uniqueness of each person, as well as for creating the conditions for change.The therapist utilises the person's resources and everything the individual brings into therapy. This includes the use of humour, paradox, and various indirect techniques, such as storytelling and metaphors.",
+		"dialog2_trigger_title": "Method",
 		"dialog2_trigger": "Hypnosis",
-		"dialog2_title": "Method",
+		"dialog2_title": "Hypnosis",
 		"dialog2_content": "Hypnosis is a state of consciousness involving focused attention and reduced awareness of external stimuli, characterised by an enhanced capacity to respond to suggestions. The ability to narrow and concentrate our attention is a natural process with neurobiological basis.\nMany everyday activities involve a hypnotic response, such as watching TV, reading, or running.\n\nIn psychotherapy, hypnosis is used to facilitate change, find tailored solutions, explore and understand oneself, and access the unconscious and its resources.Scientific literature confirms the effectiveness of hypnosis in various medical and psychological fields, such as pain management, and the treatment of addictions, anxiety, mood disorders, sleep issues, and trauma.\n\nIn Italy, hypnosis may only be practised by psychologists, psychotherapists, medical doctors, and dentists who hold a specialisation recognised by the MIUR (Ministry of University and Research)."
 	},
 

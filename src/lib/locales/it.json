@@ -20,34 +20,34 @@
 		"label_PL": "Polski"
 	},
 	"hero": {
-		"image": "/src/lib/assets/images/wardal-hero-it.jpg",
+		"image": "/src/lib/assets/images/wardalpsy-hero-it.jpg",
 		"title": "Uno spazio sicuro per la tua mente.",
 		"subtitle": "Percorsi di psicoterapia individuale per ritrovare equilibrio e serenità nella vita quotidiana.",
 		"cta_primary": "Vedi Disponibilità",
 		"cta_secondary": "Prenota Appuntamento",
-		"image_alt": "Un'illustrazione di Charlie Mackesy che mostra un bambino e una talpa seduti su un prato bianco, intenti a osservare un piccolo germoglio verde. Sopra e sotto di loro appare la scritta: Sii paziente con te stesso. Urlare contro un fiore non lo farà sbocciare",
+		"image_alt": "Un'illustrazione delicata ad acquerello che ritrae una ragazza seduta a terra di fronte a un piccolo cucciolo. Tra di loro c'è una piantina viola. Sotto l'immagine, il testo recita: Ogni pianta ha bisogno di cura e del suo tempo per sbocciare.",
 		"quote": "Lorem Ipsum Dolor"
 	},
 	"dummy": "",
 	"approach": {
 		"title": "L'Approccio Terapeutico",
 		"image": "/src/lib/assets/images/patrycja-nikki.jpg",
+		"image_alt": "Dr. Patrycja Wardal with her co-therapist dog, Nikki",
 		"subtitle": "Un viaggio collaborativo dove la tua esperienza incontra la mia competenza professionale in un ambiente di ascolto protetto.",
-		"nikki_note": "Nella stanza di terapia potresti incontrare anche la mia co-terapeuta Nikki, un cane che interviene quando necessario.",
-		"nikki_caption": "Con Nikki, la mia co-terapeuta",
+		"quote": "Nella stanza di terapia potresti incontrare anche la mia co-terapeuta Nikki, un cane che interviene quando necessario.",
 		"target_title": "Lavoro principalmente con",
 		"paragraphs": [
 			{
 				"id": "1",
-				"paragraph": "Vedo l'incontro terapeutico come un viaggio: a volte accidentato, ma sempre condiviso. Il mio ruolo in questo viaggio è quello di essere lì con te, aiutandoti a scoprire e rafforzare le tue risorse."
+				"paragraph": "Considero l'incontro terapeutico come un viaggio, a volte impegnativo e turbulento, ma sempre condiviso. Il mio ruolo in questo viaggio è quello di esserci con te e aiutarti a scoprire e rafforzare le tue risorse. "
 			},
 			{
 				"id": "2",
-				"paragraph": "Credo che tu possieda già le risorse necessarie per superare le tue difficoltà, anche se forse non ne sei ancora consapevole. Insieme cambieremo questa situazione."
+				"paragraph": "Credo che tu possieda già le risorse necessarie per superare le tue difficoltà, anche se a volte non ne sei ancora consapevole. "
 			},
 			{
 				"id": "3",
-				"paragraph": "La mia pratica clinica si basa sull'approccio ericksoniano e sull'ipnosi."
+				"paragraph": "Insieme, cercheremo di cambiarlo."
 			}
 		],
 		"targets": [
@@ -63,14 +63,18 @@
 				"id": "3",
 				"target": "Adulti"
 			}
-		]
+		],
+		"dialogs_title": "La mia pratica clinica si basa su",
+		"dialog1_trigger_title": "Approccio",
+		"dialog1_trigger": "Psicoterapia ericksoniana",
+		"dialog1_title": "Psicoterapia ericksoniana",
+		"dialog1_content": "Nell'approccio ericksoniano, il cambiamento avviene grazie al coinvolgimento attivo del soggetto, indipendentemente dalla comprensione o dall'insight, affinché, attraverso la propria esperienza, possa formulare obiettivi positivi e concentrarsi su soluzioni e possibilità, aumentando così la propria sensibilità, espressività e flessibilità.\n\nIl terapeuta è orientato al futuro e alla riorganizzazione creativa delle risposte della persona, con l'obiettivo di ottimizzarne lo sviluppo e la crescita. È attivo e responsabile nel riconoscere e valorizzare l'unicità di ogni individuo, nonché nel creare le condizioni per il cambiamento.\nIl terapeuta utilizza le risorse della persona e tutto ciò che il soggetto porta in terapia, includendo anche l'uso dell'umorismo, del paradosso e di numerose tecniche indirette, come ad esempio racconti e metafore.",
+		"dialog2_trigger_title": "Metodo",
+		"dialog2_trigger": "Ipnosi",
+		"dialog2_title": "Ipnosi",
+		"dialog2_content": "L'ipnosi è uno stato di coscienza che implica attenzione focalizzata e ridotta consapevolezza degli stimoli esterni, caratterizzato da una maggiore capacità di rispondere alle suggestioni. La capacità di restringere e concentrare la nostra attenzione è un processo naturale e ha basi neurobiologiche.\nEsistono molte attività quotidiane nella vita di ogni persona che comprendono una risposta ipnotica basata sull'attenzione focalizzata, come ad esempio: guardare la televisione, leggere o correre.\n\nIn psicoterapia, l'ipnosi viene utilizzata per facilitare il cambiamento, trovare soluzioni specifiche per il soggetto, esplorare e conoscere se stessi, accedere al proprio inconscio e alle proprie risorse.\nLa letteratura scientifica conferma l'efficacia dell'ipnosi in vari ambiti, sia medici che psicologici, come per esempio nella gestione del dolore, nel trattare dipendenze, ansia, disturbi dell'umore, problemi del sonno, traumi e tanti altri.\n\nL'ipnosi (in Italia) può essere svolta solo da psicologi, psicoterapeuti, medici e odontoiatri in possesso di una specifica specializzazione riconosciuta dal MIUR."
 	},
-	"dialog1_trigger": "Psicoterapia ericksoniana",
-	"dialog1_title": "Psicoterapia ericksoniana",
-	"dialog1_content": "L'approccio ericksoniano è una forma di psicoterapia che utilizza l'ipnosi e la suggestione indiretta per aiutare i pazienti ad accedere alle proprie risorse inconsce. Prende il nome da Milton H. Erickson e si focalizza sull'unicità di ogni individuo e sulla sua naturale capacità di guarigione.",
-	"dialog2_trigger": "Ipnosi",
-	"dialog2_title": "Ipnosi",
-	"dialog2_content": "L'ipnosi clinica è uno stato di attenzione focalizzata e di aumentata suggestionabilità. È uno stato naturale che spesso sperimentiamo nella vita quotidiana. In terapia, viene utilizzata per superare le barriere critiche della coscienza e facilitare cambiamenti positivi e nuove prospettive.",
+
 	"services": {
 		"title": "Come Posso Aiutarti",
 		"subtitle": "Ogni percorso è unico. Insieme lavoreremo per comprendere l'origine del tuo disagio e trovare le risorse per superarlo.",

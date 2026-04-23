@@ -6,7 +6,6 @@
 	//import IconArrowRight from 'virtual:icons/tabler/arrow-right';
 
 	// Dynamically import all images in the assets directory
-	// Added uppercase extensions to handle files like .JPG
 	const images = import.meta.glob<Picture>(
 		'/src/lib/assets/images/**/*.{avif,AVIF,gif,GIF,heif,HEIF,jpeg,JPEG,jpg,JPG,png,PNG,tiff,TIFF,webp,WEBP,svg,SVG}',
 		{
@@ -16,11 +15,10 @@
 		}
 	);
 
-	// Find the image that matches the filename from the metadata
 	const getAboutImage = () => {
 		const targetPath = about?.image || '';
 		const filename = targetPath.split('/').pop();
-		const defaultImage = images['/src/lib/assets/about-wardal.jpg'];
+		const defaultImage = images['/src/lib/assets/images/failsafe/about-wardal.jpg'];
 		if (!filename) return defaultImage;
 
 		for (const globPath in images) {

@@ -1,11 +1,14 @@
 <script lang="ts">
-	import * as Dialog from '$lib/components/ui/dialog';
+	import * as Dialog from '$lib/components/ui/dialog/index.js';
+	import { Button } from '$lib/components/ui/button/index.js';
 	import type { Picture } from '@sveltejs/enhanced-img';
 	import { i18n } from '$lib/i18n.svelte';
+	//Icons
+	import IconX from 'virtual:icons/tabler/x';
 
 	// Dynamically import all images in the assets directory with the enhanced query
 	const images = import.meta.glob<Picture>(
-		'$lib/assets/images/**/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp,svg}',
+		'$lib/assets/images/**/*.{avif,AVIF,gif,GIF,heif,HEIF,jpeg,JPEG,jpg,JPG,png,PNG,tiff,TIFF,webp,WEBP,svg,SVG}',
 		{
 			query: { enhanced: true },
 			import: 'default',
@@ -33,7 +36,7 @@
 	const approachImage = $derived(getApproachImage());
 </script>
 
-<section class="overflow-hidden bg-background py-32">
+<section id="approach" class="relative scroll-m-12 overflow-hidden bg-background py-32">
 	<div class="container mx-auto px-6">
 		<div class="grid grid-cols-1 gap-16 lg:grid-cols-2">
 			<div>
@@ -80,21 +83,35 @@
 									class="aria-expanded:text-secondary-foreground flex cursor-pointer flex-col items-start justify-center gap-2 rounded-2xl border border-border bg-brand-container p-6 text-on-brand-container hover:border-on-brand-container/30 hover:bg-brand-container/70 hover:shadow-xl hover:shadow-brand/15 aria-expanded:bg-secondary"
 								>
 									<span class="text-[10px] font-bold tracking-widest text-foreground uppercase"
-										>{i18n.t.approach.dialog1_title}</span
+										>{i18n.t.approach.dialog1_trigger_title}</span
 									>
 									<p class="font-serif text-lg">
 										{i18n.t.approach.dialog1_trigger}
 									</p>
 								</Dialog.Trigger>
 								<Dialog.Content
-									class="max-h-[80vh] overflow-y-auto rounded-[2rem] bg-white p-10 sm:max-w-150"
+									class="no-scrollbar max-h-[90vh] overflow-x-hidden overflow-y-auto rounded-3xl bg-background p-0 sm:max-w-150"
+									data-lenis-prevent
+									showCloseButton={false}
 								>
-									<Dialog.Header>
-										<Dialog.Title class="text-wardal-purple mb-6 font-serif text-3xl"
-											>{i18n.t.approach.dialog1_title}</Dialog.Title
-										>
+									<Dialog.Header
+										class="sticky top-0 z-10 w-full border-b bg-secondary px-6 py-4 text-on-secondary"
+									>
+										<div class="flex items-center justify-between">
+											<Dialog.Title class="text-xl">{i18n.t.approach.dialog1_title}</Dialog.Title>
+											<Dialog.Close>
+												{#snippet child({ props })}
+													<Button variant="icon" size="icon" class="cursor-pointer" {...props}>
+														<IconX class="size-4" aria-hidden="true" />
+														<span class="sr-only">{i18n.t.a11y.close}</span>
+													</Button>
+												{/snippet}</Dialog.Close
+											>
+										</div>
 									</Dialog.Header>
-									<div class="text-wardal-brown space-y-4 leading-relaxed whitespace-pre-line">
+									<div
+										class="space-y-4 p-6 text-lg leading-relaxed whitespace-pre-line text-foreground"
+									>
 										{i18n.t.approach.dialog1_content}
 									</div>
 								</Dialog.Content>
@@ -106,21 +123,35 @@
 									class="aria-expanded:text-secondary-foreground flex cursor-pointer flex-col items-start justify-center gap-2 rounded-2xl border border-border bg-brand-container p-6 text-on-brand-container hover:border-on-brand-container/30 hover:bg-brand-container/70 hover:shadow-xl hover:shadow-brand/15 aria-expanded:bg-secondary"
 								>
 									<span class="text-[10px] font-bold tracking-widest text-foreground uppercase"
-										>{i18n.t.approach.dialog2_title}</span
+										>{i18n.t.approach.dialog2_trigger_title}</span
 									>
 									<p class="font-serif text-lg">
 										{i18n.t.approach.dialog2_trigger}
 									</p>
 								</Dialog.Trigger>
 								<Dialog.Content
-									class="max-h-[80vh] overflow-y-auto rounded-[2rem] bg-white p-10 sm:max-w-150"
+									class="no-scrollbar max-h-[90vh] overflow-x-hidden overflow-y-auto rounded-3xl bg-background p-0 sm:max-w-150"
+									data-lenis-prevent
+									showCloseButton={false}
 								>
-									<Dialog.Header>
-										<Dialog.Title class="text-wardal-purple mb-6 font-serif text-3xl"
-											>{i18n.t.approach.dialog2_title}</Dialog.Title
-										>
+									<Dialog.Header
+										class="sticky top-0 z-10 w-full border-b bg-secondary px-6 py-4 text-on-secondary"
+									>
+										<div class="flex items-center justify-between">
+											<Dialog.Title class="text-xl">{i18n.t.approach.dialog2_title}</Dialog.Title>
+											<Dialog.Close>
+												{#snippet child({ props })}
+													<Button variant="icon" size="icon" class="cursor-pointer" {...props}>
+														<IconX class="size-4" aria-hidden="true" />
+														<span class="sr-only">{i18n.t.a11y.close}</span>
+													</Button>
+												{/snippet}
+											</Dialog.Close>
+										</div>
 									</Dialog.Header>
-									<div class="text-wardal-brown space-y-4 leading-relaxed whitespace-pre-line">
+									<div
+										class="space-y-4 p-6 text-lg leading-relaxed whitespace-pre-line text-foreground"
+									>
 										{i18n.t.approach.dialog2_content}
 									</div>
 								</Dialog.Content>
@@ -140,20 +171,22 @@
 							{#if approachImage}
 								<enhanced:img
 									src={approachImage}
-									alt={i18n.t.hero.image_alt}
+									alt={i18n.t.approach.image_alt}
 									class="aspect-4/5 h-full w-full rounded-3xl object-cover"
 									loading="lazy"
 								/>
 							{/if}
 						</div>
-						<!-- Floating Caption for Nikki -->
-						<div
-							class="absolute right-6 bottom-6 left-6 inline-flex justify-center rounded-2xl bg-secondary/80 p-5 text-on-secondary shadow-md shadow-brand/15 backdrop-blur-sm"
-						>
-							<p class="w-full text-center font-serif leading-snug md:text-lg">
-								{i18n.t.approach.nikki_note}
-							</p>
-						</div>
+						{#if i18n.t.approach.quote}
+							<!-- Floating Caption for Nikki -->
+							<div
+								class="absolute right-6 bottom-6 left-6 inline-flex justify-center rounded-2xl bg-secondary/80 p-5 text-on-secondary shadow-md shadow-brand/15 backdrop-blur-sm"
+							>
+								<p class="w-full text-center font-serif leading-snug md:text-lg">
+									{i18n.t.approach.quote}
+								</p>
+							</div>
+						{/if}
 					</div>
 				</div>
 			</div>

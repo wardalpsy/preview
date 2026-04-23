@@ -18,11 +18,11 @@ const translationFields = [
 		fields: [
 			{ label: 'About Link Text', name: 'about', widget: 'string' },
 			{ label: 'Approach Link Text', name: 'approach', widget: 'string' },
-			{ label: 'Practices Link Text', name: 'practices', widget: 'string' },
+			{ label: 'Services Link Text', name: 'practices', widget: 'string' },
 			{ label: 'Articles Link Text', name: 'articles', widget: 'string' },
-			{ label: 'Contact Link Text', name: 'contact', widget: 'string' },
 			{ label: 'FAQ Link Text', name: 'faq', widget: 'string' },
-			{ label: 'Testimonials Link Text', name: 'testimonials', widget: 'string' }
+			{ label: 'Testimonials Link Text', name: 'testimonials', widget: 'string' },
+			{ label: 'Contact Link Text', name: 'contact', widget: 'string' },
 		]
 	},
 			{

@@ -58,7 +58,7 @@
 		<div class="container mx-auto flex items-center justify-between px-4">
 			<!-- Brand Identity -->
 			<div class="flex items-center justify-center">
-				<div class="relative z-0 translate-x-6.5 -translate-y-2.5">
+				<div class="relative z-0 translate-x-4.5 -translate-y-2.5 sm:translate-x-6.5">
 					<Logo />
 				</div>
 				<a href={l('/')} class="group relative z-10 flex items-center">
@@ -89,7 +89,7 @@
 
 <!-- Sticky bottom bar -->
 <div
-	class="sticky top-0 z-50 w-full bg-secondary/90 py-1 shadow-sm backdrop-blur-lg lg:flex lg:py-3"
+	class="sticky top-0 z-50 mb-24 w-full bg-secondary/90 py-1 shadow-sm backdrop-blur-lg lg:mb-0 lg:flex lg:py-3"
 >
 	<div class="container mx-auto flex w-full items-center justify-between lg:hidden">
 		<!-- Mobile Nav -->
