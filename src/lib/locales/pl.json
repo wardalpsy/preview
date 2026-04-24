@@ -274,7 +274,8 @@
 		"tax_id": "Numer PESEL (CF/NIN)",
 		"tax_id_tooltip": "Proszę podać numer identyfikacji podatkowej (np. PESEL, Codice Fiscale lub NIN).",
 		"date": "Data",
-		"full_name": "Full Name"
+		"acknowledgement": "Podpisując ten dokument, potwierdzasz, że przeczytałeś, zrozumiałeś i zgadzasz się na warunki opisane powyżej.",
+		"pdf_heading": "mgr. Patrycja Wardal - wardalpsy.com"
 	},
 	"contact": {
 		"subject": "Temat",
@@ -347,6 +348,7 @@
 			"required": "Imię jest wymagane"
 		},
 		"consent": {
+			"not_minor": "Please confirm tha you are not a minor",
 			"read_required": "Proszę potwierdzić przeczytanie zgody.",
 			"signature_required": "Proszę złożyć podpis"
 		},
@@ -380,5 +382,12 @@
 		"slot_select": "Wybierz datę i godzinę wizyty.",
 		"no_slots": "Brak dostępności. Skontaktuj się ze mną, aby uzyskać informacje.",
 		"slots": "Dostępne terminy"
+	},
+	"emails": {
+		"confirmation_subject": "Appointment Confirmation - Dr. Patrycja Wardal",
+		"confirmation_title": "Appointment Confirmation",
+		"confirmation_greeting": "Dear {name},",
+		"confirmation_body": "Your appointment has been confirmed.",
+		"confirmation_footer": "See you soon,<br> Dr. Patrycja Wardal"
 	}
 }

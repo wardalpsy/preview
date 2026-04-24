@@ -274,7 +274,8 @@
 		"tax_id": "Codice Fiscale (CF/PESEL/NIN)",
 		"tax_id_tooltip": "Inserisci il tuo codice di identificazione fiscale (es. Codice Fiscale, PESEL o NIN).",
 		"date": "Data",
-		"full_name": "Full Name"
+		"acknowledgement": "Firmando questo documento, confermi di aver letto, compreso e accettato i termini sopra descritti.",
+		"pdf_heading": "dott.ssa. Patrycja Wardal - wardalpsy.com"
 	},
 	"contact": {
 		"subject": "Oggetto",
@@ -324,7 +325,7 @@
 		"articles": "Articoli"
 	},
 	"seo": {
-		"title": "Dr.ssa Patrycja Wardal | Psicologa, Psicoterapeuta, Ipnoterapeuta"
+		"title": "dott.ssa Patrycja Wardal | Psicologa, Psicoterapeuta, Ipnoterapeuta"
 	},
 	"fulfillment": {
 		"error_msg": "Qualcosa è andato storto",
@@ -375,10 +376,18 @@
 			"required": "Il nome è obbligatorio"
 		},
 		"consent": {
+			"not_minor": "Please confirm tha you are not a minor",
 			"read_required": "Per favore conferma di aver letto il consenso.",
 			"signature_required": "Per favore inserisci una firma"
 		},
 		"too_short": "Deve contenere almeno {min} caratteri",
 		"too_long": "Deve contenere al massimo {max} caratteri"
+	},
+	"emails": {
+		"confirmation_subject": "Appointment Confirmation - Dr. Patrycja Wardal",
+		"confirmation_title": "Appointment Confirmation",
+		"confirmation_greeting": "Dear {name},",
+		"confirmation_body": "Your appointment has been confirmed.",
+		"confirmation_footer": "See you soon,<br> Dr. Patrycja Wardal"
 	}
 }

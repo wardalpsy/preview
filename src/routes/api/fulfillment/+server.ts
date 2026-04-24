@@ -16,7 +16,7 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 		const { patient, slot, bookingId, lang = 'en' } = body;
 
 		const t = translations[lang] || translations.en;
-		const doctorEmail = (platform as any)?.env?.DOCTOR_EMAIL || 'wardalpsycom@protonmail.com';
+		const doctorEmail = (platform as any)?.env?.DOCTOR_EMAIL || 'oxypteros@gmail.com';
 		const calApiKey = (platform as any)?.env?.CAL_API_KEY;
 
 		if (!patient || !slot) {
@@ -79,7 +79,7 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 			legalText,
 			title: t.consent.legal_title,
 			labels: {
-				patient: t.consent.full_name,
+				patient: t.contact.first_name + ' ' + t.contact.last_name,
 				email: t.contact.email,
 				phone: t.contact.phone,
 				date: t.consent.date || 'Date',
@@ -88,7 +88,9 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 				addressResidence: t.consent.resident_address,
 				cityResidence: t.consent.resident_city,
 				taxId: 'CF/NIN/PESEL',
-				notMinor: t.consent.not_minor
+				notMinor: t.consent.not_minor,
+				acknowledgement: t.consent.acknowledgement,
+				heading: t.consent.pdf_heading
 			}
 		});
 

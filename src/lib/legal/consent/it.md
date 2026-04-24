@@ -1,37 +1,30 @@
 ---
-title: Consenso Informato al Trattamento Psicologico
+title: Privacy Notice & Consent for Data Processing
 date: 2026-04-24
 ---
 
-# Consenso Informato al Trattamento Psicologico
+# Privacy Notice & Consent for Data Processing
 
-Benvenuti. Questo documento contiene informazioni importanti sui miei servizi professionali e sulle mie politiche aziendali. Vi prego di leggerlo attentamente e di annotare eventuali domande che potreste avere, in modo da poterne discutere.
+## Data Controller:
 
-## 1. NATURA DEL TRATTAMENTO
+The data provided through this form is processed solely by Dr. Patrycja Wardal for the purpose of scheduling appointments and preparing clinical documentation.
 
-La psicoterapia è un processo di collaborazione tra voi e il vostro terapeuta. Essa prevede l'esplorazione di pensieri, sentimenti e comportamenti per migliorare il vostro benessere.
+## Purpose of Processing:
 
-## 2. RISERVATEZZA
+The information collected (including name, contact details, and national identification numbers) is used exclusively to facilitate the medical intake process and to draft the required Informed Consent documents.
 
-Tutte le informazioni condivise nelle nostre sessioni sono strettamente riservate. Le eccezioni alla riservatezza includono:
+## Data Transmission and Storage:
 
-- Sospetto abuso di minori, anziani o adulti dipendenti.
-- Minacce di gravi danni fisici a un'altra persona.
-- Intenzione di fare del male a se stessi.
-- Ordini del tribunale o requisiti legali.
+- Direct Transmission: Your data is transmitted securely via encrypted channels directly to the Doctor.
+- No Database Storage: This website does not store your personal information in a permanent web database.
+- Third Parties: Your data will never be shared, sold, or viewed by third parties, except where required by law for medical or tax purposes.
 
-## 3. APPUNTAMENTI E CANCELLAZIONI
+## User Responsibility:
 
-Le sessioni durano in genere 50 minuti. Se è necessario annullare o riprogrammare l'appuntamento, si prega di dare un preavviso di almeno 24 ore.
+By submitting this form, you certify that all information provided is truthful and accurate. The user assumes full responsibility for the validity of the data provided.
 
-## 4. ONORARI PROFESSIONALI
+## Your Rights:
 
-Gli onorari vengono discussi durante la consultazione iniziale. Il pagamento è previsto al momento del servizio, salvo diversi accordi.
-
-## 5. CONTATTI DI EMERGENZA
-
-Non sono disponibile per servizi di emergenza 24 ore su 24. In caso di emergenza psichiatrica, contattare i servizi di emergenza locali o recarsi all'ospedale più vicino.
+Under the GDPR, you have the right to access, rectify, or request the erasure of your data at any time by contacting the Doctor directly.
 
 ---
-
-_Firmando questo documento, l'utente riconosce di aver letto, compreso e accettato i termini sopra descritti._

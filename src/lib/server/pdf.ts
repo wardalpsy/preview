@@ -28,6 +28,8 @@ export interface ConsentData {
 		cityResidence: string;
 		taxId: string;
 		notMinor: string;
+		acknowledgement: string;
+		heading: string;
 	};
 }
 
@@ -38,10 +40,10 @@ export async function generateConsentPDF(data: ConsentData): Promise<Uint8Array>
 	const margin = 20;
 	const name = `${data.firstName} ${data.lastName}`;
 
-	// Header/Logo Placeholder
+	// Header
 	doc.setFont('times', 'bold');
 	doc.setFontSize(10);
-	doc.text('Dr. Patrycja Wardal - wardalpsy.com', margin, 15);
+	doc.text(data.labels.heading, margin, 15);
 	doc.setDrawColor(200, 200, 200);
 	doc.line(margin, 18, pageWidth - margin, 18);
 
@@ -52,10 +54,10 @@ export async function generateConsentPDF(data: ConsentData): Promise<Uint8Array>
 	doc.text(splitTitle, pageWidth / 2, 30, { align: 'center' });
 
 	// Patient Info Box
-	let infoY = 40;
+	let currentY = 40;
 	doc.setDrawColor(230, 230, 230);
 	doc.setFillColor(249, 249, 249);
-	doc.rect(margin, infoY, pageWidth - margin * 2, 55, 'FD');
+	doc.rect(margin, currentY, pageWidth - margin * 2, 55, 'FD');
 
 	doc.setFontSize(9);
 	const addInfoField = (label: string, value: string, y: number) => {
@@ -65,51 +67,121 @@ export async function generateConsentPDF(data: ConsentData): Promise<Uint8Array>
 		doc.text(value || '-', margin + 45, y);
 	};
 
-	addInfoField(data.labels.patient, name, infoY + 8);
-	addInfoField(data.labels.email, data.email, infoY + 14);
-	if (data.phone) addInfoField(data.labels.phone, data.phone, infoY + 20);
-	addInfoField(data.labels.birthCity, data.birthCity || '', infoY + 26);
-	addInfoField(data.labels.birthDate, data.birthDate || '', infoY + 32);
-	addInfoField(data.labels.addressResidence, `${data.addressResidence || ''}, ${data.cityResidence || ''}`, infoY + 38);
-	addInfoField(data.labels.taxId, data.taxId || '', infoY + 44);
-	addInfoField(data.labels.date, data.date, infoY + 50);
+	addInfoField(data.labels.patient, name, currentY + 8);
+	addInfoField(data.labels.email, data.email, currentY + 14);
+	if (data.phone) addInfoField(data.labels.phone, data.phone, currentY + 20);
+	addInfoField(data.labels.birthCity, data.birthCity || '', currentY + 26);
+	addInfoField(data.labels.birthDate, data.birthDate || '', currentY + 32);
+	addInfoField(
+		data.labels.addressResidence,
+		`${data.addressResidence || ''}, ${data.cityResidence || ''}`,
+		currentY + 38
+	);
+	addInfoField(data.labels.taxId, data.taxId || '', currentY + 44);
+	addInfoField(data.labels.date, data.date, currentY + 50);
 
-	// Legal Text
-	doc.setFontSize(10);
-	doc.setFont('times', 'normal');
-	
-	const cleanText = data.legalText
-		.replace(/###?\s/g, '')
-		.replace(/\*\*/g, '')
-		.replace(/\*/g, '')
-		.replace(/---/g, '');
+	currentY += 75; //text sapce from initial field
 
-	const splitText = doc.splitTextToSize(cleanText, pageWidth - margin * 2);
-	
-	let currentY = infoY + 65;
-	const lineHeight = 5;
-	
-	for (let i = 0; i < splitText.length; i++) {
-		if (currentY > pageHeight - 60) {
-			doc.addPage();
-			currentY = margin;
+	// Legal Text Processing
+	const lines: { text: string; font: string; size: number; spacing: number }[] = [];
+	const rawLines = data.legalText.split('\n');
+
+	for (let line of rawLines) {
+		line = line.trim();
+		// Skip empty lines or horizontal rules
+		if (!line || line === '---' || line === '***' || line === '___') {
+			lines.push({ text: '', font: 'times', size: 10, spacing: 5 });
+			continue;
 		}
-		doc.text(splitText[i], margin, currentY);
-		currentY += lineHeight;
+
+		// Check for Headers
+		if (line.startsWith('#')) {
+			let level = 0;
+			while (line[level] === '#') level++;
+			const cleanHeader = line
+				.replace(/^#+\s*/, '')
+				.replace(/\*\*/g, '')
+				.replace(/\*/g, '')
+				.replace(/__/g, '')
+				.replace(/_/g, '');
+
+			// Add extra space BEFORE the header
+			lines.push({ text: '', font: 'times', size: 10, spacing: 9 });
+
+			const fontSize = level === 1 ? 14 : level === 2 ? 12 : 11;
+			// Reduced spacing AFTER the header
+			lines.push({ text: cleanHeader, font: 'times', size: fontSize, spacing: 6 });
+		} else {
+			const cleanLine = line
+				.replace(/\*\*/g, '')
+				.replace(/\*/g, '')
+				.replace(/__/g, '')
+				.replace(/_/g, '');
+			const splitLines = doc.splitTextToSize(cleanLine, pageWidth - margin * 2);
+			for (const s of splitLines) {
+				lines.push({ text: s, font: 'times', size: 10, spacing: 5 });
+			}
+		}
 	}
 
-	// Signature Section
-	currentY = Math.max(currentY + 10, pageHeight - 70);
-	
-	// Check if we need a new page for the signature
+	// Add Acknowledgement
+	lines.push({ text: '', font: 'times', size: 10, spacing: 10 });
+	const ackLines = doc.splitTextToSize(data.labels.acknowledgement, pageWidth - margin * 2);
+	for (const al of ackLines) {
+		lines.push({ text: al, font: 'times', size: 10, spacing: 5 });
+	}
+
+	// Intelligent Page Splitting
+	const bottomLimit = pageHeight - 40;
+	const pageLines: (typeof lines)[] = [[]];
+	let currentPageIndex = 0;
+	let tempY = currentY;
+
+	for (let i = 0; i < lines.length; i++) {
+		const line = lines[i];
+		if (tempY + line.spacing > bottomLimit) {
+			pageLines.push([]);
+			currentPageIndex++;
+			tempY = margin + 20; // Start new page with some top margin
+		}
+		pageLines[currentPageIndex].push(line);
+		tempY += line.spacing;
+	}
+
+	// Content Balancing: If second page is too sparse, move lines from first page
+	if (pageLines.length === 2 && pageLines[1].length < 5) {
+		const moveCount = Math.min(pageLines[0].length - 10, 5 - pageLines[1].length + 2);
+		if (moveCount > 0) {
+			const moved = pageLines[0].splice(-moveCount);
+			pageLines[1] = [...moved, ...pageLines[1]];
+		}
+	}
+
+	// Render Pages
+	for (let p = 0; p < pageLines.length; p++) {
+		if (p > 0) {
+			doc.addPage();
+			currentY = margin + 20;
+		}
+		for (const line of pageLines[p]) {
+			if (line.text) {
+				doc.setFont(line.font, line.size > 10 ? 'bold' : 'normal');
+				doc.setFontSize(line.size);
+				doc.text(line.text, margin, currentY);
+			}
+			currentY += line.spacing;
+		}
+	}
+
+	// Signature Section (must be on the last page)
+	currentY += 40;
 	if (currentY > pageHeight - 40) {
 		doc.addPage();
-		currentY = margin + 10;
+		currentY = margin + 30;
 	}
 
 	doc.setDrawColor(0, 0, 0);
 	doc.line(margin, currentY, margin + 80, currentY);
-	
 	doc.setFont('helvetica', 'bold');
 	doc.setFontSize(10);
 	doc.text('Patient Digital Signature', margin, currentY + 5);
@@ -118,7 +190,7 @@ export async function generateConsentPDF(data: ConsentData): Promise<Uint8Array>
 		try {
 			doc.addImage(data.signature, 'PNG', margin, currentY - 25, 50, 20);
 		} catch (e) {
-			console.error('Error adding signature to PDF:', e);
+			console.error('Error adding signature:', e);
 		}
 	} else if (data.signatureType === 'type' && data.typedSignature) {
 		doc.setFont('times', 'italic');
@@ -126,12 +198,21 @@ export async function generateConsentPDF(data: ConsentData): Promise<Uint8Array>
 		doc.text(data.typedSignature, margin + 5, currentY - 5);
 	}
 
-	// Footer
-	doc.setFontSize(8);
-	doc.setFont('helvetica', 'italic');
-	doc.setDrawColor(200, 200, 200);
-	doc.line(margin, pageHeight - 15, pageWidth - margin, pageHeight - 15);
-	doc.text('This document was signed electronically on wardalpsy.com and is legally binding.', pageWidth / 2, pageHeight - 10, { align: 'center' });
+	// Footer (on every page)
+	const totalPages = (doc as any).internal.getNumberOfPages();
+	for (let i = 1; i <= totalPages; i++) {
+		doc.setPage(i);
+		doc.setFontSize(8);
+		doc.setFont('helvetica', 'italic');
+		doc.setDrawColor(200, 200, 200);
+		doc.line(margin, pageHeight - 15, pageWidth - margin, pageHeight - 15);
+		doc.text(
+			'This document was signed electronically on wardalpsy.com and is legally binding.',
+			pageWidth / 2,
+			pageHeight - 10,
+			{ align: 'center' }
+		);
+	}
 
 	return new Uint8Array(doc.output('arraybuffer'));
 }

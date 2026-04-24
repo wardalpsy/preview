@@ -28,5 +28,3 @@ By submitting this form, you certify that all information provided is truthful a
 Under the GDPR, you have the right to access, rectify, or request the erasure of your data at any time by contacting the Doctor directly.
 
 ---
-
-_By signing this document, you acknowledge that you have read, understood, and agreed to the terms described above._

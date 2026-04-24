@@ -24,10 +24,7 @@ export const getPasswordSchema = (t: TranslationSchema) =>
 // Testimonials
 export const getTestimonialSchema = (t: TranslationSchema) =>
 	z.object({
-		name: z
-			.string()
-			.max(50, t.validation.too_long.replace('{max}', '50'))
-			.optional(),
+		name: z.string().max(50, t.validation.too_long.replace('{max}', '50')).optional(),
 		testimonial: z
 			.string()
 			.min(10, t.validation.message.min.replace('{min}', '10'))
@@ -58,7 +55,7 @@ export const getConsentSchema = (t: TranslationSchema) =>
 			typedSignature: z.string().optional(),
 			signatureType: z.enum(['draw', 'type']).default('draw'),
 			notMinor: z.boolean().refine((v) => v === true, {
-				message: t.validation.consent.read_required
+				message: t.validation.consent.not_minor
 			}),
 			birthCity: z.string().min(2, t.validation.too_short.replace('{min}', '2')),
 			birthDate: z.string().min(2, t.validation.too_short.replace('{min}', '2')),

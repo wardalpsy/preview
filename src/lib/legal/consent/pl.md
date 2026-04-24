@@ -1,30 +1,30 @@
 ---
-title: Świadoma Zgoda na Terapię Psychologiczną
-date: 2024-03-20
+title: Privacy Notice & Consent for Data Processing
+date: 2026-04-24
 ---
 
-# Świadoma Zgoda na Terapię Psychologiczną
+# Privacy Notice & Consent for Data Processing
 
-Witaj. Niniejszy dokument zawiera ważne informacje na temat moich usług profesjonalnych i zasad prowadzenia działalności. Proszę o uważne przeczytanie go i zanotowanie wszelkich pytań, które mogą się pojawić, abyśmy mogli je omówić.
+## Data Controller:
 
-## 1. CHARAKTER TERAPII
-Psychoterapia to proces współpracy pomiędzy Tobą a Twoim terapeutą. Polega ona na badaniu myśli, uczuć i zachowań w celu poprawy Twojego samopoczucia.
+The data provided through this form is processed solely by Dr. Patrycja Wardal for the purpose of scheduling appointments and preparing clinical documentation.
 
-## 2. POUFNOŚĆ
-Wszystkie informacje przekazywane podczas naszych sesji są ściśle poufne. Wyjątki od poufności obejmują:
-- Podejrzenie nadużyć wobec dzieci, osób starszych lub niesamodzielnych dorosłych.
-- Groźby wyrządzenia poważnej krzywdy innej osobie.
-- Zamiar wyrządzenia krzywdy samemu sobie.
-- Nakazy sądowe lub wymogi prawne.
+## Purpose of Processing:
 
-## 3. WIZYTY I ODWOŁYWANIE SPOTKAŃ
-Sesje trwają zazwyczaj 50 minut. Jeśli musisz odwołać lub zmienić termin spotkania, prosimy o poinformowanie nas o tym z co najmniej 24-godzinnym wyprzedzeniem.
+The information collected (including name, contact details, and national identification numbers) is used exclusively to facilitate the medical intake process and to draft the required Informed Consent documents.
 
-## 4. OPŁATY ZA USŁUGI
-Opłaty są omawiane podczas pierwszej konsultacji. Płatność oczekiwana jest w momencie świadczenia usługi, chyba że uzgodniono inaczej.
+## Data Transmission and Storage:
 
-## 5. KONTAKT ALARMOWY
-Nie świadczę całodobowych usług w nagłych wypadkach. W przypadku nagłego pogorszenia stanu psychicznego prosimy o kontakt z lokalnymi służbami ratunkowymi lub udanie się do najbliższego szpitala.
+- Direct Transmission: Your data is transmitted securely via encrypted channels directly to the Doctor.
+- No Database Storage: This website does not store your personal information in a permanent web database.
+- Third Parties: Your data will never be shared, sold, or viewed by third parties, except where required by law for medical or tax purposes.
+
+## User Responsibility:
+
+By submitting this form, you certify that all information provided is truthful and accurate. The user assumes full responsibility for the validity of the data provided.
+
+## Your Rights:
+
+Under the GDPR, you have the right to access, rectify, or request the erasure of your data at any time by contacting the Doctor directly.
 
 ---
-*Podpisując niniejszy dokument, potwierdzasz, że przeczytałeś, zrozumiałeś i zgadzasz się na opisane powyżej warunki.*

@@ -276,7 +276,8 @@
 		"tax_id": "National Identification Number (NIN/CF/PESEL)",
 		"tax_id_tooltip": "Please enter your national tax identification number (e.g. NIN for the UK, Codice Fiscale for Italy, or PESEL for Poland).",
 		"date": "Date",
-		"full_name": "Full Name"
+		"acknowledgement": "By signing this document, you acknowledge that you have read, understood, and agreed to the terms described above.",
+		"pdf_heading": "Dr. Patrycja Wardal - wardalpsy.com"
 	},
 
 	"contact": {
@@ -378,10 +379,18 @@
 			"required": "Name is required"
 		},
 		"consent": {
+			"not_minor": "Please confirm tha you are not a minor",
 			"read_required": "Please confirm that you have read the consent.",
 			"signature_required": "Please provide a signature"
 		},
 		"too_short": "Must be at least {min} characters",
 		"too_long": "Must be at most {max} characters"
+	},
+	"emails": {
+		"confirmation_subject": "Appointment Confirmation - Dr. Patrycja Wardal",
+		"confirmation_title": "Appointment Confirmation",
+		"confirmation_greeting": "Dear {name},",
+		"confirmation_body": "Your appointment has been confirmed.",
+		"confirmation_footer": "See you soon,<br> Dr. Patrycja Wardal"
 	}
 }
