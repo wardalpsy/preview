@@ -4,7 +4,7 @@
 	import About from '$lib/components/home/About.svelte';
 	import Approach from '$lib/components/home/Approach.svelte';
 	import Services from '$lib/components/home/Services.svelte';
-	import MidHero from '$lib/components/home/MidHero.svelte';
+	import CTA from '$lib/components/home/Cta.svelte';
 	import FAQ from '$lib/components/home/FAQ.svelte';
 	import Articles from '$lib/components/home/Articles.svelte';
 	import LazyComponent from '$lib/components/LazyComponent.svelte';
@@ -20,7 +20,7 @@
 	<Articles articles={data.articles} />
 {/if}
 <FAQ />
-<MidHero />
+<CTA />
 {#if i18n.t.testimonials.enable_testimonials}
 	<LazyComponent
 		component={() => import('$lib/components/home/Testimonials.svelte')}

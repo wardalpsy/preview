@@ -23,15 +23,15 @@
 		"image": "/src/lib/assets/images/wardalpsy-hero-pl.jpg",
 		"title": "Psychoterapia i Hipnoterapia",
 		"subtitle": "Online i Stacjonarnie w Bari, Włochy",
-		"cta_primary": "Dowiedz się, jak pracuję",
-		"cta_secondary": "Umów spotkanie",
+		"cta_primary": "Umów spotkanie",
+		"cta_secondary": "Dowiedz się, jak pracuję",
 		"image_alt": "Delikatna ilustracja akwarelowa przedstawiająca dziewczynę siedzącą na ziemi naprzeciwko małego szczeniaka. Pomiędzy nimi znajduje się mała fioletowa roślina. Pod obrazem widnieje tekst: Każda roślina potrzebuje troski i swojego czasu, aby zakwitnąć.",
 		"quote": "Lorem Ipsum Dolor"
 	},
 	"dummy": "",
 	"approach": {
 		"title": "Podejście terapeutyczne",
-		"image": "/src/lib/assets/images/patrycja-nikki.jpg",
+		"image": "/src/lib/assets/images/wardalpsy-approach-en.jpg",
 		"image_alt": "Dr Patrycja Wardal ze swoim psem współterapeutą, Nikki",
 		"subtitle": "Wspólna podróż, w której Twoje doświadczenie spotyka się z moją wiedzą zawodową w bezpiecznym środowisku słuchania.",
 		"quote": "W gabinecie możesz również spotkać moją współterapeutkę Nikki — psa, który interweniuje, gdy jest to potrzebne.",
@@ -178,11 +178,11 @@
 		"previous": "Poprzednia opinia",
 		"next": "Następna opinia"
 	},
-	"mid_hero": {
+	"cta": {
 		"h2_title": "Daj sobie tyle czasu, ile potrzebujesz",
 		"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus.",
-		"image": "/src/lib/assets/images/wardal-mid-hero-pl.jpg",
-		"image_alt": "Ilustracja Charliego Mackesy'ego przedstawiająca kreta i chłopca patrzących na pojedynczy niebieski kwiat rosnący między nimi. Napis głosi: Niektóre kwiaty rozkwitają później niż inne, ale kiedy już to zrobią, są naprawdę wspaniałe. Daj sobie tyle czasu, ile potrzebujesz.",
+		"image": "/src/lib/assets/images/wardalpsy-cta-en.jpg",
+		"image_alt": "Portret dr Patrycji Wardal w profesjonalnym, a zarazem przytulnym gabinecie, w towarzystwie jej psa ko-terapeuty Nikki, oddający spokojną i pełną wsparcia atmosferę.",
 		"cta_primary": "Zacznij swoją podróż",
 		"cta_secondary": "Umów wizytę",
 		"reserved_title": "Strefa Pacjenta",
@@ -235,8 +235,8 @@
 		"nav_reserved": "Appointments",
 		"external_link": "(otwiera się w nowej karcie)",
 		"oxy_credit": true
-		},
-		"consent": {
+	},
+	"consent": {
 		"legal_title": "Świadoma zgoda na leczenie",
 		"legal_text_short": "Prosimy o zapoznanie się z dokumentem świadomej zgody przed podpisaniem.",
 		"label_name": "Imię i nazwisko",
@@ -266,7 +266,8 @@
 		"edit_details": "Edytuj szczegóły",
 		"error_fill_all": "Proszę wypełnić wszystkie pola i podpisać formularz.",
 		"access": "Dostęp"
-		},	"contact": {
+	},
+	"contact": {
 		"subject": "Temat",
 		"first_name": "Imię",
 		"last_name": "Nazwisko",
@@ -331,16 +332,17 @@
 		"too_long": "Musi mieć maksymalnie {max} znaków",
 		"too_short": "Musi mieć co najmniej {min} znaki",
 		"password": {
-		        "required": "Hasło jest wymagane"
+			"required": "Hasło jest wymagane"
 		},
 		"name": {
-		        "required": "Imię jest wymagane"
+			"required": "Imię jest wymagane"
 		},
 		"consent": {
-		        "read_required": "Proszę potwierdzić przeczytanie zgody.",
-		        "signature_required": "Proszę złożyć podpis"
+			"read_required": "Proszę potwierdzić przeczytanie zgody.",
+			"signature_required": "Proszę złożyć podpis"
 		},
-		"message": {			"max": "Wiadomość może mieć maksymalnie {max} znaków",
+		"message": {
+			"max": "Wiadomość może mieć maksymalnie {max} znaków",
 			"min": "Wiadomość musi mieć co najmniej {min} znaki"
 		},
 		"subject": {

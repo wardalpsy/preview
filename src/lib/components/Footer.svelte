@@ -44,7 +44,7 @@
 							rel="noopener"
 							>{i18n.t.footer.register_no}<span class="sr-only">{i18n.t.a11y.external_link}</span
 							></a
-						>&nbsp;since 2022.
+						>
 					</li>
 					{#if i18n.t.footer.specialization}
 						<li>

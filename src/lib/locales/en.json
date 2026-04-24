@@ -23,8 +23,8 @@
 		"image": "/src/lib/assets/images/wardalpsy-hero-en.jpg",
 		"title": "Psychotherapy and Hypnotherapy",
 		"subtitle": "Online and Onsite in Bari, Italy",
-		"cta_primary": "Begin your therapeutic journey",
-		"cta_secondary": "My approach",
+		"cta_primary": "Get in touch",
+		"cta_secondary": "Discover my approach",
 		"image_alt": "A gentle watercolor illustration showing a blonde girl sitting on the ground, facing a small black and tan puppy. Between them is a delicate purple plant. Below the illustration, the text reads: A flower needs tending and its own time to bloom.",
 		"quote": "Lorem Ipsum Dolor"
 	},
@@ -32,7 +32,7 @@
 	"approach": {
 		"title": "The Therapeutic Approach",
 		"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus.",
-		"image": "/src/lib/assets/images/patrycja-nikki.jpg",
+		"image": "/src/lib/assets/images/wardalpsy-approach-en.jpg",
 		"image_alt": "Dr. Patrycja Wardal with her co-therapist dog, Nikki",
 
 		"quote": "In the therapy room, you may also meet my co-therapist Nikki, a dog who intervenes when needed.",
@@ -144,11 +144,11 @@
 		"additional_question": "Have more questions?",
 		"ask_me": "Contact me directly."
 	},
-	"mid_hero": {
-		"h2_title": "Take all the time you need",
+	"cta": {
+		"h2_title": "Start your journey with me and Nikki",
 		"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus.",
-		"image": "/src/lib/assets/images/wardal-mid-hero-en.jpg",
-		"image_alt": "A illustration by Charlie Mackesy showing a mole and a boy  looking at a single blue flower blooming between them. The text says: Some flowers bloom later than others, and they are spectacular when they do. Take all the time you need.",
+		"image": "/src/lib/assets/images/wardalpsy-cta-en.jpg",
+		"image_alt": "A portrait of Dr. Patrycja Wardal in a professional yet cozy office setting, accompanied by Nikki her co-therapist dog, conveying a calm and supportive atmosphere.",
 		"cta_primary": "Start your Journey",
 		"cta_secondary": "Book an Appointment",
 		"reserved_title": "Reserved Area",

@@ -21,10 +21,10 @@
 	},
 	"hero": {
 		"image": "/src/lib/assets/images/wardalpsy-hero-it.jpg",
-		"title": "Uno spazio sicuro per la tua mente.",
-		"subtitle": "Percorsi di psicoterapia individuale per ritrovare equilibrio e serenità nella vita quotidiana.",
-		"cta_primary": "Vedi Disponibilità",
-		"cta_secondary": "Prenota Appuntamento",
+		"title": "Psicoterapia e Ipnoterapia",
+		"subtitle": "Online e in presenza a Bari",
+		"cta_primary": "Prenota un appuntamento",
+		"cta_secondary": "Scopri il mio approccio",
 		"image_alt": "Un'illustrazione delicata ad acquerello che ritrae una ragazza seduta a terra di fronte a un piccolo cucciolo. Tra di loro c'è una piantina viola. Sotto l'immagine, il testo recita: Ogni pianta ha bisogno di cura e del suo tempo per sbocciare.",
 		"quote": "Lorem Ipsum Dolor"
 	},
@@ -32,7 +32,7 @@
 	"approach": {
 		"title": "L'Approccio Terapeutico",
 		"subtitle": "Un viaggio collaborativo dove la tua esperienza incontra la mia competenza professionale in un ambiente di ascolto protetto.",
-		"image": "/src/lib/assets/images/patrycja-nikki.jpg",
+		"image": "/src/lib/assets/images/wardalpsy-approach-en.jpg",
 		"image_alt": "Dott.ssa Patrycja Wardal con il suo cane co-terapeuta, Nikki",
 		"quote": "Nella stanza di terapia potresti incontrare anche la mia co-terapeuta Nikki, un cane che interviene quando necessario.",
 		"target_title": "Lavoro principalmente con",
@@ -142,11 +142,11 @@
 		"additional_question": "Hai altre domande?",
 		"ask_me": "Contattami direttamente."
 	},
-	"mid_hero": {
+	"cta": {
 		"h2_title": "Prenditi tutto il tempo che ti occorre",
 		"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus.",
-		"image": "/src/lib/assets/images/wardal-mid-hero-it.jpg",
-		"image_alt": "Un'illustrazione di Charlie Mackesy che ritrae una talpa e un bambino che osservano un unico fiore blu che sboccia tra di loro. Il testo recita: Ci sono fiori che sbocciano in ritardo rispetto agli altri, ed è uno spettacolo quando succede. Prenditi tutto il tempo che ti occorre.",
+		"image": "/src/lib/assets/images/wardalpsy-cta-en.jpg",
+		"image_alt": "Ritratto della dott.ssa Patrycja Wardal in un ufficio professionale e accogliente, accompagnata dal suo cane co-terapeuta Nikki, in un'atmosfera calma e rassicurante.",
 		"cta_primary": "Inizia il tuo percorso",
 		"cta_secondary": "Prenota un appuntamento",
 		"reserved_title": "Area Riservata",
@@ -235,8 +235,8 @@
 		"nav_reserved": "Appuntamenti",
 		"external_link": "(si apre in una nuova scheda)",
 		"oxy_credit": true
-		},
-		"consent": {
+	},
+	"consent": {
 		"legal_title": "Consenso Informato al Trattamento",
 		"legal_text_short": "Si prega di prendere visione del documento di consenso informato prima di firmare.",
 		"label_name": "Nome e Cognome",
@@ -266,7 +266,8 @@
 		"edit_details": "Modifica Dettagli",
 		"error_fill_all": "Si prega di compilare tutti i campi e firmare il modulo.",
 		"access": "Accesso"
-		},	"contact": {
+	},
+	"contact": {
 		"subject": "Oggetto",
 		"first_name": "Nome",
 		"last_name": "Cognome",
@@ -359,15 +360,16 @@
 			"max": "Il messaggio deve contenere al massimo {max} caratteri"
 		},
 		"password": {
-		        "required": "La password è obbligatoria"
+			"required": "La password è obbligatoria"
 		},
 		"name": {
-		        "required": "Il nome è obbligatorio"
+			"required": "Il nome è obbligatorio"
 		},
 		"consent": {
-		        "read_required": "Per favore conferma di aver letto il consenso.",
-		        "signature_required": "Per favore inserisci una firma"
+			"read_required": "Per favore conferma di aver letto il consenso.",
+			"signature_required": "Per favore inserisci una firma"
 		},
-		"too_short": "Deve contenere almeno {min} caratteri",		"too_long": "Deve contenere al massimo {max} caratteri"
+		"too_short": "Deve contenere almeno {min} caratteri",
+		"too_long": "Deve contenere al massimo {max} caratteri"
 	}
 }
