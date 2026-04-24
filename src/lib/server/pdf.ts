@@ -27,25 +27,26 @@ export interface ConsentData {
 		addressResidence: string;
 		cityResidence: string;
 		taxId: string;
+		taxId: string;
 		notMinor: string;
 		acknowledgement: string;
 		heading: string;
-	};
-}
+		};
+		}
 
-export async function generateConsentPDF(data: ConsentData): Promise<Uint8Array> {
-	const doc = new jsPDF();
-	const pageWidth = doc.internal.pageSize.getWidth();
-	const pageHeight = doc.internal.pageSize.getHeight();
-	const margin = 20;
-	const name = `${data.firstName} ${data.lastName}`;
+		export async function generateConsentPDF(data: ConsentData): Promise<Uint8Array> {
+		const doc = new jsPDF();
+		const pageWidth = doc.internal.pageSize.getWidth();
+		const pageHeight = doc.internal.pageSize.getHeight();
+		const margin = 20;
+		const name = `${data.firstName} ${data.lastName}`;
 
-	// Header
-	doc.setFont('times', 'bold');
-	doc.setFontSize(10);
-	doc.text(data.labels.heading, margin, 15);
-	doc.setDrawColor(200, 200, 200);
-	doc.line(margin, 18, pageWidth - margin, 18);
+		// Header
+		doc.setFont('times', 'bold');
+		doc.setFontSize(10);
+		doc.text(data.labels.heading || 'Dr. Patrycja Wardal - wardalpsy.com', margin, 15);
+		doc.setDrawColor(200, 200, 200);
+		doc.line(margin, 18, pageWidth - margin, 18);
 
 	// Title
 	doc.setFont('times', 'bold');
