@@ -86,7 +86,7 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 			birthDate: patient.birthDate,
 			addressResidence: patient.addressResidence,
 			cityResidence: patient.cityResidence,
-			taxId: patient.taxId,
+			taxId: 'CF/NIN/PESEL',
 			notMinor: patient.notMinor,
 			signature: patient.signature,
 			typedSignature: patient.typedSignature,
