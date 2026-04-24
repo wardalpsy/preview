@@ -16,7 +16,7 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 		const { patient, slot, bookingId, lang = 'en' } = body;
 
 		const t = translations[lang] || translations.en;
-		const doctorEmail = (platform as any)?.env?.DOCTOR_EMAIL || 'wardalpsy@gmail.com';
+		const doctorEmail = (platform as any)?.env?.DOCTOR_EMAIL || 'wardalpsycom@protonmail.com';
 		const calApiKey = (platform as any)?.env?.CAL_API_KEY;
 
 		if (!patient || !slot) {
@@ -44,7 +44,10 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 		// Load exact legal text from MD file based on language
 		let legalText = t.consent.legal_text_full || t.consent.legal_text_short;
 		try {
-			const mdFiles = import.meta.glob('/src/lib/legal/consent/*.md', { query: '?raw', import: 'default' });
+			const mdFiles = import.meta.glob('/src/lib/legal/consent/*.md', {
+				query: '?raw',
+				import: 'default'
+			});
 			const mdPath = `/src/lib/legal/consent/${lang}.md`;
 			if (mdFiles[mdPath]) {
 				const rawContent = (await mdFiles[mdPath]()) as string;
@@ -60,19 +63,40 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 			firstName: patient.firstName,
 			lastName: patient.lastName,
 			email: patient.email,
+			phone: patient.phone,
+			birthCity: patient.birthCity,
+			birthDate: patient.birthDate,
+			addressResidence: patient.addressResidence,
+			cityResidence: patient.cityResidence,
+			taxId: patient.taxId,
+			notMinor: patient.notMinor,
 			signature: patient.signature,
 			typedSignature: patient.typedSignature,
 			signatureType: patient.signatureType || 'draw',
-			date: new Date().toLocaleDateString(lang === 'pl' ? 'pl-PL' : lang === 'it' ? 'it-IT' : 'en-US'),
+			date: new Date().toLocaleDateString(
+				lang === 'pl' ? 'pl-PL' : lang === 'it' ? 'it-IT' : 'en-US'
+			),
 			legalText,
-			title: t.consent.legal_title
+			title: t.consent.legal_title,
+			labels: {
+				patient: t.consent.full_name,
+				email: t.contact.email,
+				phone: t.contact.phone,
+				date: t.consent.date || 'Date',
+				birthCity: t.consent.birth_city,
+				birthDate: t.consent.birth_date,
+				addressResidence: t.consent.resident_address,
+				cityResidence: t.consent.resident_city,
+				taxId: 'CF/NIN/PESEL',
+				notMinor: t.consent.not_minor
+			}
 		});
 
 		const pdfBase64 = Buffer.from(pdfBuffer).toString('base64');
 
 		// Send Email to Patrycja
 		await resend.emails.send({
-			from: 'Wardal Psy <appointments@wardalpsy.com>',
+			from: 'Wardal Psy. <appointments@wardalpsy.com>',
 			to: doctorEmail,
 			subject: `${t.emails?.new_booking_subject || 'Nuova Prenotazione'}: ${fullName}`,
 			html: `
@@ -92,7 +116,7 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 
 		// Send Email to Patient
 		await resend.emails.send({
-			from: 'Wardal Psy <no-reply@wardalpsy.com>',
+			from: 'Wardal Psy. <no-reply@wardalpsy.com>',
 			to: patient.email,
 			subject: t.emails?.confirmation_subject || 'Conferma Prenotazione - Dott.ssa Wardal',
 			html: `

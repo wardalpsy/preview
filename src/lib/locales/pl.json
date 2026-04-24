@@ -265,7 +265,16 @@
 		"proceed_payment": "Przejdź do płatności",
 		"edit_details": "Edytuj szczegóły",
 		"error_fill_all": "Proszę wypełnić wszystkie pola i podpisać formularz.",
-		"access": "Dostęp"
+		"access": "Dostęp",
+		"not_minor": "Oświadczam, że jestem osobą pełnoletnią lub posiadam władzę rodzicielską nad wskazanym małoletnim.",
+		"birth_city": "Miejsce urodzenia",
+		"birth_date": "Data urodzenia",
+		"resident_city": "Miejscowość zamieszkania",
+		"resident_address": "Adres zamieszkania",
+		"tax_id": "Numer PESEL (CF/NIN)",
+		"tax_id_tooltip": "Proszę podać numer identyfikacji podatkowej (np. PESEL, Codice Fiscale lub NIN).",
+		"date": "Data",
+		"full_name": "Full Name"
 	},
 	"contact": {
 		"subject": "Temat",

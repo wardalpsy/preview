@@ -57,6 +57,14 @@ export const getConsentSchema = (t: TranslationSchema) =>
 			signature: z.string().optional(),
 			typedSignature: z.string().optional(),
 			signatureType: z.enum(['draw', 'type']).default('draw'),
+			notMinor: z.boolean().refine((v) => v === true, {
+				message: t.validation.consent.read_required
+			}),
+			birthCity: z.string().min(2, t.validation.too_short.replace('{min}', '2')),
+			birthDate: z.string().min(2, t.validation.too_short.replace('{min}', '2')),
+			addressResidence: z.string().min(2, t.validation.too_short.replace('{min}', '2')),
+			cityResidence: z.string().min(2, t.validation.too_short.replace('{min}', '2')),
+			taxId: z.string().min(2, t.validation.too_short.replace('{min}', '2')),
 			isRead: z.boolean().refine((v) => v === true, {
 				message: t.validation.consent.read_required
 			})

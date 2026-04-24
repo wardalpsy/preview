@@ -1,30 +1,32 @@
 ---
-title: Informed Consent for Psychological Treatment
-date: 2024-03-20
+title: Privacy Notice & Consent for Data Processing
+date: 2026-04-24
 ---
 
-# Informed Consent for Psychological Treatment
+# Privacy Notice & Consent for Data Processing
 
-Welcome. This document contains important information about my professional services and business policies. Please read it carefully and note any questions you may have so we can discuss them.
+## Data Controller:
 
-## 1. NATURE OF TREATMENT
-Psychotherapy is a collaborative process between you and your therapist. It involves exploring thoughts, feelings, and behaviors to improve your well-being.
+The data provided through this form is processed solely by Dr. Patrycja Wardal for the purpose of scheduling appointments and preparing clinical documentation.
 
-## 2. CONFIDENTIALITY
-All information shared in our sessions is strictly confidential. Exceptions to confidentiality include:
-- Suspected child, elder, or dependent adult abuse.
-- Threats of serious bodily harm to another person.
-- Intent to harm yourself.
-- Court orders or legal requirements.
+## Purpose of Processing:
 
-## 3. APPOINTMENTS AND CANCELLATIONS
-Sessions typically last 50 minutes. If you need to cancel or reschedule, please provide at least 24 hours' notice.
+The information collected (including name, contact details, and national identification numbers) is used exclusively to facilitate the medical intake process and to draft the required Informed Consent documents.
 
-## 4. PROFESSIONAL FEES
-Fees are discussed during the initial consultation. Payment is expected at the time of service unless otherwise agreed.
+## Data Transmission and Storage:
 
-## 5. EMERGENCY CONTACT
-I am not available for 24-hour emergency services. In case of a psychiatric emergency, please contact your local emergency services or go to the nearest hospital.
+- Direct Transmission: Your data is transmitted securely via encrypted channels directly to the Doctor.
+- No Database Storage: This website does not store your personal information in a permanent web database.
+- Third Parties: Your data will never be shared, sold, or viewed by third parties, except where required by law for medical or tax purposes.
+
+## User Responsibility:
+
+By submitting this form, you certify that all information provided is truthful and accurate. The user assumes full responsibility for the validity of the data provided.
+
+## Your Rights:
+
+Under the GDPR, you have the right to access, rectify, or request the erasure of your data at any time by contacting the Doctor directly.
 
 ---
-*By signing this document, you acknowledge that you have read, understood, and agreed to the terms described above.*
+
+_By signing this document, you acknowledge that you have read, understood, and agreed to the terms described above._

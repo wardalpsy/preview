@@ -265,7 +265,16 @@
 		"proceed_payment": "Proceed to Payment",
 		"edit_details": "Modifica Dettagli",
 		"error_fill_all": "Si prega di compilare tutti i campi e firmare il modulo.",
-		"access": "Accesso"
+		"access": "Accesso",
+		"not_minor": "Dichiaro di essere maggiorenne o di avere la potestà genitoriale per il minore indicato.",
+		"birth_city": "Luogo di nascita",
+		"birth_date": "Data di nascita",
+		"resident_city": "Città di residenza",
+		"resident_address": "Indirizzo di residenza",
+		"tax_id": "Codice Fiscale (CF/PESEL/NIN)",
+		"tax_id_tooltip": "Inserisci il tuo codice di identificazione fiscale (es. Codice Fiscale, PESEL o NIN).",
+		"date": "Data",
+		"full_name": "Full Name"
 	},
 	"contact": {
 		"subject": "Oggetto",
@@ -326,7 +335,7 @@
 		"appointment": "Appuntamento",
 		"confirmed_appointment": "Il tuo appuntamento è stato confermato con successo.",
 		"send_docs_heading": "Documenti Inviati",
-		"send_docs": "Abbiamo inviato una copia del consenso informato a"
+		"send_docs": "Abbiamo inviato una copia del consenso privay a"
 	},
 	"cal": {
 		"slots": "Orari disponibili",

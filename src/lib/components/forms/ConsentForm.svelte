@@ -23,6 +23,13 @@
 			signature?: string;
 			typedSignature?: string;
 			signatureType: 'draw' | 'type';
+			notMinor: boolean;
+			birthCity: string;
+			birthDate: string;
+			addressResidence: string;
+			cityResidence: string;
+			taxId: string;
+			isRead: boolean;
 		}) => void;
 	}>();
 
@@ -179,13 +186,30 @@
 			</button>
 		</div>
 	</div>
+	<!-- Minors consent-->
+	<Form.Field
+		{form}
+		name="notMinor"
+		class="flex items-start space-y-0 space-x-3 rounded-md border border-border bg-white p-4"
+	>
+		<Form.Control>
+			{#snippet children({ props })}
+				<Checkbox {...props} bind:checked={$formData.notMinor} />
+				<div class="space-y-1 leading-none">
+					<Form.Label>{i18n.t.consent.not_minor}</Form.Label>
+				</div>
+			{/snippet}
+		</Form.Control>
+		<Form.FieldErrors />
+	</Form.Field>
 
+	<!-- First & Last Name -->
 	<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
 		<Form.Field {form} name="firstName">
 			<Form.Control>
 				{#snippet children({ props })}
 					<Form.Label>{i18n.t.contact.first_name}<span class="form-required">*</span></Form.Label>
-					<Input {...props} bind:value={$formData.firstName} />
+					<Input {...props} bind:value={$formData.firstName} class="h-10" />
 				{/snippet}
 			</Form.Control>
 			<Form.FieldErrors />
@@ -195,18 +219,78 @@
 			<Form.Control>
 				{#snippet children({ props })}
 					<Form.Label>{i18n.t.contact.last_name}<span class="form-required">*</span></Form.Label>
-					<Input {...props} bind:value={$formData.lastName} />
+					<Input {...props} bind:value={$formData.lastName} class="h-10" />
 				{/snippet}
 			</Form.Control>
 			<Form.FieldErrors />
 		</Form.Field>
 	</div>
+
+	<!-- Born & Date of Birth-->
+	<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+		<Form.Field {form} name="birthCity">
+			<Form.Control>
+				{#snippet children({ props })}
+					<Form.Label>{i18n.t.consent.birth_city}<span class="form-required">*</span></Form.Label>
+					<Input {...props} bind:value={$formData.birthCity} />
+				{/snippet}
+			</Form.Control>
+			<Form.FieldErrors />
+		</Form.Field>
+
+		<Form.Field {form} name="birthDate">
+			<Form.Control>
+				{#snippet children({ props })}
+					<Form.Label>{i18n.t.consent.birth_date}<span class="form-required">*</span></Form.Label>
+					<Input {...props} bind:value={$formData.birthDate} />
+				{/snippet}
+			</Form.Control>
+			<Form.FieldErrors />
+		</Form.Field>
+	</div>
+
+	<!-- Resident: City Address -->
+	<div class="grid grid-cols-1 gap-4 sm:grid-cols-[2fr_1fr]">
+		<Form.Field {form} name="addressResidence">
+			<Form.Control>
+				{#snippet children({ props })}
+					<Form.Label
+						>{i18n.t.consent.resident_address}<span class="form-required">*</span></Form.Label
+					>
+					<Input {...props} bind:value={$formData.addressResidence} />
+				{/snippet}
+			</Form.Control>
+			<Form.FieldErrors />
+		</Form.Field>
+
+		<Form.Field {form} name="cityResidence">
+			<Form.Control>
+				{#snippet children({ props })}
+					<Form.Label>{i18n.t.consent.resident_city}<span class="form-required">*</span></Form.Label
+					>
+					<Input {...props} bind:value={$formData.cityResidence} />
+				{/snippet}
+			</Form.Control>
+			<Form.FieldErrors />
+		</Form.Field>
+	</div>
+
+	<Form.Field {form} name="taxId">
+		<Form.Control>
+			{#snippet children({ props })}
+				<Form.Label>{i18n.t.consent.tax_id}<span class="form-required">*</span></Form.Label>
+				<Input {...props} bind:value={$formData.taxId} />
+			{/snippet}
+		</Form.Control>
+		<Form.FieldErrors />
+	</Form.Field>
+	<!-- Email/Phone-->
 	<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
 		<Form.Field {form} name="email">
 			<Form.Control>
 				{#snippet children({ props })}
 					<Form.Label>{i18n.t.contact.email}<span class="form-required">*</span></Form.Label>
-					<Input {...props} type="email" bind:value={$formData.email} />
+					<Input {...props} type="email" bind:value={$formData.email} class="h-10" />
 				{/snippet}
 			</Form.Control>
 			<Form.FieldErrors />
@@ -216,7 +300,7 @@
 			<Form.Control>
 				{#snippet children({ props })}
 					<Form.Label>{i18n.t.contact.phone}</Form.Label>
-					<Input {...props} bind:value={$formData.phone} required={false} />
+					<Input {...props} bind:value={$formData.phone} required={false} class="h-10" />
 				{/snippet}
 			</Form.Control>
 			<Form.FieldErrors />

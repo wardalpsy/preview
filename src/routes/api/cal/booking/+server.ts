@@ -7,8 +7,8 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 	const { start, attendee, eventTypeSlug, username, lang } = body;
 
 	const finalUsername = username || 'pat.war';
-	const finalEventSlug = eventTypeSlug || 'pre-booking';
-	
+	const finalEventSlug = eventTypeSlug || 'sessions';
+
 	const protocol = request.headers.get('x-forwarded-proto') || 'http';
 	const host = request.headers.get('host');
 	const langPrefix = lang ? `/${lang}` : '';
@@ -39,7 +39,7 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 			username: finalUsername,
 			attendee: {
 				name: attendee.name,
-				email: attendee.email,
+				email: 'wardalpsycom@protonmail.com', //attendee.email,
 				timeZone: attendee.timeZone || 'Europe/Rome'
 			}
 		};
@@ -49,16 +49,19 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 			headers: {
 				'Content-Type': 'application/json',
 				'cal-api-version': '2026-02-25',
-				'Authorization': `Bearer ${apiKey}`
+				Authorization: `Bearer ${apiKey}`
 			},
 			body: JSON.stringify(requestBody)
 		});
 
 		const calResult = (await calResponse.json()) as any;
-		
+
 		if (!calResponse.ok) {
 			console.error('Cal.com booking error:', calResult);
-			return json({ error: 'Failed to create booking on Cal.com', details: calResult }, { status: calResponse.status });
+			return json(
+				{ error: 'Failed to create booking on Cal.com', details: calResult },
+				{ status: calResponse.status }
+			);
 		}
 
 		const bookingUid = calResult.data?.uid || calResult.uid;
@@ -69,8 +72,8 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 			line_items: [
 				{
 					price: stripePriceId,
-					quantity: 1,
-				},
+					quantity: 1
+				}
 			],
 			mode: 'payment',
 			success_url: successUrl,
@@ -84,9 +87,9 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 			}
 		});
 
-		return json({ 
+		return json({
 			checkoutUrl: session.url,
-			bookingUid 
+			bookingUid
 		});
 	} catch (err: any) {
 		console.error('Error in booking/checkout process:', err);

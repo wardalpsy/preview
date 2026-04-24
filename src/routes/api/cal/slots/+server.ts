@@ -7,7 +7,7 @@ export const GET: RequestHandler = async ({ url, platform }) => {
 	const timeZone = url.searchParams.get('timeZone') || 'Europe/Rome';
 
 	const username = 'pat.war';
-	const eventTypeSlug = 'pre-booking';
+	const eventTypeSlug = 'sessions';
 
 	const apiKey = CAL_API_KEY || (platform as any)?.env?.CAL_API_KEY;
 

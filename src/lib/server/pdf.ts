@@ -4,12 +4,31 @@ export interface ConsentData {
 	firstName: string;
 	lastName: string;
 	email: string;
+	phone?: string;
+	birthCity?: string;
+	birthDate?: string;
+	addressResidence?: string;
+	cityResidence?: string;
+	taxId?: string;
+	notMinor?: boolean;
 	signature?: string; // base64
 	typedSignature?: string;
 	signatureType: 'draw' | 'type';
 	date: string;
 	legalText: string;
 	title: string;
+	labels: {
+		patient: string;
+		email: string;
+		phone: string;
+		date: string;
+		birthCity: string;
+		birthDate: string;
+		addressResidence: string;
+		cityResidence: string;
+		taxId: string;
+		notMinor: string;
+	};
 }
 
 export async function generateConsentPDF(data: ConsentData): Promise<Uint8Array> {
@@ -19,55 +38,55 @@ export async function generateConsentPDF(data: ConsentData): Promise<Uint8Array>
 	const margin = 20;
 	const name = `${data.firstName} ${data.lastName}`;
 
-	// Header/Logo Placeholder (Optional, using text for now)
+	// Header/Logo Placeholder
 	doc.setFont('times', 'bold');
 	doc.setFontSize(10);
 	doc.text('Dr. Patrycja Wardal - wardalpsy.com', margin, 15);
 	doc.setDrawColor(200, 200, 200);
 	doc.line(margin, 18, pageWidth - margin, 18);
 
-	// Title (Dynamic from translation)
+	// Title
 	doc.setFont('times', 'bold');
 	doc.setFontSize(16);
 	const splitTitle = doc.splitTextToSize(data.title.toUpperCase(), pageWidth - margin * 2);
 	doc.text(splitTitle, pageWidth / 2, 30, { align: 'center' });
 
 	// Patient Info Box
+	let infoY = 40;
 	doc.setDrawColor(230, 230, 230);
 	doc.setFillColor(249, 249, 249);
-	doc.rect(margin, 40, pageWidth - margin * 2, 25, 'FD');
+	doc.rect(margin, infoY, pageWidth - margin * 2, 55, 'FD');
 
-	doc.setFontSize(10);
-	doc.setFont('helvetica', 'bold');
-	doc.text('Patient:', margin + 5, 48);
-	doc.setFont('helvetica', 'normal');
-	doc.text(name, margin + 25, 48);
+	doc.setFontSize(9);
+	const addInfoField = (label: string, value: string, y: number) => {
+		doc.setFont('helvetica', 'bold');
+		doc.text(`${label}:`, margin + 5, y);
+		doc.setFont('helvetica', 'normal');
+		doc.text(value || '-', margin + 45, y);
+	};
 
-	doc.setFont('helvetica', 'bold');
-	doc.text('Email:', margin + 5, 54);
-	doc.setFont('helvetica', 'normal');
-	doc.text(data.email, margin + 25, 54);
+	addInfoField(data.labels.patient, name, infoY + 8);
+	addInfoField(data.labels.email, data.email, infoY + 14);
+	if (data.phone) addInfoField(data.labels.phone, data.phone, infoY + 20);
+	addInfoField(data.labels.birthCity, data.birthCity || '', infoY + 26);
+	addInfoField(data.labels.birthDate, data.birthDate || '', infoY + 32);
+	addInfoField(data.labels.addressResidence, `${data.addressResidence || ''}, ${data.cityResidence || ''}`, infoY + 38);
+	addInfoField(data.labels.taxId, data.taxId || '', infoY + 44);
+	addInfoField(data.labels.date, data.date, infoY + 50);
 
-	doc.setFont('helvetica', 'bold');
-	doc.text('Date:', margin + 5, 60);
-	doc.setFont('helvetica', 'normal');
-	doc.text(data.date, margin + 25, 60);
-
-	// Legal Text (The exact MD content)
+	// Legal Text
 	doc.setFontSize(10);
 	doc.setFont('times', 'normal');
 	
-	// Clean up markdown markers for cleaner PDF text
 	const cleanText = data.legalText
-		.replace(/###?\s/g, '') // Remove headers
-		.replace(/\*\*/g, '')   // Remove bold
-		.replace(/\*/g, '')    // Remove italics
-		.replace(/---/g, '');   // Remove horizontal rules
+		.replace(/###?\s/g, '')
+		.replace(/\*\*/g, '')
+		.replace(/\*/g, '')
+		.replace(/---/g, '');
 
 	const splitText = doc.splitTextToSize(cleanText, pageWidth - margin * 2);
 	
-	// Handle multi-page if text is too long
-	let currentY = 75;
+	let currentY = infoY + 65;
 	const lineHeight = 5;
 	
 	for (let i = 0; i < splitText.length; i++) {

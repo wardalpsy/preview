@@ -21,6 +21,13 @@
 		signature?: string;
 		typedSignature?: string;
 		signatureType: 'draw' | 'type';
+		notMinor: boolean;
+		birthCity: string;
+		birthDate: string;
+		addressResidence: string;
+		cityResidence: string;
+		taxId: string;
+		isRead: boolean;
 	} | null>(null);
 	let isBooking = $state(false);
 
