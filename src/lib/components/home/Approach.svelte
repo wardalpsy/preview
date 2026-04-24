@@ -166,7 +166,7 @@
 					<div class="group relative">
 						<div class="absolute -top-6 -left-6 h-32 w-32 rounded-full bg-brand/50 blur-3xl"></div>
 						<div
-							class="relative h-160 overflow-hidden rounded-[2rem] border-8 shadow-2xl md:h-180 lg:h-213 xl:h-176"
+							class="relative h-160 overflow-hidden rounded-[2rem] border-8 shadow-2xl shadow-brand/15 md:h-180 lg:h-213 xl:h-176"
 						>
 							{#if approachImage}
 								<enhanced:img
