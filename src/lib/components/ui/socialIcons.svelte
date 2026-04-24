@@ -1,5 +1,4 @@
 <script lang="ts">
-	import * as Tooltip from '$lib/components/ui/tooltip/index.js';
 	import { i18n } from '$lib/i18n.svelte';
 	//Icons
 	import IconMail from 'virtual:icons/tabler/mail';
@@ -66,24 +65,17 @@
 	{#each socialLinks as link (link.id)}
 		{#if link.href}
 			<li class="flex items-center">
-				<Tooltip.Root>
-					<Tooltip.Trigger>
-						<a
-							href={formatUrl(link.id, link.href)}
-							class="footer-contact_link"
-							aria-label={link.id === 'email'
-								? link.label
-								: `${link.label} ${i18n.t.a11y.external_link}`}
-							target={link.id === 'email' ? undefined : '_blank'}
-							rel={link.id === 'email' ? undefined : 'noopener noreferrer'}
-						>
-							<link.icon class="size-5" aria-hidden="true" />
-						</a>
-					</Tooltip.Trigger>
-					<Tooltip.Content side="bottom">
-						<p>{link.label}</p>
-					</Tooltip.Content>
-				</Tooltip.Root>
+				<a
+					href={formatUrl(link.id, link.href)}
+					class="footer-contact_link"
+					aria-label={link.id === 'email'
+						? link.label
+						: `${link.label} ${i18n.t.a11y.external_link}`}
+					target={link.id === 'email' ? undefined : '_blank'}
+					rel={link.id === 'email' ? undefined : 'noopener noreferrer'}
+				>
+					<link.icon class="size-5" aria-hidden="true" />
+				</a>
 			</li>
 		{/if}
 	{/each}

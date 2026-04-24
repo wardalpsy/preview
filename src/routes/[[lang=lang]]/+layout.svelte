@@ -12,8 +12,11 @@
 	import 'lenis/dist/lenis.css';
 
 	let { children } = $props();
+
 	$effect(() => {
-		document.documentElement.lang = i18n.currentLang;
+		if (document.documentElement.lang !== i18n.currentLang) {
+			document.documentElement.lang = i18n.currentLang;
+		}
 	});
 
 	onMount(() => {
