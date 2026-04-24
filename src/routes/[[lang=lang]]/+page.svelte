@@ -16,7 +16,7 @@
 <About about={data.about} content={data.aboutContent} />
 <Approach />
 <Services />
-{#if i18n.t.articles.enabled}
+{#if i18n.t.articles.enabled && data.articles?.length > 0}
 	<Articles articles={data.articles} />
 {/if}
 <FAQ />

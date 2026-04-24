@@ -48,13 +48,15 @@
 <section id="sessions" class="relative scroll-m-12 overflow-hidden bg-background py-12 md:py-24">
 	<div class="container mx-auto px-6">
 		<!-- Main Bento Grid -->
-		<div class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:grid-rows-[auto_1fr] xl:grid-cols-7">
+		<div
+			class="group grid grid-cols-1 gap-12 lg:grid-cols-2 lg:grid-rows-[auto_1fr] xl:grid-cols-7"
+		>
 			<!-- LEFT -->
 			<div
 				class="flex w-full items-center justify-center lg:col-start-1 lg:col-end-2 lg:row-start-2 lg:row-end-3 xl:col-start-1 xl:col-end-4 xl:row-span-full"
 			>
 				<div
-					class="h-130 w-fit transform rounded-3xl bg-background shadow-2xl shadow-brand/15 transition-transform duration-1000 hover:rotate-1 sm:h-150 lg:h-full xl:h-160"
+					class="h-130 w-fit transform rounded-3xl bg-background shadow-2xl shadow-brand/15 transition-transform duration-1000 group-hover:rotate-1 sm:h-150 lg:h-full xl:h-160"
 				>
 					{#if midHeroImage}
 						<enhanced:img
