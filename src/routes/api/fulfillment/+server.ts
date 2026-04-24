@@ -86,7 +86,7 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 			birthDate: patient.birthDate,
 			addressResidence: patient.addressResidence,
 			cityResidence: patient.cityResidence,
-			taxId: 'CF/NIN/PESEL',
+			taxId: patient.taxId,
 			notMinor: patient.notMinor,
 			signature: patient.signature,
 			typedSignature: patient.typedSignature,
@@ -105,7 +105,7 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 				birthDate: t.consent.birth_date,
 				addressResidence: t.consent.resident_address,
 				cityResidence: t.consent.resident_city,
-				taxId: t.consent.tax_id,
+				taxId: 'CF/NIN/PESEL',
 				notMinor: t.consent.not_minor,
 				acknowledgement: t.consent.acknowledgement,
 				heading: t.consent.pdf_heading
