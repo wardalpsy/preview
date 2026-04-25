@@ -150,7 +150,7 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 			`,
 			attachments: [
 				{
-					filename: 'consenso_informato_firmato.pdf',
+					filename: 'consenso_privacy_firmato.pdf',
 					content: pdfBase64
 				}
 			]

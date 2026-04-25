@@ -17,6 +17,7 @@
 
 	let topBarVisible = $state(true);
 	let topBarRef: HTMLElement | null = $state(null);
+	let isMenuOpen = $state(false);
 
 	// Intersection Observer logic remains the same
 	$effect(() => {
@@ -94,7 +95,7 @@
 	<div class="container mx-auto flex w-full items-center justify-between lg:hidden">
 		<!-- Mobile Nav -->
 		<nav class="flex w-full items-center justify-between px-4 lg:hidden">
-			<Sheet.Root>
+			<Sheet.Root bind:open={isMenuOpen}>
 				<Sheet.Trigger>
 					{#snippet child({ props })}
 						<Button {...props} variant="icon" size="icon" aria-label={i18n.t.a11y.open_menu}>
@@ -123,6 +124,7 @@
 										<!-- Button CTA -->
 										<a
 											href={l(item.href)}
+											onclick={() => (isMenuOpen = false)}
 											class="mt-12 block rounded-full bg-primary py-3 text-center font-bold text-on-primary transition-all hover:bg-primary-container hover:text-on-primary-container hover:shadow-xl focus:ring-4 focus:ring-ring active:scale-95"
 										>
 											{item.label}
@@ -130,6 +132,7 @@
 									{:else}
 										<a
 											href={l(item.href)}
+											onclick={() => (isMenuOpen = false)}
 											class="group flex items-center font-serif text-xl tracking-tight transition-colors hover:text-brand"
 										>
 											<span
