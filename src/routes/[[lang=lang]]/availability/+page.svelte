@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { i18n } from '$lib/i18n.svelte';
 	import ContactForm from '$lib/components/forms/ContactForm.svelte';
-	import PreviewCalendarHeadless from '$lib/components/availability/PreviewCalendarHeadless.svelte';
+	import PreviewCalendarHeadless from '$lib/components/calendars/PreviewCalendarHeadless.svelte';
 	import { Button } from '$lib/components/ui/button/index.js';
 	import { slide } from 'svelte/transition';
 	import type { PageData } from './$types.js';

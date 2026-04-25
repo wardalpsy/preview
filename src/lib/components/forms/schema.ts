@@ -7,7 +7,17 @@ export const getContactSchema = (t: TranslationSchema) =>
 		firstName: z.string().min(2, t.validation.firstName.required),
 		lastName: z.string().min(2, t.validation.lastName.required),
 		email: z.string().email(t.validation.email.invalid),
-		phone: z.string().optional(),
+		phone: z
+			.string()
+			.min(1, t.validation.phone.required)
+			// Check for only numbers (regex)
+			.refine((val) => !val || /^\d+$/.test(val), {
+				message: t.validation.phone.digits_only
+			})
+			// Check for minimum length
+			.refine((val) => !val || val.length >= 8, {
+				message: t.validation.phone.min.replace('{min}', '8') // "Min 8 digits"
+			}),
 		subject: z.string().min(5, t.validation.subject.min.replace('{min}', '5')),
 		message: z
 			.string()
@@ -50,7 +60,17 @@ export const getConsentSchema = (t: TranslationSchema) =>
 			firstName: z.string().min(2, t.validation.firstName.required),
 			lastName: z.string().min(2, t.validation.lastName.required),
 			email: z.string().email(t.validation.email.invalid),
-			phone: z.string().optional(),
+			phone: z
+				.string()
+				.min(1, t.validation.phone.required)
+				// Check for only numbers (regex)
+				.refine((val) => !val || /^\d+$/.test(val), {
+					message: t.validation.phone.digits_only
+				})
+				// Check for minimum length
+				.refine((val) => !val || val.length >= 8, {
+					message: t.validation.phone.min.replace('{min}', '8') // "Min 8 digits"
+				}),
 			signature: z.string().optional(),
 			typedSignature: z.string().optional(),
 			signatureType: z.enum(['draw', 'type']).default('draw'),

@@ -32,6 +32,7 @@
 	let slots = $state<Record<string, any[]>>({});
 	let isLoading = $state(false);
 	let isBooking = $state(false);
+	let actionButton = $state<HTMLButtonElement | null>(null);
 
 	// Constants & Helpers
 	const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
@@ -160,6 +161,12 @@
 		if (placeholder) fetchSlots(placeholder);
 	});
 
+	$effect(() => {
+		if (selectedTime && actionButton) {
+			actionButton.focus();
+		}
+	});
+
 	// Helpers
 	const isDateAvailable = (date: DateValue) => availableDatesSet.has(date.toString());
 </script>
@@ -200,7 +207,11 @@
 			</h3>
 			<div class="grid gap-2">
 				{#if isLoading}
-					<div class="flex h-20 items-center justify-center">
+					<div
+						class="flex h-20 items-center justify-center"
+						role="status"
+						aria-label={i18n.t.cal.loading_slots || 'Loading slots'}
+					>
 						<div
 							class="h-4 w-4 animate-spin rounded-full border-2 border-brand border-t-transparent"
 						></div>
@@ -219,7 +230,8 @@
 						<Button
 							variant={selectedTime === slotStart ? 'secondary-slot' : 'outline-slot'}
 							onclick={() => (selectedTime = slotStart)}
-							class="w-full text-xs text-foreground/90"
+							class="w-full text-xs shadow-none"
+							aria-pressed={selectedTime === slotStart}
 						>
 							{startStr}{#if endStr}
 								- {endStr}{/if}
@@ -237,7 +249,7 @@
 	<Card.Footer
 		class="flex flex-col gap-4 border-t bg-secondary/80 px-6 py-5! text-left md:flex-row"
 	>
-		<div class="text-sm">
+		<div class="text-sm" aria-live="polite">
 			{#if value && selectedTime}
 				{i18n.t.cal.slot_appointment}
 				<span class="font-medium text-brand">
@@ -252,6 +264,7 @@
 			{/if}
 		</div>
 		<Button
+			bind:ref={actionButton}
 			disabled={!value || !selectedTime || isBooking}
 			onclick={handleAction}
 			variant="default"

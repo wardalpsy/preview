@@ -22,7 +22,7 @@
 				'outline-slot':
 					'border-border bg-background hover:bg-secondary/50 hover:text-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 aria-expanded:bg-muted aria-expanded:text-foreground cursor-pointer',
 				'secondary-slot':
-					'rounded-full bg-brand-container border-border font-bold text-on-brand-container hover:border-on-brand-container/30 hover:bg-brand-container/70 aria-expanded:bg-secondary aria-expanded:text-secondary-foreground hover:shadow-md cursor-pointer'
+					'rounded-full bg-brand border-border font-bold text-on-brand  cursor-pointer'
 			},
 			size: {
 				default:

@@ -19,7 +19,7 @@
 {#if i18n.t.articles.enabled && data.articles?.length > 0}
 	<Articles articles={data.articles} />
 {/if}
-<FAQ />
+
 <CTA />
 {#if i18n.t.testimonials.enable_testimonials}
 	<LazyComponent
@@ -28,4 +28,5 @@
 		{data}
 	/>
 {/if}
+<FAQ />
 <LazyComponent component={() => import('$lib/components/home/Contact.svelte')} {data} />

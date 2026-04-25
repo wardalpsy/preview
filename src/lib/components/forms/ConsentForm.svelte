@@ -299,8 +299,8 @@
 		<Form.Field {form} name="phone">
 			<Form.Control>
 				{#snippet children({ props })}
-					<Form.Label>{i18n.t.contact.phone}</Form.Label>
-					<Input {...props} bind:value={$formData.phone} required={false} class="h-10" />
+					<Form.Label>{i18n.t.contact.phone}<span class="form-required">*</span></Form.Label>
+					<Input {...props} bind:value={$formData.phone} class="h-10" />
 				{/snippet}
 			</Form.Control>
 			<Form.FieldErrors />

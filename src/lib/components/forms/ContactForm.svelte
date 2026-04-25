@@ -37,7 +37,7 @@
 		<Form.Control>
 			{#snippet children({ props })}
 				<Form.Label>{i18n.t.contact.subject}<span class="form-required">*</span></Form.Label>
-				<Input {...props} bind:value={$formData.subject} />
+				<Input {...props} bind:value={$formData.subject} class="h-10" />
 			{/snippet}
 		</Form.Control>
 		<Form.FieldErrors />
@@ -47,7 +47,7 @@
 			<Form.Control>
 				{#snippet children({ props })}
 					<Form.Label>{i18n.t.contact.first_name}<span class="form-required">*</span></Form.Label>
-					<Input {...props} bind:value={$formData.firstName} />
+					<Input {...props} bind:value={$formData.firstName} class="h-10" />
 				{/snippet}
 			</Form.Control>
 			<Form.FieldErrors />
@@ -57,7 +57,7 @@
 			<Form.Control>
 				{#snippet children({ props })}
 					<Form.Label>{i18n.t.contact.last_name}<span class="form-required">*</span></Form.Label>
-					<Input {...props} bind:value={$formData.lastName} />
+					<Input {...props} bind:value={$formData.lastName} class="h-10" />
 				{/snippet}
 			</Form.Control>
 			<Form.FieldErrors />
@@ -68,7 +68,7 @@
 			<Form.Control>
 				{#snippet children({ props })}
 					<Form.Label>{i18n.t.contact.email}<span class="form-required">*</span></Form.Label>
-					<Input {...props} type="email" bind:value={$formData.email} />
+					<Input {...props} type="email" bind:value={$formData.email} class="h-10" />
 				{/snippet}
 			</Form.Control>
 			<Form.FieldErrors />
@@ -77,22 +77,14 @@
 		<Form.Field {form} name="phone">
 			<Form.Control>
 				{#snippet children({ props })}
-					<Form.Label>{i18n.t.contact.phone}</Form.Label>
-					<Input {...props} bind:value={$formData.phone} required={false} />
+					<Form.Label>{i18n.t.contact.phone}<span class="form-required">*</span></Form.Label>
+					<Input {...props} bind:value={$formData.phone} class="h-10" />
 				{/snippet}
 			</Form.Control>
 			<Form.FieldErrors />
 		</Form.Field>
 	</div>
-	<Form.Field {form} name="signature">
-		<Form.Control>
-			{#snippet children({ props })}
-				<Form.Label>{i18n.t.contact.phone}</Form.Label>
-				<Input {...props} bind:value={$formData.phone} required={false} />
-			{/snippet}
-		</Form.Control>
-		<Form.FieldErrors />
-	</Form.Field>
+
 	<Form.Field {form} name="message">
 		<Form.Control>
 			{#snippet children({ props })}

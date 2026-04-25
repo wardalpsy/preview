@@ -23,7 +23,7 @@
 					observer.disconnect();
 				}
 			},
-			{ rootMargin: '200px' } // Start loading 200px before it enters the viewport
+			{ rootMargin: '400px' } // Start loading 400px before it enters the viewport
 		);
 
 		observer.observe(container);
@@ -46,6 +46,6 @@
 	{:else if placeholder}
 		{@render placeholder()}
 	{:else}
-		<div class="min-h-[400px]"></div>
+		<div class="min-h-100"></div>
 	{/if}
 </div>
