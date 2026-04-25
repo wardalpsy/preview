@@ -1,6 +1,6 @@
 {
 	"header": {
-		"title": "Dr.",
+		"title": "Dr",
 		"name": "Patrycja Wardal",
 		"specialties": "Psychologist • Psychotherapist • Hypnotherapist"
 	},
@@ -8,10 +8,12 @@
 		"about": "About me",
 		"approach": "Approach",
 		"practices": "Services",
+		"sessions": "Get in touch",
 		"articles": "Articles",
-		"faq": "FAQ",
 		"testimonials": "Testimonials",
-		"contact": "Contact"
+		"faq": "FAQ",
+		"contact": "Contact",
+		"reserved": "Reserved Area"
 	},
 	"lang_switch": {
 		"flags": true,
@@ -145,7 +147,7 @@
 		"ask_me": "Contact me directly."
 	},
 	"cta": {
-		"h2_title": "Start your journey with me and Nikki",
+		"h2_title": "Schedule an appointment",
 		"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus.",
 		"image": "/src/lib/assets/images/wardalpsy-cta-en.jpg",
 		"image_alt": "A portrait of Dr. Patrycja Wardal in a professional yet cozy office setting, accompanied by Nikki her co-therapist dog, conveying a calm and supportive atmosphere.",

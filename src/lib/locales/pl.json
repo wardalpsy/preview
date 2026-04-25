@@ -1,6 +1,6 @@
 {
 	"header": {
-		"title": "mgr.",
+		"title": "mgr",
 		"name": "Patrycja Wardal",
 		"specialties": "Psycholog • Psychoterapeuta • Hipnoterapeuta"
 	},
@@ -8,10 +8,12 @@
 		"about": "O mnie",
 		"approach": "Podejście",
 		"practices": "Obszary pomocy",
+		"sessions": "Umów wizytę",
 		"articles": "Artykuły",
 		"contact": "Kontakt",
 		"faq": "FAQ",
-		"testimonials": "Opinie"
+		"testimonials": "Opinie",
+		"reserved": "Strefa klienta"
 	},
 	"lang_switch": {
 		"flags": true,
@@ -179,7 +181,7 @@
 		"next": "Następna opinia"
 	},
 	"cta": {
-		"h2_title": "Daj sobie tyle czasu, ile potrzebujesz",
+		"h2_title": "Umów wizytę",
 		"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus.",
 		"image": "/src/lib/assets/images/wardalpsy-cta-en.jpg",
 		"image_alt": "Portret dr Patrycji Wardal w profesjonalnym, a zarazem przytulnym gabinecie, w towarzystwie jej psa ko-terapeuty Nikki, oddający spokojną i pełną wsparcia atmosferę.",

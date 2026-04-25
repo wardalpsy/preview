@@ -8,10 +8,12 @@
 		"about": "Chi sono",
 		"approach": "Approccio",
 		"practices": "Aree di intervento",
+		"sessions": "Prenota un appuntamento",
 		"articles": "Articoli",
 		"faq": "FAQ",
 		"testimonials": "Testimonianze",
-		"contact": "Contatti"
+		"contact": "Contatti",
+		"reserved": "Area riservata"
 	},
 	"lang_switch": {
 		"flags": true,
@@ -143,7 +145,7 @@
 		"ask_me": "Contattami direttamente."
 	},
 	"cta": {
-		"h2_title": "Prenditi tutto il tempo che ti occorre",
+		"h2_title": "Prenota un appuntamento",
 		"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus.",
 		"image": "/src/lib/assets/images/wardalpsy-cta-en.jpg",
 		"image_alt": "Ritratto della dott.ssa Patrycja Wardal in un ufficio professionale e accogliente, accompagnata dal suo cane co-terapeuta Nikki, in un'atmosfera calma e rassicurante.",
