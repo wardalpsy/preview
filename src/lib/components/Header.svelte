@@ -89,7 +89,7 @@
 
 <!-- Sticky bottom bar -->
 <div
-	class="sticky top-0 z-50 mb-24 w-full bg-secondary/90 py-1 shadow-sm backdrop-blur-lg lg:mb-0 lg:flex lg:py-3"
+	class="sticky top-0 z-50 w-full bg-secondary/90 py-1 shadow-sm backdrop-blur-lg lg:mb-0 lg:flex lg:py-3"
 >
 	<div class="container mx-auto flex w-full items-center justify-between lg:hidden">
 		<!-- Mobile Nav -->

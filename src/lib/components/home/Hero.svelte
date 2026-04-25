@@ -42,33 +42,9 @@
 	const heroImage = $derived(getHeroImage());
 </script>
 
-<div class="relative flex min-h-[90vh] items-center overflow-hidden bg-background pb-18">
-	<div class="container mx-auto px-4 py-12 lg:py-24">
-		<div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 xl:grid-cols-[1fr_1fr]">
-			<!-- Text Content -->
-			<div class="z-10 mb-18">
-				<h1
-					class="mb-8 text-center font-display text-5xl leading-[1.05] text-brand italic sm:text-left md:text-6xl lg:mt-0 lg:px-0 lg:text-center lg:text-7xl xl:text-left xl:text-8xl"
-				>
-					{i18n.t.hero.title}
-				</h1>
-
-				<p
-					class="mb-18 max-w-xl text-center text-xl leading-relaxed font-light tracking-wide sm:text-left md:text-2xl lg:text-center xl:text-left"
-				>
-					{i18n.t.hero.subtitle}
-				</p>
-
-				<div class="flex flex-col gap-4 sm:flex-row">
-					<Button size="xl" href={l('/#sessions')}>
-						{i18n.t.hero.cta_primary}
-					</Button>
-					<Button size="xl" variant="secondary" href={l('/#approach')}>
-						{i18n.t.hero.cta_secondary}
-					</Button>
-				</div>
-			</div>
-
+<div class="relative flex overflow-hidden bg-background">
+	<div class="container mx-auto px-4 py-12 lg:py-24 xl:py-36">
+		<div class="grid grid-cols-1 items-center justify-items-center gap-24 lg:grid-cols-[auto_1fr]">
 			<!-- Image Section -->
 			<div class="relative">
 				<div
@@ -100,6 +76,29 @@
 							</q>
 						</div>
 					{/if}
+				</div>
+			</div>
+			<!-- Text Content -->
+			<div class="z-10 pb-18">
+				<h1
+					class="mb-8 text-center font-display text-5xl leading-[1.05] text-brand italic sm:text-left md:text-6xl lg:mt-0 lg:px-0 lg:text-center lg:text-7xl xl:text-left xl:text-8xl"
+				>
+					{i18n.t.hero.title}
+				</h1>
+
+				<p
+					class="mb-18 max-w-xl text-center text-xl leading-relaxed font-light tracking-wide sm:text-left md:text-2xl lg:text-center xl:text-left"
+				>
+					{i18n.t.hero.subtitle}
+				</p>
+
+				<div class="flex flex-col gap-4 sm:flex-row">
+					<Button size="xl" href={l('/#sessions')}>
+						{i18n.t.hero.cta_primary}
+					</Button>
+					<Button size="xl" variant="secondary" href={l('/#approach')}>
+						{i18n.t.hero.cta_secondary}
+					</Button>
 				</div>
 			</div>
 		</div>
