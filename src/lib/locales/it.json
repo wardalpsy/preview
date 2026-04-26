@@ -393,10 +393,11 @@
 		}
 	},
 	"emails": {
-		"confirmation_subject": "Appointment Confirmation - Dr. Patrycja Wardal",
-		"confirmation_title": "Appointment Confirmation",
-		"confirmation_greeting": "Dear {name},",
-		"confirmation_body": "Your appointment has been confirmed.",
-		"confirmation_footer": "See you soon,<br> Dr. Patrycja Wardal"
+		"new_request_subject": "Nuova richiesta di appuntamento",
+		"confirmation_subject": "Conferma appuntamento - Dott.ssa Patrycja Wardal",
+		"confirmation_title": "Conferma appuntamento",
+		"confirmation_greeting": "Gentile {name},",
+		"confirmation_body": "Il tuo appuntamento è stato confermato.",
+		"confirmation_footer": "A presto,<br> Dott.ssa Patrycja Wardal"
 	}
 }

@@ -16,7 +16,7 @@
 <Approach />
 <Services />
 
-<Calendar />
+<Calendar {data} />
 {#if i18n.t.testimonials.enable_testimonials}
 	<LazyComponent
 		component={() => import('$lib/components/home/Testimonials.svelte')}

@@ -396,6 +396,7 @@
 		}
 	},
 	"emails": {
+		"new_request_subject": "New Appointment Request",
 		"confirmation_subject": "Appointment Confirmation - Dr. Patrycja Wardal",
 		"confirmation_title": "Appointment Confirmation",
 		"confirmation_greeting": "Dear {name},",

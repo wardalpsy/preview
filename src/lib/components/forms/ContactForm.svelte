@@ -8,9 +8,10 @@
 	import { toast } from 'svelte-sonner';
 	import { i18n } from '$lib/i18n.svelte';
 
-	let { data, subject = '' } = $props();
+	let { data, subject = '', id = 'contact-form', action = '' } = $props();
 	// svelte-ignore state_referenced_locally
-	const form = superForm(data.form, {
+	const form = superForm(data[id] || data.form, {
+		id,
 		validators: zod4Client(getContactSchema(i18n.t)),
 		onUpdated: ({ form: f }) => {
 			if (f.message) {
@@ -32,7 +33,7 @@
 	});
 </script>
 
-<form method="POST" use:enhance class="space-y-6">
+<form method="POST" {action} use:enhance class="space-y-6">
 	<Form.Field {form} name="subject">
 		<Form.Control>
 			{#snippet children({ props })}
