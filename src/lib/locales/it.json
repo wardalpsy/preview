@@ -13,7 +13,8 @@
 		"faq": "FAQ",
 		"testimonials": "Testimonianze",
 		"contact": "Contatti",
-		"reserved": "Area riservata"
+		"reserved": "Area riservata",
+		"more": "Altro"
 	},
 	"lang_switch": {
 		"flags": true,

@@ -13,7 +13,8 @@
 		"contact": "Kontakt",
 		"faq": "FAQ",
 		"testimonials": "Opinie",
-		"reserved": "Strefa klienta"
+		"reserved": "Strefa klienta",
+		"more": "Więcej"
 	},
 	"lang_switch": {
 		"flags": true,

@@ -13,7 +13,8 @@
 		"testimonials": "Testimonials",
 		"faq": "FAQ",
 		"contact": "Contact",
-		"reserved": "Reserved Area"
+		"reserved": "Reserved Area",
+		"more": "More"
 	},
 	"lang_switch": {
 		"flags": true,

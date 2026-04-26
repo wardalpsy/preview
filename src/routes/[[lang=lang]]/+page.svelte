@@ -4,9 +4,8 @@
 	import About from '$lib/components/home/About.svelte';
 	import Approach from '$lib/components/home/Approach.svelte';
 	import Services from '$lib/components/home/Services.svelte';
-	import CTA from '$lib/components/home/Cta.svelte';
+	import Calendar from '$lib/components/home/Calendar.svelte';
 	import FAQ from '$lib/components/home/FAQ.svelte';
-	import Articles from '$lib/components/home/Articles.svelte';
 	import LazyComponent from '$lib/components/LazyComponent.svelte';
 
 	let { data } = $props();
@@ -16,11 +15,8 @@
 <About about={data.about} content={data.aboutContent} />
 <Approach />
 <Services />
-{#if i18n.t.articles.enabled && data.articles?.length > 0}
-	<Articles articles={data.articles} />
-{/if}
 
-<CTA />
+<Calendar />
 {#if i18n.t.testimonials.enable_testimonials}
 	<LazyComponent
 		component={() => import('$lib/components/home/Testimonials.svelte')}
