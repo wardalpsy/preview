@@ -45,7 +45,7 @@
 			class:translate-y-2={topBarVisible}
 			class:pointer-events-none={topBarVisible}
 		>
-			<span class="pl-13 font-serif text-sm leading-tight">{i18n.t.header.title}</span>&nbsp;
+			<span class="font-serif text-sm leading-tight">{i18n.t.header.title}</span>&nbsp;
 			<span class="font-display text-xl leading-tight font-bold tracking-tight text-brand">
 				{i18n.t.header.name}
 			</span>

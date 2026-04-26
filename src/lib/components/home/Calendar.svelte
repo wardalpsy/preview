@@ -57,7 +57,7 @@
 
 <Dialog.Root bind:open={isDialogOpen}>
 	<Dialog.Content
-		class="rounded-3xl border border-border bg-secondary p-8 text-left text-on-secondary shadow-sm shadow-brand/15 sm:max-w-150"
+		class="no-scrollbar max-h-[90vh] overflow-x-hidden overflow-y-auto rounded-3xl border border-border bg-secondary p-8 text-left text-on-secondary shadow-sm shadow-brand/15 sm:max-w-150"
 		data-lenis-prevent
 		showCloseButton={false}
 	>
