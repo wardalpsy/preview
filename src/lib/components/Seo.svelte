@@ -27,14 +27,15 @@
 		].filter(Boolean)
 	} = $props();
 
-	// Schema Logic using Schema.org Psychologist
+	// Schema Logic using Schema.org MedicalBusiness
 	let schema = $derived({
 		'@context': 'https://schema.org',
 		'@graph': [
 			{
-				'@type': 'Psychologist',
+				'@type': 'MedicalBusiness',
 				'@id': `${url}/#identity`,
-				name: 'Patrycja Wardal',
+				name: title,
+				alternateName: 'Patrycja Wardal',
 				image: `${url}${image}`,
 				description: metaDesc,
 				telephone: phone,
@@ -49,26 +50,33 @@
 				},
 				geo: {
 					'@type': 'GeoCoordinates',
-					latitude: '41.1171', // Bari coordinates
+					latitude: '41.1171',
 					longitude: '16.8719'
 				},
 				knowsLanguage: ['English', 'Italian', 'Polish'],
-				medicalSpecialty: 'Psychology',
 				priceRange: '€€',
 				openingHours: 'Mo,Tu,We,Th,Fr 09:00-19:00',
 				sameAs: sameAs,
-				availableService: [
-					{
-						'@type': 'MedicalTherapy',
-						name: 'Psychotherapy',
-						description: 'Individual and group psychotherapy sessions.'
-					},
-					{
-						'@type': 'MedicalTherapy',
-						name: 'Hypnosis',
-						description: 'Clinical hypnosis for various psychological issues.'
-					}
-				]
+				hasOfferCatalog: {
+					'@type': 'OfferCatalog',
+					name: 'Psychotherapy Services',
+					itemListElement: [
+						{
+							'@type': 'Offer',
+							itemOffered: {
+								'@type': 'Service',
+								name: 'Psychotherapy'
+							}
+						},
+						{
+							'@type': 'Offer',
+							itemOffered: {
+								'@type': 'Service',
+								name: 'Hypnosis'
+							}
+						}
+					]
+				}
 			},
 			{
 				'@type': 'WebSite',
