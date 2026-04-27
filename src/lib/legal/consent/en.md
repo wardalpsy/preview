@@ -3,8 +3,6 @@ title: Privacy Notice & Consent for Data Processing
 date: 2026-04-24
 ---
 
-# Privacy Notice & Consent for Data Processing
-
 ## Data Controller
 
 Dr Patrycja Wardal  

@@ -3,8 +3,6 @@ title: Informativa sulla Privacy e Consenso al Trattamento dei Dati
 date: 2026-04-24
 ---
 
-# Informativa sulla Privacy e Consenso al Trattamento dei Dati
-
 ## Titolare del Trattamento
 
 dott.ssa Patrycja Wardal  

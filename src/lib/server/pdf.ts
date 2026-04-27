@@ -80,7 +80,7 @@ export async function generateConsentPDF(data: ConsentData): Promise<Uint8Array>
 	addInfoField(data.labels.taxId, data.taxId || '', currentY + 44);
 	addInfoField(data.labels.date, data.date, currentY + 50);
 
-	currentY += 75; //text sapce from initial field
+	currentY += 65; //text sapce from initial field
 
 	// Legal Text Processing
 	const lines: { text: string; font: string; size: number; spacing: number }[] = [];

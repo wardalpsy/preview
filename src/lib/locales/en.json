@@ -264,7 +264,7 @@
 		"type_sig_full_name": "Type your full name to sign.",
 		"type_sig_disclaimer": "By typing your name, you agree that this will serve as your electronic signature.",
 		"delete_sig": "Delete signature",
-		"read_consent": "I have read and agree to the Informed Consent for Treatment.",
+		"read_consent": "I have read and agree to the Consent for Data Processing.",
 		"view_consent": "View consent document",
 		"accept_and_close": "I have read and accept",
 		"badge_step3": "Payment",

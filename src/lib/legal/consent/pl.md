@@ -3,8 +3,6 @@ title: Informacja o ochronie prywatności i zgoda na przetwarzanie danych
 date: 2026-04-24
 ---
 
-# Informacja o ochronie prywatności i zgoda na przetwarzanie danych
-
 ## Administrator Danych
 
 mgr Patrycja Wardal  

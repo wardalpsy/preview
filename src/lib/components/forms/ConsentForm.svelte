@@ -168,7 +168,8 @@
 		<Dialog.Header
 			class="sticky top-0 z-10 w-full border-b bg-secondary px-4 py-6 text-on-secondary"
 		>
-			<div class="flex items-center justify-end px-4">
+			<div class="flex items-center justify-between px-4">
+				<Dialog.Title>{i18n.t.consent.legal_title}</Dialog.Title>
 				<Dialog.Close>
 					{#snippet child({ props })}
 						<Button variant="icon" size="icon" class="cursor-pointer" {...props}>
