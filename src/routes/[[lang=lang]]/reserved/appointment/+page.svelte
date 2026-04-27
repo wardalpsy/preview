@@ -94,40 +94,64 @@
 		{ id: 2, label: i18n.t.consent.badge_step2 || 'Consent' },
 		{ id: 3, label: i18n.t.consent.badge_step3 || 'Payment' }
 	];
+
+	let headingRef = $state<HTMLElement | null>(null);
+
+	// Move focus to the heading when the step changes for screen readers
+	$effect(() => {
+		if (step && headingRef) {
+			headingRef.focus();
+		}
+	});
+
+	const pageTitle = $derived(`${steps.find((s) => s.id === step)?.label} - ${i18n.t.seo.title}`);
 </script>
+
+<svelte:head>
+	<title>{pageTitle}</title>
+</svelte:head>
 
 <div class="min-h-screen bg-background py-20">
 	<div class="container mx-auto px-6">
 		<div class="mx-auto max-w-4xl space-y-12">
 			<!-- Progress Bar -->
-			<div class="flex items-center justify-between px-4 md:px-20">
-				{#each steps as s, i (s.id)}
-					<div class="flex flex-col items-center gap-2">
-						<div
-							class="flex h-10 w-10 items-center justify-center rounded-full font-bold transition-colors {step >=
-							s.id
-								? 'bg-primary text-on-primary'
-								: 'bg-secondary text-on-secondary'}"
-						>
-							{s.id}
-						</div>
-						<span
-							class="text-[10px] font-bold tracking-widest uppercase transition-colors {step >= s.id
-								? 'text-brand'
-								: 'text-foreground/90'}"
-						>
-							{s.label}
-						</span>
-					</div>
-					{#if i < steps.length - 1}
-						<div class="mx-4 mb-6 h-px grow bg-border"></div>
-					{/if}
-				{/each}
-			</div>
+			<nav aria-label="Progress" class="px-4 md:px-20">
+				<ol class="flex items-center justify-between">
+					{#each steps as s, i (s.id)}
+						<li class="flex flex-col items-center gap-2">
+							<div
+								class="flex h-10 w-10 items-center justify-center rounded-full font-bold transition-colors {step >=
+								s.id
+									? 'bg-primary text-on-primary'
+									: 'bg-secondary text-on-secondary'}"
+								aria-hidden="true"
+							>
+								{s.id}
+							</div>
+							<span
+								class="text-[10px] font-bold tracking-widest uppercase transition-colors {step >=
+								s.id
+									? 'text-brand'
+									: 'text-foreground/90'}"
+								aria-current={step === s.id ? 'step' : undefined}
+							>
+								{s.label}
+							</span>
+						</li>
+						{#if i < steps.length - 1}
+							<div class="mx-4 mb-6 h-px grow bg-border" aria-hidden="true"></div>
+						{/if}
+					{/each}
+				</ol>
+			</nav>
 
 			{#if step === 1}
 				<div class="my-16 animate-in duration-500 fade-in slide-in-from-bottom-4">
-					<h1 class="mb-8 text-center font-display text-3xl text-brand">
+					<h1
+						bind:this={headingRef}
+						tabindex="-1"
+						class="mb-8 text-center font-display text-3xl text-brand outline-none"
+					>
 						{i18n.t.consent.calendar_title || 'Appointment & Payment Calendar'}
 					</h1>
 					<BookingCalendarHeadless mode="select" onSelect={handleSlotSelected} />
@@ -147,11 +171,19 @@
 							/>
 							{i18n.t.a11y.back}
 						</Button>
-						<h2 class="mb-8 text-center font-display text-3xl text-brand">
+						<h1
+							bind:this={headingRef}
+							tabindex="-1"
+							class="mb-8 text-center font-display text-3xl text-brand outline-none"
+						>
 							{i18n.t.consent.legal_title || 'Informed Consent for Treatment'}
-						</h2>
+						</h1>
 					</div>
-					<ConsentForm form={data.form} onComplete={handleConsentComplete} />
+					<ConsentForm
+						form={data.form}
+						initialData={patientData}
+						onComplete={handleConsentComplete}
+					/>
 				</div>
 			{:else if step === 3}
 				<div class="my-16 animate-in duration-500 fade-in slide-in-from-bottom-4">
@@ -159,16 +191,20 @@
 						class="overflow-hidden rounded-[2rem] border bg-secondary text-on-secondary shadow-md shadow-brand/15"
 					>
 						<Card.Header class="p-8">
-							<h2 class="mb-8 text-center font-display text-3xl text-brand">
+							<h1
+								bind:this={headingRef}
+								tabindex="-1"
+								class="mb-8 text-center font-display text-3xl text-brand outline-none"
+							>
 								{i18n.t.consent.appointment_overview}
-							</h2>
+							</h1>
 						</Card.Header>
 						<Card.Content class="space-y-6 p-8">
-							<div class="grid gap-8 md:grid-cols-2">
+							<div class="grid grid-cols-1 gap-8">
 								<div class="space-y-4">
-									<h3 class="text-xs font-bold tracking-widest text-foreground/90 uppercase">
+									<h2 class="text-xs font-bold tracking-widest text-foreground/90 uppercase">
 										{i18n.t.consent.appointment_details}
-									</h3>
+									</h2>
 									<div class="rounded-2xl border bg-background p-6">
 										<p class="text-wardal-purple font-serif text-lg">
 											{selectedSlot?.date}
@@ -180,16 +216,53 @@
 									</div>
 								</div>
 								<div class="space-y-4">
-									<h3 class="text-xs font-bold tracking-widest text-foreground/90 uppercase">
-										I tuoi dati
-									</h3>
+									<h2 class="text-xs font-bold tracking-widest text-foreground/90 uppercase">
+										{i18n.t.consent.label_data}
+									</h2>
 									<div class="rounded-2xl border bg-white p-6">
-										<p class="font-bold">
-											{patientData?.firstName}
-											{patientData?.lastName}
-										</p>
-										<p>{patientData?.email}</p>
-										<div class="mt-4 border-t border-border/50 pt-4">
+										<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+											<div class="space-y-1">
+												<p class="text-[10px] font-bold text-foreground/60 uppercase">
+													{i18n.t.contact.section_name}
+												</p>
+												<p class="font-bold">
+													{patientData?.firstName}
+													{patientData?.lastName}
+												</p>
+											</div>
+											<div class="space-y-1">
+												<p class="text-[10px] font-bold text-foreground/60 uppercase">
+													{i18n.t.contact.email}
+												</p>
+												<p>{patientData?.email}</p>
+											</div>
+											<div class="space-y-1">
+												<p class="text-[10px] font-bold text-foreground/60 uppercase">
+													{i18n.t.contact.phone}
+												</p>
+												<p>{patientData?.phone}</p>
+											</div>
+											<div class="space-y-1">
+												<p class="text-[10px] font-bold text-foreground/60 uppercase">
+													{i18n.t.consent.tax_id}
+												</p>
+												<p>{patientData?.taxId}</p>
+											</div>
+											<div class="space-y-1">
+												<p class="text-[10px] font-bold text-foreground/60 uppercase">
+													{i18n.t.consent.birth_city} / {i18n.t.consent.birth_date}
+												</p>
+												<p>{patientData?.birthCity}, {patientData?.birthDate}</p>
+											</div>
+											<div class="space-y-1">
+												<p class="text-[10px] font-bold text-foreground/60 uppercase">
+													{i18n.t.consent.resident_address}
+												</p>
+												<p>{patientData?.addressResidence}, {patientData?.cityResidence}</p>
+											</div>
+										</div>
+
+										<div class="mt-6 border-t border-border/50 pt-4">
 											<p class="mb-2 text-[10px] font-bold text-foreground/90 uppercase">
 												{i18n.t.consent.signature}
 											</p>

@@ -80,11 +80,11 @@
 					</li>
 					<li>
 						<a
-							href="#sessions"
+							href={l('/#sessions')}
 							class="footer-nav_link"
 							onmouseenter={() => {
 								window.dispatchEvent(
-									new CustomEvent('preload-component', { detail: { id: 'contact' } })
+									new CustomEvent('preload-component', { detail: { id: 'sessions' } })
 								);
 							}}>{i18n.t.footer.nav_availability}</a
 						>
@@ -94,7 +94,7 @@
 					</li>
 					<li>
 						<a
-							href="#contact"
+							href={l('/#contact')}
 							class="footer-nav_link"
 							onmouseenter={() => {
 								window.dispatchEvent(

@@ -244,7 +244,9 @@
 	},
 	"consent": {
 		"legal_title": "Privacy Notice & Consent for Data Processing",
-		"legal_text_short": "Please review the informed consent document before signing.",
+		"form_title": "Consent and Signature Form",
+		"legal_text_short": "Please {link} document before signing.",
+		"legal_text_short_link": "review the consent document",
 		"label_name": "Full Name",
 		"label_email": "Your Email",
 		"label_signature": "Digital Signature",
@@ -270,18 +272,20 @@
 		"appointment_details": "Appointment Details",
 		"proceed_payment": "Proceed to Payment",
 		"edit_details": "Edit Details",
+		"label_data": "Your Data",
 		"error_fill_all": "Please fill in all fields and sign the form.",
 		"access": "Access",
 		"not_minor": "I confirm I am an adult or have parental authority for the minor mentioned.",
 		"birth_city": "City of Birth",
 		"birth_date": "Date of Birth",
+		"birth_date_sugg": "(dd/mm/yyyy)",
 		"resident_city": "City of residence",
 		"resident_address": "Residential address",
 		"tax_id": "National Identification Number (NIN/CF/PESEL)",
 		"tax_id_tooltip": "Please enter your national tax identification number (e.g. NIN for the UK, Codice Fiscale for Italy, or PESEL for Poland).",
 		"date": "Date",
 		"acknowledgement": "By signing this document, you acknowledge that you have read, understood, and agreed to the terms described above.",
-		"pdf_heading": "Dr. Patrycja Wardal - wardalpsy.com"
+		"pdf_heading": "Dr Patrycja Wardal - wardalpsy.com"
 	},
 
 	"contact": {
@@ -299,7 +303,7 @@
 		"request_info": "Please enter your details below to submit your request. Fields marked with an asterisk (*) are required.",
 		"whatsapp_appointment_message": "Request for appointment...",
 		"contact_form_target": "wardalpsycom@protonmail.com",
-		"my_email": "wardal.psy@gmail.com",
+		"my_email": "wardalpsycom@protonmail.com",
 		"section_title": "Contact me!",
 		"section_subtitle": "Lorem Ipsum Dolor",
 		"section_name": "Name",
@@ -343,7 +347,8 @@
 		"appointment": "Appointment",
 		"confirmed_appointment": "Your appointment has been successfully confirmed.",
 		"send_docs_heading": "Documents Sent",
-		"send_docs": "We've sent a copy of the privacy consent to"
+		"send_docs": "We've sent a copy of the privacy consent to",
+		"reschedule": "Contact us if you need to reschedule your appointment."
 	},
 	"cal": {
 		"slots": "Available times",
@@ -395,6 +400,11 @@
 			"required": "Phone number is required",
 			"digits_only": "Phone number must contain only digits",
 			"min": "Phone number must be at least {min} digits"
+		},
+		"date": {
+			"invalid_format": "Invalid date format. Use dd/mm/yyyy",
+			"invalid_date": "This date is not valid",
+			"future_date": "Date cannot be in the future"
 		}
 	},
 	"emails": {

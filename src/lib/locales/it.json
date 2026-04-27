@@ -241,8 +241,10 @@
 		"oxy_credit": true
 	},
 	"consent": {
-		"legal_title": "Consenso Informato al Trattamento",
-		"legal_text_short": "Si prega di prendere visione del documento di consenso informato prima di firmare.",
+		"legal_title": "Informativa sulla privacy e consenso al trattamento dei dati",
+		"form_title": "Modulo di consenso e firma",
+		"legal_text_short": "Per favore, {link} prima di firmare.",
+		"legal_text_short_link": "leggi l'informativa sul consenso",
 		"label_name": "Nome e Cognome",
 		"label_email": "La tua Email",
 		"label_signature": "Firma Digitale",
@@ -266,20 +268,22 @@
 		"badge_step3": "Pagamento",
 		"appointment_overview": "Riepilogo Appuntamento",
 		"appointment_details": "Dettagli Appuntamento",
-		"proceed_payment": "Proceed to Payment",
+		"proceed_payment": "Procedi al pagamento",
 		"edit_details": "Modifica Dettagli",
+		"label_data": "I tuoi dati",
 		"error_fill_all": "Si prega di compilare tutti i campi e firmare il modulo.",
 		"access": "Accesso",
 		"not_minor": "Dichiaro di essere maggiorenne o di avere la potestà genitoriale per il minore indicato.",
 		"birth_city": "Luogo di nascita",
 		"birth_date": "Data di nascita",
+		"birth_date_sugg": "(gg/mm/aaaa)",
 		"resident_city": "Città di residenza",
 		"resident_address": "Indirizzo di residenza",
 		"tax_id": "Codice Fiscale (CF/PESEL/NIN)",
 		"tax_id_tooltip": "Inserisci il tuo codice di identificazione fiscale (es. Codice Fiscale, PESEL o NIN).",
 		"date": "Data",
 		"acknowledgement": "Firmando questo documento, confermi di aver letto, compreso e accettato i termini sopra descritti.",
-		"pdf_heading": "dott.ssa. Patrycja Wardal - wardalpsy.com"
+		"pdf_heading": "dott.ssa Patrycja Wardal - wardalpsy.com"
 	},
 	"contact": {
 		"subject": "Oggetto",
@@ -296,7 +300,7 @@
 		"request_info": "Inserisci i tuoi dati qui sotto per inviare la richiesta. I campi contrassegnati con l'asterisco (*) sono obbligatori.",
 		"whatsapp_appointment_message": "Richiesta di appuntamento...",
 		"contact_form_target": "wardalpsycom@protonmail.com",
-		"my_email": "wardal.psy@gmail.com",
+		"my_email": "wardalpsycom@protonmail.com",
 		"section_title": "Contattami!",
 		"section_subtitle": "Lorem Ipsum Dolor",
 		"section_name": "Nome",
@@ -340,7 +344,8 @@
 		"appointment": "Appuntamento",
 		"confirmed_appointment": "Il tuo appuntamento è stato confermato con successo.",
 		"send_docs_heading": "Documenti Inviati",
-		"send_docs": "Abbiamo inviato una copia del consenso privay a"
+		"send_docs": "Abbiamo inviato una copia del consenso privay a",
+		"reschedule": "Contattaci se hai bisogno di modificare il tuo appuntamento."
 	},
 	"cal": {
 		"slots": "Orari disponibili",
@@ -389,9 +394,14 @@
 		"too_short": "Deve contenere almeno {min} caratteri",
 		"too_long": "Deve contenere al massimo {max} caratteri",
 		"phone": {
-			"required": "Phone number is required",
+			"required": "Il numero di telefono è obbligatorio",
 			"digits_only": "Il numero di telefono deve contenere solo cifre",
 			"min": "Il numero di telefono deve avere almeno {min} cifre"
+		},
+		"date": {
+			"invalid_format": "Formato data non valido. Usa gg/mm/aaaa",
+			"invalid_date": "Questa data non è valida",
+			"future_date": "La data non può essere nel futuro"
 		}
 	},
 	"emails": {

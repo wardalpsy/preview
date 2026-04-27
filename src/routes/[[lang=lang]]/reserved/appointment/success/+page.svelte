@@ -2,12 +2,21 @@
 	import { onMount } from 'svelte';
 	import { i18n } from '$lib/i18n.svelte';
 	import { Button } from '$lib/components/ui/button';
+	import { base } from '$app/paths';
 	//Icons
 	import IconCheck from 'virtual:icons/tabler/circle-check';
 	import IconLoader from 'virtual:icons/tabler/loader-2';
 	import IconMail from 'virtual:icons/tabler/mail';
 	import IconCalendar from 'virtual:icons/tabler/calendar-event';
 	import IconError from 'virtual:icons/tabler/face-id-error';
+
+	const l = (path: string) => {
+		const lang = i18n.currentLang;
+		const prefix = lang === 'en' ? '' : `/${lang}`;
+		// Ensure path starts with a slash
+		const cleanPath = path.startsWith('/') ? path : `/${path}`;
+		return `${base}${prefix}${cleanPath === '/' && lang !== 'en' ? '' : cleanPath}`;
+	};
 
 	let status = $state<'loading' | 'success' | 'error'>('loading');
 	let bookingData = $state<any>(null);
@@ -65,6 +74,7 @@
 						{i18n.t.consent.thanks}, {bookingData?.patient?.firstName}!
 					</h1>
 					<p class="text-lg text-foreground">{i18n.t.fulfillment.confirmed_appointment}</p>
+					<p class="text-sm text-foreground">{i18n.t.fulfillment.reschedule}</p>
 				</div>
 
 				<div class="space-y-6 rounded-3xl border bg-white p-8 text-left shadow-md shadow-brand/15">
@@ -78,7 +88,11 @@
 							</p>
 							<p class="font-bold text-foreground first-letter:uppercase">
 								{new Date(bookingData?.slot?.start || bookingData?.slot?.time).toLocaleString(
-									i18n.currentLang === 'it' ? 'it-IT' : i18n.currentLang === 'pl' ? 'pl-PL' : 'en-US',
+									i18n.currentLang === 'it'
+										? 'it-IT'
+										: i18n.currentLang === 'pl'
+											? 'pl-PL'
+											: 'en-US',
 									{
 										weekday: 'long',
 										day: 'numeric',
@@ -106,7 +120,7 @@
 					</div>
 				</div>
 
-				<Button href="/" variant="secondary" size="lg" class="cursor-pointer">
+				<Button href={l('/')} variant="secondary" size="lg" class="cursor-pointer">
 					{i18n.t.a11y.back_home}
 				</Button>
 			</div>
@@ -121,7 +135,7 @@
 				<p class="text-foreground">
 					{i18n.t.fulfillment.error_info}
 				</p>
-				<Button href="/reserved/appointment" variant="secondary" size="lg" class="px-10"
+				<Button href={l('/reserved/appointment')} variant="secondary" size="lg" class="px-10"
 					>{i18n.t.fulfillment.retry}</Button
 				>
 			</div>

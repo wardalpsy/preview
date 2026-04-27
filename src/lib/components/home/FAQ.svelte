@@ -1,6 +1,14 @@
 <script lang="ts">
 	import * as Accordion from '$lib/components/ui/accordion';
 	import { i18n } from '$lib/i18n.svelte';
+	import { base } from '$app/paths';
+
+	const l = (path: string) => {
+		const lang = i18n.currentLang;
+		const prefix = lang === 'en' ? '' : `/${lang}`;
+		const cleanPath = path.startsWith('/') ? path : `/${path}`;
+		return `${base}${prefix}${cleanPath === '/' && lang !== 'en' ? '' : cleanPath}`;
+	};
 </script>
 
 <section id="faq" class="scroll-m-12 bg-background py-24">
@@ -44,7 +52,12 @@
 					<p class="text-sm italic">
 						{i18n.t.faq.additional_question}
 						<a
-							href="#contact"
+							href={l('/#contact')}
+							onmouseenter={() => {
+								window.dispatchEvent(
+									new CustomEvent('preload-component', { detail: { id: 'contact' } })
+								);
+							}}
 							class="text-primary underline underline-offset-4 transition-colors hover:text-brand hover:decoration-2"
 							>{i18n.t.faq.ask_me}</a
 						>

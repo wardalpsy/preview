@@ -241,8 +241,10 @@
 		"oxy_credit": true
 	},
 	"consent": {
-		"legal_title": "Świadoma zgoda na leczenie",
-		"legal_text_short": "Prosimy o zapoznanie się z dokumentem świadomej zgody przed podpisaniem.",
+		"legal_title": "Informacja o prywatności i zgoda na przetwarzanie danych",
+		"form_title": "Formularz zgody i podpis",
+		"legal_text_short": "Prosimy o {link} przed podpisaniem.",
+		"legal_text_short_link": "zapoznanie się z treścią zgody",
 		"label_name": "Imię i nazwisko",
 		"label_email": "Twój e-mail",
 		"label_signature": "Podpis cyfrowy",
@@ -268,18 +270,20 @@
 		"appointment_details": "Szczegóły wizyty",
 		"proceed_payment": "Przejdź do płatności",
 		"edit_details": "Edytuj szczegóły",
+		"label_data": "Twoje dane",
 		"error_fill_all": "Proszę wypełnić wszystkie pola i podpisać formularz.",
 		"access": "Dostęp",
 		"not_minor": "Oświadczam, że jestem osobą pełnoletnią lub posiadam władzę rodzicielską nad wskazanym małoletnim.",
 		"birth_city": "Miejsce urodzenia",
-		"birth_date": "Data urodzenia",
+		"birth_date": "Data urodzenia (dd/mm/rrrr)",
+		"birth_date_sugg": "(dd/mm/rrrr)",
 		"resident_city": "Miejscowość zamieszkania",
 		"resident_address": "Adres zamieszkania",
 		"tax_id": "Numer PESEL (CF/NIN)",
 		"tax_id_tooltip": "Proszę podać numer identyfikacji podatkowej (np. PESEL, Codice Fiscale lub NIN).",
 		"date": "Data",
 		"acknowledgement": "Podpisując ten dokument, potwierdzasz, że przeczytałeś, zrozumiałeś i zgadzasz się na warunki opisane powyżej.",
-		"pdf_heading": "mgr. Patrycja Wardal - wardalpsy.com"
+		"pdf_heading": "mgr Patrycja Wardal - wardalpsy.com"
 	},
 	"contact": {
 		"subject": "Temat",
@@ -296,7 +300,7 @@
 		"request_info": "Wprowadź swoje dane poniżej, aby przesłać prośbę. Pola oznaczone gwiazdką (*) są wymagane.",
 		"whatsapp_appointment_message": "Prośba o wizytę...",
 		"contact_form_target": "wardalpsycom@protonmail.com",
-		"my_email": "wardal.psy@gmail.com",
+		"my_email": "wardalpsycom@protonmail.com",
 		"section_title": "Skontaktuj się ze mną!",
 		"section_subtitle": "Zrób pierwszy krok, to już czas.",
 		"section_name": "Imię",
@@ -340,7 +344,8 @@
 		"appointment": "Wizyta",
 		"confirmed_appointment": "Twoja wizyta została pomyślnie potwierdzona.",
 		"send_docs_heading": "Dokumenty wysłane",
-		"send_docs": "Wysłaliśmy kopię świadomej zgody na adres"
+		"send_docs": "Wysłaliśmy kopię świadomej zgody na adres",
+		"reschedule": "Skontaktuj się ze mną, jeśli potrzebujesz zmienić termin wizyty."
 	},
 	"validation": {
 		"too_long": "Musi mieć maksymalnie {max} znaków",
@@ -375,9 +380,14 @@
 			"required": "Imię jest wymagane"
 		},
 		"phone": {
-			"required": "Phone number is required",
-			"digits_only": "Il numero di telefono deve contenere solo cifre",
-			"min": "Il numero di telefono deve avere almeno {min} cifre"
+			"required": "Numer telefonu jest wymagany",
+			"digits_only": "Numer telefonu może zawierać tylko cyfry",
+			"min": "Numer telefonu musi mieć co najmniej {min} cyfr"
+		},
+		"date": {
+			"invalid_format": "Nieprawidłowy format daty. Użyj dd/mm/rrrr",
+			"invalid_date": "Ta data jest nieprawidłowa",
+			"future_date": "Data nie może być z przyszłości"
 		}
 	},
 	"cal": {

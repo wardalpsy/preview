@@ -1,6 +1,14 @@
 <script lang="ts">
 	import { i18n } from '$lib/i18n.svelte';
 	import { getIcon } from 'virtual:cms-icons';
+	import { base } from '$app/paths';
+
+	const l = (path: string) => {
+		const lang = i18n.currentLang;
+		const prefix = lang === 'en' ? '' : `/${lang}`;
+		const cleanPath = path.startsWith('/') ? path : `/${path}`;
+		return `${base}${prefix}${cleanPath === '/' && lang !== 'en' ? '' : cleanPath}`;
+	};
 </script>
 
 {#snippet serviceCard(
@@ -65,7 +73,12 @@
 			<p class="text-sm italic">
 				{i18n.t.services.not_found}
 				<a
-					href="#contact"
+					href={l('/#contact')}
+					onmouseenter={() => {
+						window.dispatchEvent(
+							new CustomEvent('preload-component', { detail: { id: 'contact' } })
+						);
+					}}
 					class="text-primary underline underline-offset-4 transition-colors hover:text-brand hover:decoration-2"
 				>
 					{i18n.t.services.contact_me}

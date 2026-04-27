@@ -43,7 +43,7 @@ export async function generateConsentPDF(data: ConsentData): Promise<Uint8Array>
 	// Header
 	doc.setFont('times', 'bold');
 	doc.setFontSize(10);
-	doc.text(data.labels.heading || 'Dr. Patrycja Wardal - wardalpsy.com', margin, 15);
+	doc.text(data.labels.heading || 'Dr Patrycja Wardal - wardalpsy.com', margin, 15);
 	doc.setDrawColor(200, 200, 200);
 	doc.line(margin, 18, pageWidth - margin, 18);
 

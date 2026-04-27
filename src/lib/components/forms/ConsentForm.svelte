@@ -10,11 +10,16 @@
 	import { zod4Client } from 'sveltekit-superforms/adapters';
 	import { getConsentSchema } from './schema';
 	import { toast } from 'svelte-sonner';
-	import { untrack } from 'svelte';
+	import { untrack, onMount } from 'svelte';
 	//Icons
 	import IconX from 'virtual:icons/tabler/x';
-	let { form: serverForm, onComplete } = $props<{
+	let {
+		form: serverForm,
+		initialData,
+		onComplete
+	} = $props<{
 		form: any;
+		initialData?: any;
 		onComplete: (data: {
 			firstName: string;
 			lastName: string;
@@ -56,6 +61,19 @@
 
 	const { form: formData, enhance, delayed } = form;
 
+	// Populate form with initial data if provided (e.g. when coming back from Step 3)
+	onMount(() => {
+		if (initialData) {
+			Object.keys(initialData).forEach((key) => {
+				// @ts-ignore
+				$formData[key] = initialData[key];
+			});
+			if (initialData.signatureType) {
+				signatureMethod = initialData.signatureType;
+			}
+		}
+	});
+
 	let canvasElement = $state<HTMLCanvasElement>();
 	let signaturePad: SignaturePad | null = null;
 
@@ -69,7 +87,11 @@
 					canvasElement.height = canvasElement.offsetHeight * ratio;
 					canvasElement.getContext('2d')!.scale(ratio, ratio);
 					signaturePad.clear();
-					$formData.signature = '';
+
+					// If we have initial signature data, load it after resize
+					if ($formData.signature && signatureMethod === 'draw') {
+						signaturePad.fromDataURL($formData.signature);
+					}
 				});
 			};
 
@@ -81,6 +103,11 @@
 
 				window.addEventListener('resize', resizeCanvas);
 				resizeCanvas();
+
+				// If we have initial signature data, load it
+				if ($formData.signature && signatureMethod === 'draw') {
+					signaturePad.fromDataURL($formData.signature);
+				}
 
 				signaturePad.addEventListener('endStroke', () => {
 					$formData.signature = signaturePad!.toDataURL('image/png');
@@ -108,7 +135,7 @@
 		$formData.typedSignature = '';
 	}
 
-	// --- Dynamic Markdown loading for Consent ---
+	// Dynamic Markdown loading for Consent
 	let ConsentContent = $state<any>(null);
 	let isDialogOpen = $state(false);
 
@@ -128,6 +155,7 @@
 		$formData.isRead = true;
 		isDialogOpen = false;
 	}
+	const parts = i18n.t.consent.legal_text_short.split('{link}');
 </script>
 
 <!-- Informed Consent Dialog -->
@@ -140,8 +168,7 @@
 		<Dialog.Header
 			class="sticky top-0 z-10 w-full border-b bg-secondary px-4 py-6 text-on-secondary"
 		>
-			<div class="flex items-center justify-between px-4">
-				<Dialog.Title>{i18n.t.consent.legal_title}</Dialog.Title>
+			<div class="flex items-center justify-end px-4">
 				<Dialog.Close>
 					{#snippet child({ props })}
 						<Button variant="icon" size="icon" class="cursor-pointer" {...props}>
@@ -175,15 +202,17 @@
 	class="space-y-8 rounded-[2rem] border bg-secondary p-8 text-on-secondary shadow-sm md:p-12"
 >
 	<div class="max-w-none">
-		<h3 class="text-2xl">{i18n.t.consent.legal_title}</h3>
+		<h2 class="text-2xl">{i18n.t.consent.form_title}</h2>
 		<div class="mt-4 leading-relaxed">
+			{parts[0]}
 			<button
 				type="button"
 				onclick={() => (isDialogOpen = true)}
 				class="cursor-pointer text-left text-primary underline underline-offset-2 transition-colors hover:text-brand hover:decoration-2"
 			>
-				{i18n.t.consent.legal_text_short}
+				{i18n.t.consent.legal_text_short_link}
 			</button>
+			{parts[1]}
 		</div>
 	</div>
 	<!-- Minors consent-->
@@ -241,7 +270,10 @@
 		<Form.Field {form} name="birthDate">
 			<Form.Control>
 				{#snippet children({ props })}
-					<Form.Label>{i18n.t.consent.birth_date}<span class="form-required">*</span></Form.Label>
+					<Form.Label
+						>{i18n.t.consent.birth_date}
+						{i18n.t.consent.birth_date_sugg}<span class="form-required">*</span></Form.Label
+					>
 					<Input {...props} bind:value={$formData.birthDate} />
 				{/snippet}
 			</Form.Control>

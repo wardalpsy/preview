@@ -31,9 +31,13 @@
 		</p>
 		<ReservedAreaForm {data} />
 		<p class="mt-8 text-sm text-foreground/90 italic">
-			{i18n.t.reserved.no_pass_info}&nbsp;<br /><a
+			{i18n.t.reserved.no_pass_info}&nbsp;<br />
+			<a
+				href={l('/#sessions')}
 				class="text-primary underline underline-offset-4 transition-colors hover:text-brand hover:decoration-2"
-				href={l('/availability')}
+				onmouseenter={() => {
+					window.dispatchEvent(new CustomEvent('preload-component', { detail: { id: 'contact' } }));
+				}}
 			>
 				{i18n.t.reserved.no_pass_info_link}</a
 			>

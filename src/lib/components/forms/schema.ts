@@ -78,7 +78,35 @@ export const getConsentSchema = (t: TranslationSchema) =>
 				message: t.validation.consent.not_minor
 			}),
 			birthCity: z.string().min(2, t.validation.too_short.replace('{min}', '2')),
-			birthDate: z.string().min(2, t.validation.too_short.replace('{min}', '2')),
+			birthDate: z
+				.string()
+				.min(10, t.validation.date.invalid_format)
+				.refine(
+					(val) => {
+						// Basic format check
+						if (!/^\d{2}\/\d{2}\/\d{4}$/.test(val)) return false;
+
+						const [d, m, y] = val.split('/').map(Number);
+
+						// Month check
+						if (m < 1 || m > 12) return false;
+
+						// Day check
+						const daysInMonth = new Date(y, m, 0).getDate();
+						if (d < 1 || d > daysInMonth) return false;
+
+						return true;
+					},
+					{ message: t.validation.date.invalid_date }
+				)
+				.refine(
+					(val) => {
+						const [d, m, y] = val.split('/').map(Number);
+						const date = new Date(y, m - 1, d);
+						return date <= new Date();
+					},
+					{ message: t.validation.date.future_date }
+				),
 			addressResidence: z.string().min(2, t.validation.too_short.replace('{min}', '2')),
 			cityResidence: z.string().min(2, t.validation.too_short.replace('{min}', '2')),
 			taxId: z.string().min(2, t.validation.too_short.replace('{min}', '2')),
