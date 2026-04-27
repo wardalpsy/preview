@@ -86,7 +86,7 @@
 				<a href={l('/')} class="group relative z-10 flex items-center">
 					<div class="flex flex-col">
 						<div>
-							<span class="font-serif text-base leading-tight md:text-lg"
+							<span class="font-display text-base leading-tight font-semibold md:text-lg"
 								>{i18n.t.header.title}</span
 							>&nbsp;
 							<span
