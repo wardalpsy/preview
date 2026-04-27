@@ -333,7 +333,27 @@
 		"articles": "Artykuły"
 	},
 	"seo": {
-		"title": "Dr Patrycja Wardal | Psycholog, Psychoterapeuta, Hipnoterapeuta"
+		"title": "mgr Patrycja Wardal | Psycholog, Psychoterapeuta, Hipnoterapeuta",
+		"home": {
+			"title": "mgr Patrycja Wardal | Psycholog i Psychoterapeuta w Bari i Online",
+			"description": "Profesjonalne wsparcie psychologiczne i psychoterapia w Bari oraz online. Specjalizacja w psychoterapii ericksonowskiej i hipnozie."
+		},
+		"about": {
+			"title": "O mnie | mgr Patrycja Wardal | Doświadczenie i Podejście",
+			"description": "Poznaj moją drogę zawodową, szkolenie w psychoterapii ericksonowskiej oraz to, jak pracuję z pacjentami, aby odkrywać ich zasoby."
+		},
+		"articles": {
+			"title": "Artykuły psychologiczne i spostrzeżenia | mgr Patrycja Wardal",
+			"description": "Spostrzeżenia na temat zdrowia psychicznego, dobrostanu i rozwoju osobistego od profesjonalnego psychologa."
+		},
+		"reserved": {
+			"title": "Strefa Klienta | Zarezerwuj sesję",
+			"description": "Zaloguj się do strefy klienta, aby zarządzać swoimi wizytami i rezerwować nowe sesje."
+		},
+		"appointment": {
+			"title": "Umów wizytę | mgr Patrycja Wardal",
+			"description": "Wybierz termin kolejnej sesji psychoterapii lub konsultacji."
+		}
 	},
 	"fulfillment": {
 		"error_msg": "Coś poszło nie tak",

@@ -2,6 +2,8 @@
 	import { i18n } from '$lib/i18n.svelte';
 	import { base } from '$app/paths';
 
+	import SEO from '$lib/components/Seo.svelte';
+
 	let { data } = $props();
 	let Content = $derived(data.content);
 	let meta = $derived(data.meta);
@@ -14,10 +16,11 @@
 	};
 </script>
 
-<svelte:head>
-	<title>{meta.title} | Patrycja Wardal</title>
-	<meta name="description" content={meta.excerpt || meta.description} />
-</svelte:head>
+<SEO
+	title={`${meta.title} | Patrycja Wardal`}
+	metaDesc={meta.excerpt || meta.description}
+	image={meta.image}
+/>
 
 <article class=" min-h-screen bg-background px-6 py-20 lg:py-32">
 	<div class="mx-auto max-w-3xl">

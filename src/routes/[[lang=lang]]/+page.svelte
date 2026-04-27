@@ -6,9 +6,12 @@
 	import Services from '$lib/components/home/Services.svelte';
 	import FAQ from '$lib/components/home/FAQ.svelte';
 	import LazyComponent from '$lib/components/LazyComponent.svelte';
+	import SEO from '$lib/components/Seo.svelte';
 
 	let { data } = $props();
 </script>
+
+<SEO title={i18n.t.seo.home.title} metaDesc={i18n.t.seo.home.description} />
 
 <Hero />
 <About about={data.about} content={data.aboutContent} />

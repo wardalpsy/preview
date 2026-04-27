@@ -336,7 +336,27 @@
 		"articles": "Articles"
 	},
 	"seo": {
-		"title": "Dr. Patrycja Wardal | Psychologist, Psychotherapist, Hypnotherapist"
+		"title": "Dr. Patrycja Wardal | Psychologist, Psychotherapist, Hypnotherapist",
+		"home": {
+			"title": "Dr. Patrycja Wardal | Psychologist & Psychotherapist in Bari",
+			"description": "Professional psychological support and psychotherapy in Bari and online. Specialized in Ericksonian psychotherapy and Hypnosis."
+		},
+		"about": {
+			"title": "About Dr. Patrycja Wardal | Background & Approach",
+			"description": "Learn about my professional journey, my training in Ericksonian psychotherapy, and how I work with patients to discover their resources."
+		},
+		"articles": {
+			"title": "Psychology Articles & Insights | Dr. Patrycja Wardal",
+			"description": "Insights on mental health, well-being, and personal growth from a professional psychologist."
+		},
+		"reserved": {
+			"title": "Reserved Area | Book Your Session",
+			"description": "Access the reserved area to manage your appointments and book new sessions."
+		},
+		"appointment": {
+			"title": "Book an Appointment | Dr. Patrycja Wardal",
+			"description": "Select a time for your next psychotherapy or consultation session."
+		}
 	},
 	"fulfillment": {
 		"error_msg": "Something went wrong",

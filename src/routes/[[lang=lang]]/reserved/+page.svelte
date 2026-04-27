@@ -5,6 +5,8 @@
 	import IconUserKey from 'virtual:icons/tabler/user-key';
 	import type { PageData } from './$types.js';
 	import { base } from '$app/paths';
+	import SEO from '$lib/components/Seo.svelte';
+
 	let { data }: { data: PageData } = $props();
 	const l = (path: string) => {
 		const lang = i18n.currentLang;
@@ -13,6 +15,8 @@
 		return `${base}${prefix}${cleanPath === '/' && lang !== 'en' ? '' : cleanPath}`;
 	};
 </script>
+
+<SEO title={i18n.t.seo.reserved.title} metaDesc={i18n.t.seo.reserved.description} />
 
 <div class="flex min-h-[80vh] items-center justify-center bg-background px-6">
 	<div

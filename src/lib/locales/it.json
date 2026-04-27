@@ -333,7 +333,27 @@
 		"articles": "Articoli"
 	},
 	"seo": {
-		"title": "dott.ssa Patrycja Wardal | Psicologa, Psicoterapeuta, Ipnoterapeuta"
+		"title": "dott.ssa Patrycja Wardal | Psicologa, Psicoterapeuta, Ipnoterapeuta",
+		"home": {
+			"title": "dott.ssa Patrycja Wardal | Psicologa e Psicoterapeuta a Bari",
+			"description": "Supporto psicologico professionale e psicoterapia a Bari e online. Specializzata in psicoterapia ericksoniana e ipnosi."
+		},
+		"about": {
+			"title": "Chi sono | dott.ssa Patrycja Wardal | Percorso e Approccio",
+			"description": "Scopri il mio percorso professionale, la mia formazione in psicoterapia ericksoniana e come lavoro con i pazienti per scoprire le loro risorse."
+		},
+		"articles": {
+			"title": "Articoli di Psicologia e Approfondimenti | dott.ssa Patrycja Wardal",
+			"description": "Approfondimenti su salute mentale, benessere e crescita personale da una psicologa professionista."
+		},
+		"reserved": {
+			"title": "Area Riservata | Prenota la tua Seduta",
+			"description": "Accedi all'area riservata per gestire i tuoi appuntamenti e prenotare nuove sedute."
+		},
+		"appointment": {
+			"title": "Prenota un Appuntamento | dott.ssa Patrycja Wardal",
+			"description": "Seleziona un orario per la tua prossima seduta di psicoterapia o consulenza."
+		}
 	},
 	"fulfillment": {
 		"error_msg": "Qualcosa è andato storto",

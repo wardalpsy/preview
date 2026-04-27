@@ -105,11 +105,11 @@
 	});
 
 	const pageTitle = $derived(`${steps.find((s) => s.id === step)?.label} - ${i18n.t.seo.title}`);
+
+	import SEO from '$lib/components/Seo.svelte';
 </script>
 
-<svelte:head>
-	<title>{pageTitle}</title>
-</svelte:head>
+<SEO title={pageTitle} metaDesc={i18n.t.seo.appointment.description} />
 
 <div class="min-h-screen bg-background py-20">
 	<div class="container mx-auto px-6">
