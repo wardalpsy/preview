@@ -161,7 +161,7 @@
 <!-- Informed Consent Dialog -->
 <Dialog.Root bind:open={isDialogOpen}>
 	<Dialog.Content
-		class="no-scrollbar max-h-[90vh] overflow-x-hidden overflow-y-auto bg-background p-0 sm:max-w-200"
+		class="no-scrollbar max-h-[80vh] overflow-x-hidden overflow-y-auto bg-background p-0 sm:max-w-200"
 		data-lenis-prevent
 		showCloseButton={false}
 	>

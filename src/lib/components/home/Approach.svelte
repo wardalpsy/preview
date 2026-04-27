@@ -90,7 +90,7 @@
 									</p>
 								</Dialog.Trigger>
 								<Dialog.Content
-									class="no-scrollbar max-h-[90vh] overflow-x-hidden overflow-y-auto rounded-3xl bg-background p-0 sm:max-w-150"
+									class="no-scrollbar max-h-[80vh] overflow-x-hidden overflow-y-auto rounded-3xl bg-background p-0 sm:max-w-150"
 									data-lenis-prevent
 									showCloseButton={false}
 								>
@@ -130,7 +130,7 @@
 									</p>
 								</Dialog.Trigger>
 								<Dialog.Content
-									class="no-scrollbar max-h-[90vh] overflow-x-hidden overflow-y-auto rounded-3xl bg-background p-0 sm:max-w-150"
+									class="no-scrollbar max-h-[80vh] overflow-x-hidden overflow-y-auto rounded-3xl bg-background p-0 sm:max-w-150"
 									data-lenis-prevent
 									showCloseButton={false}
 								>
