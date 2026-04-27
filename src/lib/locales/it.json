@@ -81,7 +81,7 @@
 		"title": "Servizi",
 		"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus.",
 		"not_found": "Non trovi quello che cerchi?",
-		"contact_me": "Contattami per un incontro conoscitivo.",
+		"contact_me": "Modulo di contatto",
 		"disable_decorations": false,
 		"disable_icons": false,
 		"items": [
@@ -143,7 +143,7 @@
 			}
 		],
 		"additional_question": "Hai altre domande?",
-		"ask_me": "Contattami direttamente."
+		"ask_me": "Modulo di contatto"
 	},
 	"cta": {
 		"h2_title": "Prenota un appuntamento",

@@ -47,10 +47,12 @@
 			</Accordion.Root>
 
 			<!-- Support text -->
-			{#if i18n.t.faq.additional_question && i18n.t.faq.ask_me}
-				<div class="mt-16 text-center">
+			<div class="mt-16 text-center">
+				{#if i18n.t.faq.ask_me}
 					<p class="text-sm italic">
-						{i18n.t.faq.additional_question}
+						{#if i18n.t.faq.additional_question}
+							{i18n.t.faq.additional_question}
+						{/if}
 						<a
 							href={l('/#contact')}
 							onmouseenter={() => {
@@ -62,8 +64,8 @@
 							>{i18n.t.faq.ask_me}</a
 						>
 					</p>
-				</div>
-			{/if}
+				{/if}
+			</div>
 		</div>
 	</div>
 </section>

@@ -11,12 +11,7 @@
 	};
 </script>
 
-{#snippet serviceCard(
-	title: string,
-	description: string,
-	iconName: string,
-	no_decoration: boolean
-)}
+{#snippet serviceCard(title: string, description: string, iconName: string, no_decoration: boolean)}
 	{@const Icon = iconName ? getIcon(iconName) : null}
 	<div
 		class="group relative rounded-3xl border border-border bg-white p-8 transition-all duration-500 hover:border-primary/30 hover:shadow-xl hover:shadow-brand/10"
@@ -70,20 +65,24 @@
 
 		<!-- Bottom CTA context -->
 		<div class="mt-16 text-center">
-			<p class="text-sm italic">
-				{i18n.t.services.not_found}
-				<a
-					href={l('/#contact')}
-					onmouseenter={() => {
-						window.dispatchEvent(
-							new CustomEvent('preload-component', { detail: { id: 'contact' } })
-						);
-					}}
-					class="text-primary underline underline-offset-4 transition-colors hover:text-brand hover:decoration-2"
-				>
-					{i18n.t.services.contact_me}
-				</a>
-			</p>
+			{#if i18n.t.services.contact_me}
+				<p class="text-sm italic">
+					{#if i18n.t.services.not_found}
+						{i18n.t.services.not_found}
+					{/if}
+					<a
+						href={l('/#contact')}
+						onmouseenter={() => {
+							window.dispatchEvent(
+								new CustomEvent('preload-component', { detail: { id: 'contact' } })
+							);
+						}}
+						class="text-primary underline underline-offset-4 transition-colors hover:text-brand hover:decoration-2"
+					>
+						{i18n.t.services.contact_me}
+					</a>
+				</p>
+			{/if}
 		</div>
 	</div>
 </section>

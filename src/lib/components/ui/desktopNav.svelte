@@ -26,7 +26,7 @@
 	} = $props();
 </script>
 
-<div class="flex w-full items-center justify-start">
+<div class="flex w-full items-center justify-start pr-4">
 	<!-- Ghost brand that fades in when top bar scrolls out -->
 	<a
 		href={l('/')}
