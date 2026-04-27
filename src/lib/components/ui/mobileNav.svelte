@@ -85,7 +85,7 @@
 								<a
 									href={l(item.href)}
 									onclick={() => (isMenuOpen = false)}
-									class="group flex items-center font-serif text-xl tracking-tight transition-colors hover:text-brand"
+									class="group flex items-center font-serif text-lg tracking-tight transition-colors hover:text-brand"
 								>
 									<span
 										class="h-px w-0 bg-brand transition-all duration-300 group-hover:mr-3 group-hover:w-4"
@@ -99,7 +99,7 @@
 			</nav>
 
 			<!-- Footer -->
-			<div class="mt-auto px-6 pb-10 text-center">
+			<div class="mt-auto px-6 pb-[max(2.5rem,env(safe-area-inset-bottom))] text-center">
 				<span
 					class="block text-[10px] leading-normal font-medium tracking-[0.2em] uppercase opacity-80"
 				>
