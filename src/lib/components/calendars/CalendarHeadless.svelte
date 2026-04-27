@@ -233,8 +233,10 @@
 							class="w-full text-xs shadow-none"
 							aria-pressed={selectedTime === slotStart}
 						>
-							{startStr}{#if endStr}
-								- {endStr}{/if}
+							{startStr}
+							{#if endStr}
+								{i18n.t.cal.slots_separator || '+'} {endStr}
+							{/if}
 						</Button>
 					{/each}
 				{:else}

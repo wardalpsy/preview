@@ -235,6 +235,7 @@
 		"location": "Bari, 70124",
 		"location_info": "Sesje: stacjonarnie i online\nPo uprzednim umówieniu",
 		"nav_availability": "Availability",
+		"nav_home": "Home",
 		"nav_reserved": "Appointments",
 		"external_link": "(otwiera się w nowej karcie)",
 		"oxy_credit": true
@@ -390,7 +391,8 @@
 		"slot_select": "Wybierz datę i godzinę wizyty.",
 		"no_slots": "Brak dostępności. Skontaktuj się ze mną, aby uzyskać informacje.",
 		"slots": "Dostępne terminy",
-		"loading_slots": "Ładowanie dostępnych terminów"
+		"loading_slots": "Ładowanie dostępnych terminów",
+		"slots_separator": "-"
 	},
 	"emails": {
 		"new_request_subject": "Nowa prośba o wizytę",

@@ -47,6 +47,14 @@
 			<NavigationMenu.Item>
 				<NavigationMenu.Link
 					href={l(item.href)}
+					onmouseenter={() => {
+						if (item.href.includes('#')) {
+							const id = item.href.split('#').pop();
+							if (id) {
+								window.dispatchEvent(new CustomEvent('preload-component', { detail: { id } }));
+							}
+						}
+					}}
 					class={cn(navigationMenuTriggerStyle(), 'header-nav_link whitespace-nowrap')}
 				>
 					{item.label}

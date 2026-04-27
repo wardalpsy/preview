@@ -28,7 +28,7 @@
 	}
 </script>
 
-<section id="sessions" class="bg-background py-20">
+<section class="bg-background py-20">
 	<div class="container mx-auto px-6 text-center">
 		<h2 class="mb-6 font-serif text-4xl text-brand">
 			{i18n.t.sessions.title}
@@ -72,8 +72,8 @@
 							<IconX class="size-4" aria-hidden="true" />
 							<span class="sr-only">{i18n.t.a11y.close}</span>
 						</Button>
-					{/snippet}</Dialog.Close
-				>
+					{/snippet}
+				</Dialog.Close>
 			</div>
 			<Dialog.Description>
 				<p class="text-sm text-foreground/80">

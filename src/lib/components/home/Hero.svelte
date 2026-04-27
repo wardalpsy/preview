@@ -93,7 +93,15 @@
 				</p>
 
 				<div class="flex flex-col gap-4 sm:flex-row">
-					<Button size="xl" href={l('/#sessions')}>
+					<Button
+						size="xl"
+						href={l('/#sessions')}
+						onmouseenter={() => {
+							window.dispatchEvent(
+								new CustomEvent('preload-component', { detail: { id: 'sessions' } })
+							);
+						}}
+					>
 						{i18n.t.hero.cta_primary}
 					</Button>
 					<Button size="xl" variant="secondary" href={l('/#approach')}>

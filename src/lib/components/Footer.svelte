@@ -76,17 +76,35 @@
 				<h2 class="footer-headings">{i18n.t.footer.quick_links}</h2>
 				<ul class="space-y-4 text-sm">
 					<li>
-						<a href={l('/availability')} class="footer-nav_link">{i18n.t.footer.nav_availability}</a
-						>
+						<a href={l('/')} class="footer-nav_link">{i18n.t.footer.nav_home}</a>
 					</li>
 					<li>
-						<a href={l('/reserved')} class="footer-nav_link">{i18n.t.footer.nav_reserved}</a>
+						<a
+							href="#sessions"
+							class="footer-nav_link"
+							onmouseenter={() => {
+								window.dispatchEvent(
+									new CustomEvent('preload-component', { detail: { id: 'contact' } })
+								);
+							}}>{i18n.t.footer.nav_availability}</a
+						>
 					</li>
 					<li>
 						<a href={l('/articles')} class="footer-nav_link">{i18n.t.nav.articles}</a>
 					</li>
 					<li>
-						<a href="#contact" class="footer-nav_link">{i18n.t.nav.contact}</a>
+						<a
+							href="#contact"
+							class="footer-nav_link"
+							onmouseenter={() => {
+								window.dispatchEvent(
+									new CustomEvent('preload-component', { detail: { id: 'contact' } })
+								);
+							}}>{i18n.t.nav.contact}</a
+						>
+					</li>
+					<li>
+						<a href={l('/reserved')} class="footer-nav_link">{i18n.t.footer.nav_reserved}</a>
 					</li>
 				</ul>
 			</div>

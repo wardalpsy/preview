@@ -33,7 +33,7 @@
 	});
 </script>
 
-<section id="contact" class="relative scroll-m-16 overflow-hidden bg-background pt-24 pb-36">
+<section class="relative scroll-m-16 overflow-hidden bg-background pt-24 pb-36">
 	<!-- Background Detail -->
 	<div
 		class="absolute bottom-0 left-0 h-96 w-96 -translate-x-1/2 translate-y-1/2 rounded-full bg-brand/20 blur-3xl"

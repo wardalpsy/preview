@@ -235,7 +235,8 @@
 		"location": "Bari, 70124",
 		"location_info": "Sessioni in presenza e online\nSolo su appuntamento",
 		"nav_availability": "Disponibilità",
-		"nav_reserved": "Appuntamenti",
+		"nav_reserved": "Riservata",
+		"nav_home": "Home",
 		"external_link": "(si apre in una nuova scheda)",
 		"oxy_credit": true
 	},
@@ -352,7 +353,8 @@
 		"slot_appointment": "Appuntamento per",
 		"proceed": "Procedi",
 		"proceed_payment": "Procedi al pagamento",
-		"time_preposition": "alle"
+		"time_preposition": "alle",
+		"slots_separator": "-"
 	},
 	"validation": {
 		"firstName": {

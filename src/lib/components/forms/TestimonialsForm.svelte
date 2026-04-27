@@ -9,6 +9,9 @@
 	import { getTestimonialSchema } from './schema';
 	import { i18n } from '$lib/i18n.svelte';
 	import { toast } from 'svelte-sonner';
+	import { Button } from '$lib/components/ui/button/index.js';
+	//Icons
+	import IconX from 'virtual:icons/tabler/x';
 
 	let { data } = $props();
 	let open = $state(false);
@@ -34,12 +37,24 @@
 		{i18n.t.testimonials.cta_button}
 	</Dialog.Trigger>
 	<Dialog.Content
-		class="rounded-3xl border border-border bg-secondary p-8 text-left text-on-secondary shadow-sm sm:max-w-106.25"
+		class="no-scrollbar max-h-[90vh] overflow-x-hidden overflow-y-auto rounded-3xl border border-border bg-secondary p-8 text-left text-on-secondary shadow-sm shadow-brand/15 sm:max-w-110"
+		data-lenis-prevent
+		showCloseButton={false}
 	>
 		<Dialog.Header>
-			<Dialog.Title class="mb-6 font-serif text-3xl text-brand">
-				{i18n.t.testimonials.modal_title}
-			</Dialog.Title>
+			<div class="mb-6 flex items-center justify-between">
+				<Dialog.Title class="font-serif text-2xl text-brand">
+					{i18n.t.testimonials.modal_title}
+				</Dialog.Title>
+				<Dialog.Close>
+					{#snippet child({ props })}
+						<Button variant="icon" size="icon" class="shrink-0 cursor-pointer" {...props}>
+							<IconX class="size-4" aria-hidden="true" />
+							<span class="sr-only">{i18n.t.a11y.close}</span>
+						</Button>
+					{/snippet}
+				</Dialog.Close>
+			</div>
 			<Dialog.Description class="text-sm text-foreground/80">
 				{i18n.t.testimonials.modal_desc}
 			</Dialog.Description>
@@ -50,7 +65,7 @@
 				<Form.Control>
 					{#snippet children({ props })}
 						<Form.Label>{i18n.t.testimonials.name_label}</Form.Label>
-						<Input {...props} bind:value={$formData.name} required={false} />
+						<Input {...props} bind:value={$formData.name} class="h-10" required={false} />
 					{/snippet}
 				</Form.Control>
 				<Form.FieldErrors />

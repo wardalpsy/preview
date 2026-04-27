@@ -28,7 +28,7 @@
 	};
 </script>
 
-<section id="testimonials" class="scroll-m-22 overflow-hidden bg-background py-24">
+<section class="scroll-m-22 overflow-hidden bg-background py-24">
 	<div class="container mx-auto px-6">
 		<!-- Header -->
 		<div class="mx-auto mb-16 max-w-3xl space-y-4 text-center">
