@@ -82,13 +82,29 @@
 		"subtitle": "Profesjonalne wsparcie psychologiczne i terapeutyczne dostosowane do Twoich indywidualnych potrzeb i celów.",
 		"not_found": "Nie znajdujesz tego, czego szukasz?",
 		"contact_me": "Skontaktuj się ze mną w celu umówienia spotkania zapoznawczego.",
+		"dialog_trigger": "Obszary pomocy",
+		"dialog_trigger_title": "Obszary pomocy",
 		"items": [
 			{
 				"id": "1",
 				"no_decoration": false,
 				"icon": "user",
 				"title": "Psychoterapia indywidualna",
-				"description": "Miejsce, w którym wspólnie pracujemy nad Twoim rozwojem i rozwiązaniem problemów, z którymi się mierzysz."
+				"description": "Miejsce, w którym wspólnie pracujemy nad Twoim rozwojem i rozwiązaniem problemów, z którymi się mierzysz.",
+				"intervention_areas": [
+					{
+						"term": "Zaburzenia lękowe",
+						"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus."
+					},
+					{
+						"term": "Depresja (no description)",
+						"description": ""
+					},
+					{
+						"term": "Zarządzanie stresem",
+						"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus."
+					}
+				]
 			},
 			{
 				"id": "2",

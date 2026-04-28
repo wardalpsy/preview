@@ -82,6 +82,8 @@
 		"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus.",
 		"not_found": "Non trovi quello che cerchi?",
 		"contact_me": "Modulo di contatto",
+		"dialog_trigger": "Aree di intervento",
+		"dialog_trigger_title": "Aree di intervento",
 		"disable_decorations": false,
 		"disable_icons": false,
 		"items": [
@@ -90,7 +92,21 @@
 				"no_decoration": false,
 				"icon": "user",
 				"title": "Psicoterapia individuale",
-				"description": "Uno spazio dedicato al lavoro individuale sul superare delle difficoltà che ti portano in terapia e sulla tua crescita personale."
+				"description": "Uno spazio dedicato al lavoro individuale sul superare delle difficoltà che ti portano in terapia e sulla tua crescita personale.",
+				"intervention_areas": [
+					{
+						"term": "Disturbi d'Ansia",
+						"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus."
+					},
+					{
+						"term": "Depressione (no description)",
+						"description": ""
+					},
+					{
+						"term": "Gestione dello Stress",
+						"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus."
+					}
+				]
 			},
 			{
 				"id": "2",

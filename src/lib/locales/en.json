@@ -84,6 +84,8 @@
 		"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus.",
 		"not_found": "Can't find what you're looking for?",
 		"contact_me": "Contact me for an introductory meeting.",
+		"dialog_trigger": "Areas of intervention",
+		"dialog_trigger_title": "Areas of intervention",
 		"disable_decorations": false,
 		"disable_icons": false,
 		"items": [
@@ -92,7 +94,21 @@
 				"no_decoration": false,
 				"icon": "user",
 				"title": "Individual Psychotherapy",
-				"description": "A dedicated space to overcome your difficulties and foster personal growth."
+				"description": "A dedicated space to overcome your difficulties and foster personal growth.",
+				"intervention_areas": [
+					{
+						"term": "Anxiety Disorders",
+						"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus."
+					},
+					{
+						"term": "Depression (no description)",
+						"description": ""
+					},
+					{
+						"term": "Stress Management",
+						"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie bibendum risus."
+					}
+				]
 			},
 			{
 				"id": "2",
